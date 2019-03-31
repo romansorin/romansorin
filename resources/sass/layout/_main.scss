@@ -1,0 +1,13 @@
+.hero-wrapper {
+	font-family: $font-main;
+	padding-top: 170px;
+	padding-bottom: 0px;
+	.title {
+		margin-bottom: 12px;
+		line-height: 1.26;
+	}
+	.subtitle {
+		line-height: 1.45;
+		font-weight: $weight-medium;
+	}
+}

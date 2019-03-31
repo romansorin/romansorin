@@ -21306,3 +21306,39 @@ input[type=range].slider.is-danger .has-output-tooltip + output {
   }
 }
 
+.hero-wrapper {
+  font-family: "Poppins", sans-serif;
+  padding-top: 170px;
+  padding-bottom: 0px;
+}
+
+.hero-wrapper .title {
+  margin-bottom: 12px;
+  line-height: 1.26;
+}
+
+.hero-wrapper .subtitle {
+  line-height: 1.45;
+  font-weight: 500;
+}
+
+.header-wrapper {
+  font-family: "Poppins", sans-serif;
+  padding-top: 60px;
+  padding-bottom: 0px;
+}
+
+.header-wrapper .hero-body {
+  padding: 0;
+}
+
+.header-wrapper .header-li {
+  padding: 0.5rem 1.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .header-wrapper {
+    padding-top: 16px;
+  }
+}
+

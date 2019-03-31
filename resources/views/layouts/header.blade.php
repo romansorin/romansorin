@@ -1,31 +1,31 @@
-<div class="header-wrapper container">
-	<nav class="navbar" role="navigation" aria-label="main navigation">
-  <div class="navbar-brand">
-    <a class="navbar-item" href="https://bulma.io">
-      <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28">
-    </a>
-
-    <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="header-nav">
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-    </a>
-  </div>
-
-  <div id="header-nav" class="navbar-menu">
-    <div class="navbar-start">
+<nav aria-label="main navigation" class="navbar header-wrapper" role="navigation">
+    <div class="container">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="https://bulma.io">
+                <img height="28" src="https://bulma.io/images/bulma-logo.png" width="112">
+                </img>
+            </a>
+            <a aria-expanded="false" aria-label="menu" class="navbar-burger burger" data-target="header-nav" role="button">
+                <span aria-hidden="true">
+                </span>
+                <span aria-hidden="true">
+                </span>
+                <span aria-hidden="true">
+                </span>
+            </a>
+        </div>
+        <div class="navbar-menu" id="header-nav">
+            <div class="navbar-end">
+                <a class="navbar-item header-li">
+                    works
+                </a>
+                <a class="navbar-item header-li">
+                    about
+                </a>
+                <a class="navbar-item header-li">
+                    contact
+                </a>
+            </div>
+        </div>
     </div>
-    <div class="navbar-end">
-      <a class="navbar-item">
-        works
-      </a>
-      <a class="navbar-item">
-        about
-      </a>
-      <a class="navbar-item">
-        contact
-      </a>
-    </div>
-  </div>
 </nav>
-</div>

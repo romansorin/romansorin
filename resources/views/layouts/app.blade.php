@@ -9,11 +9,11 @@
         @yield('stylesheets')  
     </head>
     <body>
-    	@include('layouts.header')
     	<div id="app">
+    	@include('layouts.header')	
         @yield('content')
-        </div>
         @include('layouts.footer')
+        </div>
         @yield('scripts')
         <script src="{{ asset('js/app.js') }}"></script>
     </body>
