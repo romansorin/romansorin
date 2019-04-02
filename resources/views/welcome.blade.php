@@ -1,5 +1,7 @@
 @extends('layouts.app')
-
+@section('stylesheets')
+<link rel="stylesheet" href="{{ asset('css/animate.min.css') }}">
+@endsection
 @section('title')
 Home
 @endsection
@@ -11,12 +13,12 @@ Home
     		<div class="container">
     			<div class="columns">
     				<div class="column is-three-fifths">
-      					<h1 class="title has-text-black-bis is-size-1-tablet is-size-2-mobile">Hey there! I'm a full-stack<br>web developer, photographer,<br>and violinist.</h1>
+      					<h1 class="title animated slideInUp fast has-text-black-bis is-size-1-tablet is-size-2-mobile">Hey there! I'm a full-stack<br>web developer, photographer,<br>and violinist.</h1>
       				</div>
       			</div>
       			<div class="columns">
       				<div class="column is-three-fifths">
-      					<h2 class="subtitle has-text-black-ter is-size-4">As you can see, this site is currently in progress.<br>Come back later for the full release, or email me with any questions: <a href="mailto:roman@romansorin.com">roman@romansorin.com</a></h2>
+      					<h2 class="subtitle animated slideInUp slow has-text-black-ter is-size-4">As you can see, this site is currently in progress.<br>Come back later for the full release, or email me with any questions: <a href="mailto:roman@romansorin.com">roman@romansorin.com</a></h2>
       				</div>
       			</div>
       			{{-- <div class="columns">

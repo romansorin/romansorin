@@ -50780,8 +50780,8 @@ bulmaTagsinput.attach();
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\Users\Roman\Documents\romansorin\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! C:\Users\Roman\Documents\romansorin\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! /Users/988244/Documents/romansorin/resources/js/app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! /Users/988244/Documents/romansorin/resources/sass/app.scss */"./resources/sass/app.scss");
 
 
 /***/ })
