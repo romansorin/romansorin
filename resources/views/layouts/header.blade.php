@@ -16,13 +16,13 @@
         </div>
         <div class="navbar-menu" id="header-nav">
             <div class="navbar-end">
-                <a class="navbar-item header-li">
+                <a class="navbar-item header-li has-text-black-bis">
                     works
                 </a>
-                <a class="navbar-item header-li">
+                <a class="navbar-item header-li has-text-black-bis">
                     about
                 </a>
-                <a class="navbar-item header-li">
+                <a class="navbar-item header-li has-text-black-bis">
                     contact
                 </a>
             </div>
