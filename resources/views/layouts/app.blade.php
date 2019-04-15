@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>@yield('title')</title>
+        <title>@yield('title') — Roman Sorin</title>
         <link rel="stylesheet" href="{{ asset('css/app.css') }}">
         @yield('stylesheets')  
     </head>

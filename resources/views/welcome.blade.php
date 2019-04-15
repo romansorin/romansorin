@@ -22,11 +22,8 @@ Home
       				</div>
       			</div>
       			<div class="columns">
-      				<div class="column">
-      					<button class="button is-primary is-rounded">Contact</button>
-      				</div>
-      				<div class="column">
-      					<button class="button is-white is-rounded">More</button>
+      				<div class="column is-one-quarter">
+      					<button class="button is-dark is-rounded">See my work</button>
       				</div>
       			</div>
     		</div>
