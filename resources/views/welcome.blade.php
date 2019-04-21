@@ -2,9 +2,7 @@
 @section('stylesheets')
 <link rel="stylesheet" href="{{ asset('css/animate.min.css') }}">
 @endsection
-@section('title')
-Home
-@endsection
+@section('title', 'Home')
 
 @section('content')
 <section class="hero">

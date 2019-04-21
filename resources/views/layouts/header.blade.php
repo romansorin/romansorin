@@ -2,15 +2,12 @@
     <div class="container">
         <div class="navbar-brand">
             <a class="navbar-item" href="/">
-                <img height="28" src="https://bulma.io/images/bulma-logo.png" width="112">
-                </img>
+{{--                <img height="28" src="https://bulma.io/images/bulma-logo.png" width="112">--}}
+                <h1 class="is-size-3 has-text-weight-bold has-text-black">rs.</h1>
             </a>
-            <a aria-expanded="false" aria-label="menu" class="navbar-burger burger" data-target="header-nav" role="button">
-                <span aria-hidden="true">
-                </span>
-                <span aria-hidden="true">
-                </span>
-                <span aria-hidden="true">
+            <a aria-expanded="false" aria-label="menu" class="is-invisible-desktop hamburger hamburger--slider" data-target="header-nav" role="button">
+                <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
                 </span>
             </a>
         </div>

@@ -2,6 +2,18 @@
 	font-family: $font-main;
 	padding-top: 60px;
 	padding-bottom: 0px;
+    .hamburger {
+        margin-left: auto;
+    }
+    .hamburger-box {
+        &:focus {
+            outline: none;
+        }
+
+        &:active {
+            outline: none;
+        }
+    }
 	.hero-body {
 		padding: 0;
 	}
