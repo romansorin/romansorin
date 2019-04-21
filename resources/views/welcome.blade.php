@@ -19,11 +19,6 @@
       					<h2 class="subtitle animated fadeInUp fast has-text-black-ter is-size-4">As you can see, this site is currently in progress.<br>Come back later for the full release, or email me with any questions: <a href="mailto:roman@romansorin.com">roman@romansorin.com</a></h2>
       				</div>
       			</div>
-      			<div class="columns">
-      				<div class="column is-one-quarter">
-      					<button class="button is-dark is-rounded">See my work</button>
-      				</div>
-      			</div>
     		</div>
   		</div>
   	</div>
