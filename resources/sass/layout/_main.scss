@@ -1,7 +1,62 @@
+.rscom-logo {
+
+}
+
+.projects {
+	.project-grid {
+		margin-top: 60px;
+		margin-bottom: 25px;
+
+		.project-thumbnail-box {
+			transition: 0.6s ease;
+			padding: 0;
+			border-radius: 12px;
+			border-color: transparent;
+			-webkit-box-shadow: 1px 1px 8px 0px rgba(0, 0, 0, 0.25);
+			-moz-box-shadow:    1px 1px 8px 0px rgba(0, 0, 0, 0.25);
+			box-shadow:         1px 1px 8px 0px rgba(0, 0, 0, 0.25);
+			overflow: hidden;
+			&:hover {
+				-webkit-box-shadow: 1px 1px 8px 0px rgba(0, 0, 0, 0.45);
+			-moz-box-shadow:    1px 1px 8px 0px rgba(0, 0, 0, 0.45);
+			box-shadow:         1px 1px 8px 0px rgba(0, 0, 0, 0.45);
+			background-color: rgba(0, 0, 0, .8);
+			}
+		}
+		.project-thumbnail {
+			transition: 0.6s ease;
+			max-height: 290px;
+			border-radius: 12px;
+			border-color: transparent;
+			&:hover {
+				transform: scale(1.1);
+				cursor: pointer;
+			}
+		}
+	}
+	
+	.button {
+		@extend %main-gradient;
+		border: none;
+    border-radius: 7px;
+    font-size: 16px;
+    font-weight: $weight-medium;
+    letter-spacing: 0.5px;
+    box-shadow: 0px 1px 6px 0px rgba(50, 50, 50, 0.35);
+		padding: 20px 29px 20px 29px;
+		transition: .3s ease;
+		&:hover {
+			transform: translateY(-5px);
+			box-shadow: 0px 2px 10px 0px rgba(50, 50, 50, 0.5);
+		}
+	}
+}
+
 .hero-wrapper {
 	font-family: $font-main;
 	padding-top: 130px;
 	padding-bottom: 0px;
+	margin-bottom: 120px;
 	.title {
 		margin-bottom: 12px;
 		line-height: 1.26;
@@ -10,5 +65,8 @@
 	.subtitle {
 		line-height: 1.45;
 		font-weight: $weight-medium;
+	}
+	#description {
+		font-weight: $weight-normal;
 	}
 }
