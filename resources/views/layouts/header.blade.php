@@ -3,7 +3,6 @@
         <div class="navbar-brand">
             <a class="navbar-item" href="/">
                 <h1 class="is-size-3 has-text-weight-bold has-text-black">rs.</h1>
-                {{-- <object data="{{ asset('rscom.svg')}}" type="image/svg+xml" /></object> --}}
             </a>
             <a aria-expanded="false" aria-label="menu" class="is-invisible-desktop hamburger hamburger--slider" data-target="header-nav" role="button">
                 <span class="hamburger-box">
