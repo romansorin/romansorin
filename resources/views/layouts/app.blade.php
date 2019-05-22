@@ -9,7 +9,7 @@
     <title>@yield('title') — Roman Sorin</title>
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
     @yield('stylesheets')
-    
+    <script src="{{ asset('js/hotjar.js') }}"></script>
 </head>
 
 <body>
@@ -20,17 +20,6 @@
     </div>
     @yield('scripts')
     <script src="{{ asset('js/app.js') }}"></script>
-    <!-- Hotjar Tracking Code for https://www.romansorin.com -->
-    <script>
-        (function(h,o,t,j,a,r){
-            h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-            h._hjSettings={hjid:1327317,hjsv:6};
-            a=o.getElementsByTagName('head')[0];
-            r=o.createElement('script');r.async=1;
-            r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-            a.appendChild(r);
-        })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-    </script>
 </body>
 
 </html>

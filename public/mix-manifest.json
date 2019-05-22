@@ -1,5 +1,6 @@
 {
     "/js/app.js": "/js/app.js",
+    "/js/hotjar.js": "/js/hotjar.js",
     "/css/app.css": "/css/app.css",
     "/css/animate.min.css": "/css/animate.min.css"
 }
