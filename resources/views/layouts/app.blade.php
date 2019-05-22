@@ -16,7 +16,6 @@
     <div id="app">
         @include('layouts.header')
         @yield('content')
-        @include('layouts.footer')
     </div>
     @yield('scripts')
     <script src="{{ asset('js/app.js') }}"></script>
