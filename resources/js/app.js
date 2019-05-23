@@ -1,4 +1,4 @@
-require('./bootstrap');
+require('./bulma-extensions');
 
 
 // Bulma NavBar Burger Script
@@ -26,7 +26,3 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
 });
-
-
-
-require('./bulma-extensions');

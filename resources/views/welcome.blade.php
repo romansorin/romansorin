@@ -29,10 +29,17 @@
           </div>
         </div>
         <div class="columns">
-            <div class="column is-two-thirds">
-              <a role="button" href="/works" class="button is-dark animated fadeIn slow">See My Work</a>
+          <div class="column is-two-thirds">
+            <div class="field is-grouped">
+              <p class="control">
+                <a href="/works" class="button button-cta is-rounded is-link animated fadeIn slow" id="see-work-btn">See my work</a>
+              </p>
+              <p class="control">
+                <a class="button button-cta is-rounded is-white animated fadeIn slow" href="/about">Know more</a>
+              </p>
             </div>
           </div>
+        </div>
       </div>
     </div>
   </div>

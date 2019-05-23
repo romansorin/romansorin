@@ -13,13 +13,16 @@
         <div class="navbar-menu" id="header-nav">
             <div class="navbar-end">
                 <a href="/works" class="navbar-item header-li has-text-black-bis">
-                    works
+                    Works
+                </a>
+                <a href="/insights" class="navbar-item header-li has-text-black-bis">
+                    Insights
                 </a>
                 <a href="/about" class="navbar-item header-li has-text-black-bis">
-                    about
+                    About
                 </a>
                 <a href="/contact" class="navbar-item header-li has-text-black-bis">
-                    contact
+                    Contact
                 </a>
             </div>
         </div>

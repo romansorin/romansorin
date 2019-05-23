@@ -1,12 +1,10 @@
 // Colors
 
-$favorite-black: #333;
+$main-text-black: #333;
 
+$purple-gradient-medium: #7C69F4;
+$purple-gradient-dark: #5546F2;
 
-%main-gradient {
-	background-color: #0093E9;
-	background-image: linear-gradient(-19deg, #0093E9 35%, #80D0C7 121%);
-	background-image: -webkit-linear-gradient(-19deg, #0093E9 35%, #80D0C7 121%);
-	background-image: -moz-linear-gradient(-19deg, #0093E9 35%, #80D0C7 121%);
-	background-image: -o-linear-gradient(-19deg, #0093E9 35%, #80D0C7 121%);
-}
+/* Implement AB testing for these */
+$hover-blue: #6C63FF;
+$hover-blue-2: #3273dc;

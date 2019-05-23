@@ -17,14 +17,16 @@
 	.hero-body {
 		padding: 0;
 	}
+	.navbar-item {
+		&:hover {
+			color: $hover-blue-2 !important;
+			background-color: transparent;
+		}
+	}
 	.header-li {
 		padding: .5rem 1.5rem;
 		font-size: 17px;
 		font-weight: $weight-medium;
-		&:hover {
-			color: #3273dc !important;
-			background-color: transparent;
-		}
 	}
 	@include mobile {
 		padding-top: 16px;
