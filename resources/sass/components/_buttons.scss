@@ -1,13 +1,21 @@
 #see-work-btn {
-    background: #5546F2;
-    background: -webkit-linear-gradient(bottom, #5546F2, #7D69F4);
-    background: -moz-linear-gradient(bottom, #5546F2, #7D69F4);
-    background: linear-gradient(to top, #5546F2, #7D69F4);
+    background: #5546f2;
+    background: -webkit-linear-gradient(bottom, #5546f2, #7d69f4);
+    background: -moz-linear-gradient(bottom, #5546f2, #7d69f4);
+    background: linear-gradient(to top, #5546f2, #7d69f4);
     -webkit-box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.27);
     -moz-box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.27);
     box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.27);
+    border: none;
 }
+
 .button-cta {
     border-color: transparent;
     padding: 1.5rem !important;
+}
+
+.is-white {
+    &:hover {
+        background-color: transparent !important;
+    }
 }

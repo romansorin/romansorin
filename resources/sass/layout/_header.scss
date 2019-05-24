@@ -1,10 +1,12 @@
 .header-wrapper {
-	font-family: $font-main;
-	padding-top: 60px;
-	padding-bottom: 0px;
+    font-family: $font-main;
+    padding-top: 60px;
+    padding-bottom: 0px;
+
     .hamburger {
         margin-left: auto;
     }
+
     .hamburger-box {
         &:focus {
             outline: none;
@@ -14,21 +16,27 @@
             outline: none;
         }
     }
-	.hero-body {
-		padding: 0;
-	}
-	.navbar-item {
-		&:hover {
-			color: $hover-blue-2 !important;
-			background-color: transparent;
-		}
-	}
-	.header-li {
-		padding: .5rem 1.5rem;
-		font-size: 17px;
-		font-weight: $weight-medium;
-	}
-	@include mobile {
-		padding-top: 16px;
-	}
+
+    .hero-body {
+        padding: 0;
+    }
+
+    .navbar-item {
+        transition: .2s ease-in;
+
+        &:hover {
+            color: $hover-blue-2 !important;
+            background-color: transparent;
+        }
+    }
+
+    .header-li {
+        padding: .5rem 1.5rem;
+        font-size: 17px;
+        font-weight: $weight-medium;
+    }
+
+    @include mobile {
+        padding-top: 16px;
+    }
 }

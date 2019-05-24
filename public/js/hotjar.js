@@ -81,7 +81,7 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 0);
+/******/ 	return __webpack_require__(__webpack_require__.s = 1);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -112,26 +112,14 @@
 
 /***/ }),
 
-/***/ "./resources/sass/app.scss":
-/*!*********************************!*\
-  !*** ./resources/sass/app.scss ***!
-  \*********************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-
-/***/ 0:
-/*!****************************************************************!*\
-  !*** multi ./resources/js/hotjar.js ./resources/sass/app.scss ***!
-  \****************************************************************/
+/***/ 1:
+/*!**************************************!*\
+  !*** multi ./resources/js/hotjar.js ***!
+  \**************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! E:\Documents\GitHub\romansorin\resources\js\hotjar.js */"./resources/js/hotjar.js");
-module.exports = __webpack_require__(/*! E:\Documents\GitHub\romansorin\resources\sass\app.scss */"./resources/sass/app.scss");
+module.exports = __webpack_require__(/*! /Users/988244/Documents/romansorin/resources/js/hotjar.js */"./resources/js/hotjar.js");
 
 
 /***/ })

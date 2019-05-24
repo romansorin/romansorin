@@ -1,28 +1,25 @@
 require('./bulma-extensions');
+require('./bootstrap');
 
+window.Vue = require('vue');
 
-// Bulma NavBar Burger Script
-document.addEventListener('DOMContentLoaded', function() {
-    // Get all "hamburger" elements
-    const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.hamburger'), 0);
+/**
+ * The following block of code may be used to automatically register your
+ * Vue components. It will recursively scan this directory for the Vue
+ * components and automatically register them with their "basename".
+ *
+ * Eg. ./components/ExampleComponent.vue -> <example-component></example-component>
+ */
 
-    // Check if there are any navbar burgers
-    if ($navbarBurgers.length > 0) {
+const files = require.context('./', true, /\.vue$/i)
+files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
 
-        // Add a click event on each of them
-        $navbarBurgers.forEach(function($el) {
-            $el.addEventListener('click', function() {
+/**
+ * Next, we will create a fresh Vue application instance and attach it to
+ * the page. Then, you may begin adding components to this application
+ * or customize the JavaScript scaffolding to fit your unique needs.
+ */
 
-                // Get the target from the "data-target" attribute
-                let target = $el.dataset.target;
-                let $target = document.getElementById(target);
-
-                // Toggle the class on both the "hamburger" and the "navbar-menu"
-                $el.classList.toggle('is-active');
-                $target.classList.toggle('is-active');
-
-            });
-        });
-    }
-
+const app = new Vue({
+    el: '#app'
 });
