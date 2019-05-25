@@ -1783,7 +1783,30 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-/* harmony default export */ __webpack_exports__["default"] = ({});
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ __webpack_exports__["default"] = ({
+  props: {
+    title: String,
+    subtitle: String
+  }
+});
 
 /***/ }),
 
@@ -1816,7 +1839,30 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-/* harmony default export */ __webpack_exports__["default"] = ({});
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ __webpack_exports__["default"] = ({
+  props: {
+    title: String,
+    subtitle: String
+  }
+});
 
 /***/ }),
 
@@ -40555,40 +40601,70 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
+  return _c("div", [
+    _c("div", { staticClass: "tile article-tile is-child" }, [
+      _c("a", { attrs: { href: "https://google.com" } }, [
+        _vm._m(0),
+        _vm._v(" "),
+        _c("div", { staticClass: "article-title-info" }, [
+          _c("p", { staticClass: "title" }, [_vm._v(_vm._s(_vm.title))]),
+          _vm._v(" "),
+          _c("p", { staticClass: "subtitle" }, [_vm._v(_vm._s(_vm.subtitle))])
+        ])
+      ])
+    ])
+  ])
 }
 var staticRenderFns = [
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", [
-      _c("div", { staticClass: "tile article-tile is-child" }, [
-        _c("a", { attrs: { href: "https://google.com" } }, [
-          _c(
-            "div",
-            { staticClass: "article-tile-image article-tile-image--large" },
-            [
-              _c("figure", { staticClass: "image" }, [
-                _c("img", {
-                  attrs: {
-                    src:
-                      "https://images.pexels.com/photos/227675/pexels-photo-227675.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
-                    alt: "#"
-                  }
-                })
-              ])
-            ]
-          ),
+    return _c(
+      "div",
+      { staticClass: "article-tile-image article-tile-image--large" },
+      [
+        _c("figure", { staticClass: "image" }, [
+          _c("img", {
+            attrs: {
+              src:
+                "https://images.pexels.com/photos/227675/pexels-photo-227675.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
+              alt: "#"
+            }
+          }),
           _vm._v(" "),
-          _c("div", { staticClass: "article-title-info" }, [
-            _c("p", { staticClass: "title" }, [_vm._v("Yoyoyoyoyo")]),
-            _vm._v(" "),
-            _c("p", { staticClass: "subtitle" }, [_vm._v("Wassup hjomies!")])
+          _c("div", { staticClass: "image-overlay" }, [
+            _c("div", { staticClass: "columns is-mobile is-centered" }, [
+              _c("div", { staticClass: "column is-half" }, [
+                _c("nav", { staticClass: "level" }, [
+                  _c("div", { staticClass: "level-item has-text-centered" }, [
+                    _c(
+                      "a",
+                      {
+                        staticClass: "icon-link",
+                        attrs: { href: "http://google.com" }
+                      },
+                      [_c("i", { attrs: { "data-feather": "eye" } })]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "level-item has-text-centered" }, [
+                    _c(
+                      "a",
+                      {
+                        staticClass: "icon-link",
+                        attrs: { href: "http://github.com" }
+                      },
+                      [_c("i", { attrs: { "data-feather": "code" } })]
+                    )
+                  ])
+                ])
+              ])
+            ])
           ])
         ])
-      ])
-    ])
+      ]
+    )
   }
 ]
 render._withStripped = true
@@ -40612,44 +40688,74 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
+  return _c("div", [
+    _c("div", { staticClass: "tile article-tile is-child" }, [
+      _c("a", { attrs: { href: "https://google.com" } }, [
+        _vm._m(0),
+        _vm._v(" "),
+        _c("div", { staticClass: "article-title-info" }, [
+          _c("p", { staticClass: "title has-text-grey-darker" }, [
+            _vm._v(_vm._s(_vm.title))
+          ]),
+          _vm._v(" "),
+          _c("p", { staticClass: "subtitle has-text-grey-dark" }, [
+            _vm._v(_vm._s(_vm.subtitle))
+          ])
+        ])
+      ])
+    ])
+  ])
 }
 var staticRenderFns = [
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", [
-      _c("div", { staticClass: "tile article-tile is-child" }, [
-        _c("a", { attrs: { href: "https://google.com" } }, [
-          _c(
-            "div",
-            { staticClass: "article-tile-image article-tile-image--small" },
-            [
-              _c("figure", { staticClass: "image" }, [
-                _c("img", {
-                  attrs: {
-                    src:
-                      "https://images.pexels.com/photos/1829191/pexels-photo-1829191.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
-                    alt: "#"
-                  }
-                })
-              ])
-            ]
-          ),
+    return _c(
+      "div",
+      { staticClass: "article-tile-image article-tile-image--small" },
+      [
+        _c("figure", { staticClass: "image" }, [
+          _c("img", {
+            attrs: {
+              src:
+                "https://images.pexels.com/photos/1829191/pexels-photo-1829191.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
+              alt: "#"
+            }
+          }),
           _vm._v(" "),
-          _c("div", { staticClass: "article-title-info" }, [
-            _c("p", { staticClass: "title has-text-grey-darker" }, [
-              _vm._v("Yoyoyoyoyo")
-            ]),
-            _vm._v(" "),
-            _c("p", { staticClass: "subtitle has-text-grey-dark" }, [
-              _vm._v("Wassup hjomies!")
+          _c("div", { staticClass: "image-overlay" }, [
+            _c("div", { staticClass: "columns is-mobile is-centered" }, [
+              _c("div", { staticClass: "column is-half" }, [
+                _c("nav", { staticClass: "level" }, [
+                  _c("div", { staticClass: "level-item has-text-centered" }, [
+                    _c(
+                      "a",
+                      {
+                        staticClass: "icon-link",
+                        attrs: { href: "http://google.com" }
+                      },
+                      [_c("i", { attrs: { "data-feather": "eye" } })]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "level-item has-text-centered" }, [
+                    _c(
+                      "a",
+                      {
+                        staticClass: "icon-link",
+                        attrs: { href: "http://github.com" }
+                      },
+                      [_c("i", { attrs: { "data-feather": "code" } })]
+                    )
+                  ])
+                ])
+              ])
             ])
           ])
         ])
-      ])
-    ])
+      ]
+    )
   }
 ]
 render._withStripped = true
@@ -53099,8 +53205,8 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /Users/988244/Documents/romansorin/resources/js/app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! /Users/988244/Documents/romansorin/resources/sass/app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! E:\Documents\GitHub\romansorin\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! E:\Documents\GitHub\romansorin\resources\sass\app.scss */"./resources/sass/app.scss");
 
 
 /***/ })

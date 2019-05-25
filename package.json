@@ -26,6 +26,7 @@
     },
     "dependencies": {
         "animate.css": "^3.7.0",
+        "feather-icons": "^4.21.0",
         "hamburgers": "^1.1.3",
         "hover.css": "^2.3.2"
     }

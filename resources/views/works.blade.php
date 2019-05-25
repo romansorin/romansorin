@@ -1,10 +1,23 @@
 @extends('layouts.app')
 @section('title', 'Works')
 
+@php
+$posts = [
+[
+'title' => 'testtuek ibe ',
+'subtitle' => 'dasdasdasdsa'
+],
+[
+'title' => 'dsadasdsa',
+'subtitle' => 'dasdasdasdas'
+]
+];
+@endphp
+
 @section('content')
 <section class="hero">
     <div class="hero-body">
-        <div class="container hero-wrapper">
+        <div class="container hero-wrapper" style="margin-bottom: 0">
             <div class="columns is-multiline">
                 <div class="column is-full">
                     <h1 class="title has-text-weight-semibold has-text-black-bis is-size-1-tablet is-size-2-mobile">
@@ -25,21 +38,34 @@
 <section class="section">
     <div class="container article-container">
         <div class="tile is-ancestor">
-            <div class="tile is-8 is-parent">
-                <article-tile-long />
+            <div class="columns is-desktop">
+                <div class="column">
+                    <div class="tile is-parent">
+                        <article-tile-long title="{{ $posts[0]['title'] }}" subtitle="{{ $posts[0]['subtitle'] }}" />
+                    </div>
+                </div>
+                <div class="column is-offset-1-widescreen">
+                    <div class="tile is-parent">
+                        <article-tile-short title="{{ $posts[1]['title'] }}" subtitle="{{ $posts[1]['subtitle'] }}" />
+                    </div>
+                </div>
             </div>
-            <div class="tile is-parent pl-0">
-                <article-tile-short />
-            </div>
+
         </div>
     </div>
     <div class="container article-container">
         <div class="tile is-ancestor">
-            <div class="tile is-parent">
-                <article-tile-short />
-            </div>
-            <div class="tile is-parent">
-                <article-tile-long />
+            <div class="columns is-desktop">
+                <div class="column">
+                    <div class="tile is-parent">
+                        <article-tile-short title="{{ $posts[0]['title'] }}" subtitle="{{ $posts[0]['subtitle'] }}" />
+                    </div>
+                </div>
+                <div class="column is-offset-1-widescreen">
+                    <div class="tile is-parent">
+                        <article-tile-long title="{{ $posts[0]['title'] }}" subtitle="{{ $posts[0]['subtitle'] }}" />
+                    </div>
+                </div>
             </div>
         </div>
     </div>
