@@ -25,7 +25,7 @@
                     {{-- blue to black transition on hover of links --}}
                     <li><i data-feather="mail"></i> <a href="mailto:roman@romansorin.com">roman@romansorin.com</a>
                     </li>
-                    <li><i data-feather="phone"></i> <a href="tel:4408971215">(440) 897 1215</a></li>
+                    <li><i data-feather="phone"></i> <a href="tel:4408971215">(440) 897 - 1215</a></li>
                 </ul>
             </div>
         </div>

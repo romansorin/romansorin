@@ -67,7 +67,7 @@
                     <div class="tile is-parent is-vertical is-half">
                         <div class="tile is-child">
                             <ul>
-                                <li>One</li>
+                                <li class="has-text-weight-semibold">One</li>
                                 <li>One</li>
                                 <li>One</li>
                                 <li>One</li>
@@ -75,7 +75,7 @@
                         </div>
                         <div class="tile is-child">
                             <ul>
-                                <li>One</li>
+                                <li class="has-text-weight-semibold">One</li>
                                 <li>One</li>
                                 <li>One</li>
                                 <li>One</li>
@@ -85,7 +85,7 @@
                     <div class="tile is-parent is-vertical is-half">
                         <div class="tile is-child">
                             <ul>
-                                <li>One</li>
+                                <li class="has-text-weight-semibold">One</li>
                                 <li>One</li>
                                 <li>One</li>
                                 <li>One</li>
@@ -93,7 +93,7 @@
                         </div>
                         <div class="tile is-child">
                             <ul>
-                                <li>One</li>
+                                <li class="has-text-weight-semibold">One</li>
                                 <li>One</li>
                                 <li>One</li>
                                 <li>One</li>
