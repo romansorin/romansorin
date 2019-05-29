@@ -19,6 +19,7 @@ class CreateContactFormSubmissionsTable extends Migration
             $table->string('email')->required();
             $table->string('subject')->required();
             $table->text('user_message')->required();
+            $table->string('budget')->nullable();
             $table->timestamps();
         });
     }
