@@ -9,7 +9,6 @@
                 <div class="column is-full">
                     <h1 class="title has-text-weight-semibold has-text-black-bis is-size-1">
                         About Me
-                        {{-- Need to make this much bigger --}}
                     </h1>
                 </div>
                 <div class="column is-7">
@@ -28,13 +27,14 @@
             As a full-stack developer, I strongly believe in producing the highest quality work from all fronts: UI/UX,
             designs, atmosphere, and code. In my eyes, the most ideal design is one with carefully selected typography,
             subtle gradients and shadows, and well thought-out colors with vibrancy to bring minimalist designs to life.
-            <br /><br />
-            {{-- Put this in italics and as a "display" maybe? For emphasis --}}
-            <em class="is-size-3 has-text-weight-light" id="about-quote">Attractive design doesn't have to be complex –
+            <br /><br /><br /><br /><br />
+            <em class="is-size-3 has-text-weight-light">Attractive design doesn't have
+                to be
+                complex –
                 it simply
                 requires
                 a purpose for every element.</em>
-            <br /><br />
+            <br /><br /><br /><br /><br />
             As a self-starter and enthusiast of constant improvement, I take part in the entrepreneurial side of
             technology too. I value the production of high-quality work that fits exactly my client's needs, and have no
             issue investing mass amounts of time to make it just right. I'm a believer in clear communication and
@@ -52,9 +52,7 @@
             <br /><br />
             If you're looking for someone to bring your ideas to life, or have interests in collaborating with me, I'd
             love to make it a reality. <a href="/contact" id="contact-link">Let's talk!</a>
-            {{-- Make the above href black and underlined, then blue on hover --}}
-            {{-- I also have a bird, two cats, and a fluffy Covachon named Bentley :) --}}
-            {{-- Insert image of said animals here --}}
+            {{-- Find a spot to insert images --}}
         </p>
     </div>
 </section>
@@ -68,6 +66,7 @@
                 <ul class="is-size-4 has-text-black-ter">
                     <li class="has-text-weight-semibold has-text-black-bis is-size-3"
                         style="color: #5546f2 !important; padding-bottom: 15px;">
+                        {{-- Later, put these inline styles into stylesheet --}}
                         Design</li>
                     <li>Mockups</li>
                     <li>User Experience</li>
@@ -83,6 +82,63 @@
                     <li>Websites</li>
                     <li>Mobile/Web Applications</li>
                 </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section">
+    <div class="container">
+        <div class="columns is-vcentered">
+            <div class="column is-one-third">
+                <h1 class="has-text-weight-semibold has-text-black-bis is-size-1">Values</h1>
+            </div>
+            <div class="column">
+                <div class="tile is-ancestor">
+                    <div class="tile is-parent is-half is-vertical">
+                        <div class="tile is-child">
+                            <ul class="is-size-4 has-text-black-ter">
+                                <li class="has-text-weight-semibold has-text-black-bis is-size-3"
+                                    style="color: #5546f2 !important; padding-bottom: 15px;">
+                                    Design</li>
+                                <li>Mockups</li>
+                                <li>User Experience</li>
+                                <li>Interface Design</li>
+                            </ul>
+                        </div>
+                        <div class="tile is-child">
+                            <ul class="is-size-4 has-text-black-ter">
+                                <li class="has-text-weight-semibold has-text-black-bis is-size-3"
+                                    style="color: #5546f2 !important; padding-bottom: 15px;">
+                                    Design</li>
+                                <li>Mockups</li>
+                                <li>User Experience</li>
+                                <li>Interface Design</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="tile is-parent is-half is-vertical">
+                        <div class="tile is-child">
+                            <ul class="is-size-4 has-text-black-ter">
+                                <li class="has-text-weight-semibold has-text-black-bis is-size-3"
+                                    style="color: #5546f2 !important; padding-bottom: 15px;">
+                                    Design</li>
+                                <li>Mockups</li>
+                                <li>User Experience</li>
+                                <li>Interface Design</li>
+                            </ul>
+                        </div>
+                        <div class="tile is-child">
+                            <ul class="is-size-4 has-text-black-ter">
+                                <li class="has-text-weight-semibold has-text-black-bis is-size-3"
+                                    style="color: #5546f2 !important; padding-bottom: 15px;">
+                                    Design</li>
+                                <li>Mockups</li>
+                                <li>User Experience</li>
+                                <li>Interface Design</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

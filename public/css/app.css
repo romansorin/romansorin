@@ -22749,11 +22749,13 @@ input[type=range].slider.is-danger .has-output-tooltip + output {
   width: 100%;
 }
 
-#about-hero {
+#about-hero,
+#contact-hero {
   margin-bottom: 30px;
 }
 
-#about-hero .title {
+#about-hero .title,
+#contact-hero .title {
   font-size: 4rem !important;
 }
 
@@ -22768,7 +22770,7 @@ input[type=range].slider.is-danger .has-output-tooltip + output {
 }
 
 #about-quote {
-  margin-top: 50px;
+  margin-top: 150px;
   margin-bottom: 50px;
 }
 
