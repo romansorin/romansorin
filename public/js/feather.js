@@ -1856,7 +1856,7 @@ feather.replace();
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! E:\Documents\GitHub\romansorin\resources\js\feather.js */"./resources/js/feather.js");
+module.exports = __webpack_require__(/*! /Users/988244/Documents/romansorin/resources/js/feather.js */"./resources/js/feather.js");
 
 
 /***/ })

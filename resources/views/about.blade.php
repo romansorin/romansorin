@@ -4,9 +4,8 @@
 @section('content')
 <section class="hero">
     <div class="hero-body">
-        <div class="container hero-wrapper">
+        <div class="container hero-wrapper" id="about-hero">
             <div class="columns is-multiline">
-                {{-- Address these columns widths --}}
                 <div class="column is-full">
                     <h1 class="title has-text-weight-semibold has-text-black-bis is-size-1">
                         About Me
@@ -31,7 +30,10 @@
             subtle gradients and shadows, and well thought-out colors with vibrancy to bring minimalist designs to life.
             <br /><br />
             {{-- Put this in italics and as a "display" maybe? For emphasis --}}
-            Attractive design doesn't have to be complex – it simply requires a purpose for every element.
+            <em class="is-size-3 has-text-weight-light" id="about-quote">Attractive design doesn't have to be complex –
+                it simply
+                requires
+                a purpose for every element.</em>
             <br /><br />
             As a self-starter and enthusiast of constant improvement, I take part in the entrepreneurial side of
             technology too. I value the production of high-quality work that fits exactly my client's needs, and have no
@@ -49,58 +51,38 @@
             a strong believer in "investing in yourself" through education and experiences.
             <br /><br />
             If you're looking for someone to bring your ideas to life, or have interests in collaborating with me, I'd
-            love to make it a reality. <a href="/contact">Let's talk!</a>
+            love to make it a reality. <a href="/contact" id="contact-link">Let's talk!</a>
             {{-- Make the above href black and underlined, then blue on hover --}}
             {{-- I also have a bird, two cats, and a fluffy Covachon named Bentley :) --}}
             {{-- Insert image of said animals here --}}
         </p>
     </div>
 </section>
-<section>
+<section class="section">
     <div class="container">
-        <div class="columns">
-            <div class="column is-half">
-                <h1 class="has-text-weight-bold has-text-black-bis is-size-1 is-size-2-mobile">Services</h1>
+        <div class="columns is-vcentered">
+            <div class="column is-one-third">
+                <h1 class="has-text-weight-semibold has-text-black-bis is-size-1">Services</h1>
             </div>
             <div class="column">
-                <div class="tile is-ancestor has-text-black-bis">
-                    <div class="tile is-parent is-vertical is-half">
-                        <div class="tile is-child">
-                            <ul>
-                                <li class="has-text-weight-semibold">One</li>
-                                <li>One</li>
-                                <li>One</li>
-                                <li>One</li>
-                            </ul>
-                        </div>
-                        <div class="tile is-child">
-                            <ul>
-                                <li class="has-text-weight-semibold">One</li>
-                                <li>One</li>
-                                <li>One</li>
-                                <li>One</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="tile is-parent is-vertical is-half">
-                        <div class="tile is-child">
-                            <ul>
-                                <li class="has-text-weight-semibold">One</li>
-                                <li>One</li>
-                                <li>One</li>
-                                <li>One</li>
-                            </ul>
-                        </div>
-                        <div class="tile is-child">
-                            <ul>
-                                <li class="has-text-weight-semibold">One</li>
-                                <li>One</li>
-                                <li>One</li>
-                                <li>One</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+                <ul class="is-size-4 has-text-black-ter">
+                    <li class="has-text-weight-semibold has-text-black-bis is-size-3"
+                        style="color: #5546f2 !important; padding-bottom: 15px;">
+                        Design</li>
+                    <li>Mockups</li>
+                    <li>User Experience</li>
+                    <li>Interface Design</li>
+                </ul>
+            </div>
+            <div class="column">
+                <ul class="is-size-4 has-text-black-ter">
+                    <li class="has-text-weight-semibold has-text-black-bis is-size-3"
+                        style="color: #5546f2 !important; padding-bottom: 15px;">
+                        Development</li>
+                    <li>Prototypes</li>
+                    <li>Websites</li>
+                    <li>Mobile/Web Applications</li>
+                </ul>
             </div>
         </div>
     </div>

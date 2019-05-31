@@ -22749,6 +22749,29 @@ input[type=range].slider.is-danger .has-output-tooltip + output {
   width: 100%;
 }
 
+#about-hero {
+  margin-bottom: 30px;
+}
+
+#about-hero .title {
+  font-size: 4rem !important;
+}
+
+#contact-link {
+  color: inherit;
+  text-decoration: underline;
+  transition: 0.3s;
+}
+
+#contact-link:hover {
+  color: #3273dc;
+}
+
+#about-quote {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
 .header-wrapper {
   font-family: "Poppins", sans-serif;
   padding-top: 60px;

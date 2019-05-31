@@ -119,7 +119,7 @@
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! E:\Documents\GitHub\romansorin\resources\js\hotjar.js */"./resources/js/hotjar.js");
+module.exports = __webpack_require__(/*! /Users/988244/Documents/romansorin/resources/js/hotjar.js */"./resources/js/hotjar.js");
 
 
 /***/ })
