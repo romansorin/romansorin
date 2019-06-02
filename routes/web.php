@@ -13,6 +13,7 @@ Route::get('/about', function () {
 Route::get('/contact', function () {
     return view('contact');
 });
+Route::post('/contact', 'ContactFormController@store');
 Route::get('/insights', function () {
     return view('insights');
 });
@@ -20,7 +21,6 @@ Route::get('/works', function () {
     return view('works');
 });
 
-Route::post('/contact', 'ContactFormController@store');
 
 // Auth::routes();
 

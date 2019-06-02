@@ -27,7 +27,9 @@
                     {{-- blue to black transition on hover of links --}}
                     <li><i data-feather="mail"></i> <a href="mailto:roman@romansorin.com">roman@romansorin.com</a>
                     </li>
-                    <li><i data-feather="phone-call"></i> <a href="tel:4408971215">(440) 897 - 1215</a></li>
+                    <li><i data-feather="phone-call"></i> <a href="tel:4408971215">(440) 897 1215</a></li>
+                    <li><i data-feather="map-pin"></i>Cleveland, OH</li>
+                    {{-- Maybe some kind of map on the right? --}}
                 </ul>
             </div>
         </div>
