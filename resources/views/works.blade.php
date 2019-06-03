@@ -1,5 +1,5 @@
 @extends('layouts.app')
-@section('title', 'Works')
+@section('title', 'Works -')
 
 @php
 $posts = [
@@ -66,36 +66,6 @@ $posts = [
                         <article-tile-long title="{{ $posts[0]['title'] }}" subtitle="{{ $posts[0]['subtitle'] }}" />
                     </div>
                 </div>
-            </div>
-        </div>
-    </div>
-</section>
-<section class="section">
-    <div class="container">
-        <div class="columns is-vcentered">
-            <div class="column is-one-third">
-                <h1 class="has-text-weight-semibold has-text-black-bis is-size-1">Services</h1>
-            </div>
-            <div class="column">
-                <ul class="is-size-4 has-text-black-ter">
-                    <li class="has-text-weight-semibold has-text-black-bis is-size-3"
-                        style="color: #5546f2 !important; padding-bottom: 15px;">
-                        {{-- Later, put these inline styles into stylesheet --}}
-                        Design</li>
-                    <li>Mockups</li>
-                    <li>User Experience</li>
-                    <li>Interface Design</li>
-                </ul>
-            </div>
-            <div class="column">
-                <ul class="is-size-4 has-text-black-ter">
-                    <li class="has-text-weight-semibold has-text-black-bis is-size-3"
-                        style="color: #5546f2 !important; padding-bottom: 15px;">
-                        Development</li>
-                    <li>Prototypes</li>
-                    <li>Websites</li>
-                    <li>Mobile/Web Applications</li>
-                </ul>
             </div>
         </div>
     </div>

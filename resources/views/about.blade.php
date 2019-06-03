@@ -1,5 +1,5 @@
 @extends('layouts.app')
-@section('title', 'About')
+@section('title', 'About -')
 
 @section('content')
 <section class="hero">
@@ -44,7 +44,7 @@
             a startup", I aim to provide value and impact on the users which interact with my product and business
             ideas. Through this, a clear connection between these values and effective development exists; the necessity
             to truly understand your users, which includes accepting feedback and investing in studying the effect
-            which these products may have on an individual.
+            which these products may have.
             <br /><br />
             When I'm not working on projects, I spend my time reading about a variety of subjects, listening to podcasts
             or lectures, and practicing violin – I'm
