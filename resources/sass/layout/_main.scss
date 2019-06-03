@@ -115,36 +115,40 @@
                     height: 300px;
                 }
 
-            }
-        }
+                .image-overlay {
+                    height: 50vh;
+                }
 
-        &--small {
-            height: 35vh;
-            max-height: 330px;
-            width: auto;
-
-            @media screen and (max-width: 767.98px) {
-                width: auto;
-                height: 300px;
             }
 
-            @media screen and (min-width: 767.98px) and (max-width: 1023.98px) {
-                width: 700px;
-            }
-
-            @media screen and (min-width: 1024px) and (max-width: 1215.98px) {
-                width: auto;
-                height: 300px;
-            }
-
-            @include until-widescreen {
-                height: 300px;
-            }
-
-            .image-overlay {
+            &--small {
                 height: 35vh;
-            }
+                max-height: 330px;
+                width: auto;
 
+                @media screen and (max-width: 767.98px) {
+                    width: auto;
+                    height: 300px;
+                }
+
+                @media screen and (min-width: 767.98px) and (max-width: 1023.98px) {
+                    width: 700px;
+                }
+
+                @media screen and (min-width: 1024px) and (max-width: 1215.98px) {
+                    width: auto;
+                    height: 300px;
+                }
+
+                @include until-widescreen {
+                    height: 300px;
+                }
+
+                .image-overlay {
+                    height: 35vh;
+                }
+
+            }
         }
     }
 
@@ -162,6 +166,7 @@
 
 }
 
+
 .pr-0 {
     padding-right: 0 !important;
 }
@@ -176,4 +181,18 @@
     .columns {
         width: 100%;
     }
+}
+
+.icon-link {
+    color: inherit;
+    transition: .2s ease-in-out;
+
+    &:hover {
+        color: $hover-blue-2;
+    }
+}
+
+.modal-content {
+    box-shadow: rgba(0, 0, 0, 0.22) 2px 3px 20px 0px;
+
 }

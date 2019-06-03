@@ -1798,13 +1798,21 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   props: {
     title: String,
-    subtitle: String
+    subtitle: String,
+    insight: String,
+    repo: String,
+    image: String,
+    alt: String
+  },
+  methods: {
+    openModal: function openModal(event) {
+      document.querySelector('.modal').classList.add('is-active');
+      document.getElementById('modal-image').setAttribute('src', this.image);
+      document.getElementById('modal-image').setAttribute('alt', this.alt);
+    }
   }
 });
 
@@ -1854,13 +1862,21 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   props: {
     title: String,
-    subtitle: String
+    subtitle: String,
+    insight: String,
+    repo: String,
+    image: String,
+    alt: String
+  },
+  methods: {
+    openModal: function openModal(event) {
+      document.querySelector('.modal').classList.add('is-active');
+      document.getElementById('modal-image').setAttribute('src', this.image);
+      document.getElementById('modal-image').setAttribute('alt', this.alt);
+    }
   }
 });
 
@@ -40603,8 +40619,54 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c("div", [
     _c("div", { staticClass: "tile article-tile is-child" }, [
-      _c("a", { attrs: { href: "https://google.com" } }, [
-        _vm._m(0),
+      _c("a", { attrs: { href: _vm.insight } }, [
+        _c(
+          "div",
+          { staticClass: "article-tile-image article-tile-image--large" },
+          [
+            _c("figure", { staticClass: "image" }, [
+              _c("img", { attrs: { src: _vm.image, alt: _vm.alt } }),
+              _vm._v(" "),
+              _c("div", { staticClass: "image-overlay" }, [
+                _c("div", { staticClass: "columns is-mobile is-centered" }, [
+                  _c("div", { staticClass: "column is-half" }, [
+                    _c("nav", { staticClass: "level" }, [
+                      _c(
+                        "div",
+                        { staticClass: "level-item has-text-centered" },
+                        [
+                          _c(
+                            "a",
+                            {
+                              staticClass: "icon-link modal-link",
+                              on: { click: _vm.openModal }
+                            },
+                            [_c("i", { attrs: { "data-feather": "eye" } })]
+                          )
+                        ]
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        { staticClass: "level-item has-text-centered" },
+                        [
+                          _c(
+                            "a",
+                            {
+                              staticClass: "icon-link",
+                              attrs: { href: _vm.repo }
+                            },
+                            [_c("i", { attrs: { "data-feather": "code" } })]
+                          )
+                        ]
+                      )
+                    ])
+                  ])
+                ])
+              ])
+            ])
+          ]
+        ),
         _vm._v(" "),
         _c("div", { staticClass: "article-title-info" }, [
           _c("p", { staticClass: "title" }, [_vm._v(_vm._s(_vm.title))]),
@@ -40615,58 +40677,7 @@ var render = function() {
     ])
   ])
 }
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "div",
-      { staticClass: "article-tile-image article-tile-image--large" },
-      [
-        _c("figure", { staticClass: "image" }, [
-          _c("img", {
-            attrs: {
-              src:
-                "https://images.pexels.com/photos/227675/pexels-photo-227675.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
-              alt: "#"
-            }
-          }),
-          _vm._v(" "),
-          _c("div", { staticClass: "image-overlay" }, [
-            _c("div", { staticClass: "columns is-mobile is-centered" }, [
-              _c("div", { staticClass: "column is-half" }, [
-                _c("nav", { staticClass: "level" }, [
-                  _c("div", { staticClass: "level-item has-text-centered" }, [
-                    _c(
-                      "a",
-                      {
-                        staticClass: "icon-link",
-                        attrs: { href: "http://google.com" }
-                      },
-                      [_c("i", { attrs: { "data-feather": "eye" } })]
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "level-item has-text-centered" }, [
-                    _c(
-                      "a",
-                      {
-                        staticClass: "icon-link",
-                        attrs: { href: "http://github.com" }
-                      },
-                      [_c("i", { attrs: { "data-feather": "code" } })]
-                    )
-                  ])
-                ])
-              ])
-            ])
-          ])
-        ])
-      ]
-    )
-  }
-]
+var staticRenderFns = []
 render._withStripped = true
 
 
@@ -40690,74 +40701,65 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c("div", [
     _c("div", { staticClass: "tile article-tile is-child" }, [
-      _c("a", { attrs: { href: "https://google.com" } }, [
-        _vm._m(0),
+      _c("a", { attrs: { href: _vm.insight } }, [
+        _c(
+          "div",
+          { staticClass: "article-tile-image article-tile-image--small" },
+          [
+            _c("figure", { staticClass: "image" }, [
+              _c("img", { attrs: { src: _vm.image, alt: _vm.alt } }),
+              _vm._v(" "),
+              _c("div", { staticClass: "image-overlay" }, [
+                _c("div", { staticClass: "columns is-mobile is-centered" }, [
+                  _c("div", { staticClass: "column is-half" }, [
+                    _c("nav", { staticClass: "level" }, [
+                      _c(
+                        "div",
+                        { staticClass: "level-item has-text-centered" },
+                        [
+                          _c(
+                            "a",
+                            {
+                              staticClass: "icon-link modal-link",
+                              on: { click: _vm.openModal }
+                            },
+                            [_c("i", { attrs: { "data-feather": "eye" } })]
+                          )
+                        ]
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        { staticClass: "level-item has-text-centered" },
+                        [
+                          _c(
+                            "a",
+                            {
+                              staticClass: "icon-link",
+                              attrs: { href: _vm.repo }
+                            },
+                            [_c("i", { attrs: { "data-feather": "code" } })]
+                          )
+                        ]
+                      )
+                    ])
+                  ])
+                ])
+              ])
+            ])
+          ]
+        ),
         _vm._v(" "),
         _c("div", { staticClass: "article-title-info" }, [
-          _c("p", { staticClass: "title has-text-grey-darker" }, [
-            _vm._v(_vm._s(_vm.title))
-          ]),
+          _c("p", { staticClass: "title" }, [_vm._v(_vm._s(_vm.title))]),
           _vm._v(" "),
-          _c("p", { staticClass: "subtitle has-text-grey-dark" }, [
-            _vm._v(_vm._s(_vm.subtitle))
-          ])
+          _c("p", { staticClass: "subtitle" }, [_vm._v(_vm._s(_vm.subtitle))])
         ])
       ])
     ])
   ])
 }
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "div",
-      { staticClass: "article-tile-image article-tile-image--small" },
-      [
-        _c("figure", { staticClass: "image" }, [
-          _c("img", {
-            attrs: {
-              src:
-                "https://images.pexels.com/photos/1829191/pexels-photo-1829191.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
-              alt: "#"
-            }
-          }),
-          _vm._v(" "),
-          _c("div", { staticClass: "image-overlay" }, [
-            _c("div", { staticClass: "columns is-mobile is-centered" }, [
-              _c("div", { staticClass: "column is-half" }, [
-                _c("nav", { staticClass: "level" }, [
-                  _c("div", { staticClass: "level-item has-text-centered" }, [
-                    _c(
-                      "a",
-                      {
-                        staticClass: "icon-link",
-                        attrs: { href: "http://google.com" }
-                      },
-                      [_c("i", { attrs: { "data-feather": "eye" } })]
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "level-item has-text-centered" }, [
-                    _c(
-                      "a",
-                      {
-                        staticClass: "icon-link",
-                        attrs: { href: "http://github.com" }
-                      },
-                      [_c("i", { attrs: { "data-feather": "code" } })]
-                    )
-                  ])
-                ])
-              ])
-            ])
-          ])
-        ])
-      ]
-    )
-  }
-]
+var staticRenderFns = []
 render._withStripped = true
 
 

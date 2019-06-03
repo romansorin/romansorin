@@ -22685,39 +22685,43 @@ input[type=range].slider.is-danger .has-output-tooltip + output {
   }
 }
 
-.tile .article-tile--small {
+.tile .article-tile .article-tile-image--large .image-overlay {
+  height: 50vh;
+}
+
+.tile .article-tile .article-tile-image--small {
   height: 35vh;
   max-height: 330px;
   width: auto;
 }
 
 @media screen and (max-width: 767.98px) {
-  .tile .article-tile--small {
+  .tile .article-tile .article-tile-image--small {
     width: auto;
     height: 300px;
   }
 }
 
 @media screen and (min-width: 767.98px) and (max-width: 1023.98px) {
-  .tile .article-tile--small {
+  .tile .article-tile .article-tile-image--small {
     width: 700px;
   }
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1215.98px) {
-  .tile .article-tile--small {
+  .tile .article-tile .article-tile-image--small {
     width: auto;
     height: 300px;
   }
 }
 
 @media screen and (max-width: 1215px) {
-  .tile .article-tile--small {
+  .tile .article-tile .article-tile-image--small {
     height: 300px;
   }
 }
 
-.tile .article-tile--small .image-overlay {
+.tile .article-tile .article-tile-image--small .image-overlay {
   height: 35vh;
 }
 
@@ -22747,6 +22751,19 @@ input[type=range].slider.is-danger .has-output-tooltip + output {
 
 .article-container .columns {
   width: 100%;
+}
+
+.icon-link {
+  color: inherit;
+  transition: 0.2s ease-in-out;
+}
+
+.icon-link:hover {
+  color: #3273dc;
+}
+
+.modal-content {
+  box-shadow: rgba(0, 0, 0, 0.22) 2px 3px 20px 0px;
 }
 
 .header-wrapper {

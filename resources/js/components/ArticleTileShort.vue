@@ -1,24 +1,21 @@
 <template>
   <div>
     <div class="tile article-tile is-child">
-      <a href="https://google.com">
+      <a :href="insight">
         <div class="article-tile-image article-tile-image--small">
           <figure class="image">
-            <img
-              src="https://images.pexels.com/photos/1829191/pexels-photo-1829191.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"
-              alt="#"
-            >
+            <img :src="image" :alt="alt">
             <div class="image-overlay">
               <div class="columns is-mobile is-centered">
                 <div class="column is-half">
                   <nav class="level">
                     <div class="level-item has-text-centered">
-                      <a class="icon-link" href="http://google.com">
+                      <a class="icon-link modal-link" v-on:click="openModal">
                         <i data-feather="eye"></i>
                       </a>
                     </div>
                     <div class="level-item has-text-centered">
-                      <a class="icon-link" href="http://github.com">
+                      <a class="icon-link" :href="repo">
                         <i data-feather="code"></i>
                       </a>
                     </div>
@@ -29,8 +26,8 @@
           </figure>
         </div>
         <div class="article-title-info">
-          <p class="title has-text-grey-darker">{{ title }}</p>
-          <p class="subtitle has-text-grey-dark">{{ subtitle }}</p>
+          <p class="title">{{ title }}</p>
+          <p class="subtitle">{{ subtitle }}</p>
         </div>
       </a>
     </div>
@@ -38,9 +35,20 @@
 </template>
 <script>
 export default {
-   props: {
+  props: {
     title: String,
-    subtitle: String
+    subtitle: String,
+    insight: String,
+    repo: String,
+    image: String,
+    alt: String
+  },
+  methods: {
+    openModal: function (event) {
+      document.querySelector('.modal').classList.add('is-active');
+      document.getElementById('modal-image').setAttribute('src', this.image);
+      document.getElementById('modal-image').setAttribute('alt', this.alt);
+    },
   }
 };
 </script>
