@@ -15,10 +15,16 @@ Route::get('/contact', function () {
 });
 // Route::post('/contact', 'ContactFormController@store');
 Route::get('/insights', function () {
-    return view('errors.inprogress');
+    if (env('APP_ENV') == 'production')
+        return view('errors.inprogress');
+    else
+        return view('insights');
 });
 Route::get('/works', function () {
-    return view('errors.inprogress');
+    if (env('APP_ENV') == 'production')
+        return view('errors.inprogress');
+    else
+        return view('works');
 });
 
 
