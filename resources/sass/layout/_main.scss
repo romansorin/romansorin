@@ -183,6 +183,31 @@
     }
 }
 
+
+#about-hero,
+#contact-hero {
+    margin-bottom: 30px;
+
+    .title {
+        font-size: 4rem !important;
+    }
+}
+
+#contact-link {
+    color: inherit;
+    text-decoration: underline;
+    transition: 0.3s;
+
+    &:hover {
+        color: $hover-blue-2;
+    }
+}
+
+#about-quote {
+    margin-top: 150px;
+    margin-bottom: 50px;
+}
+
 .icon-link {
     color: inherit;
     transition: .2s ease-in-out;

@@ -22753,6 +22753,31 @@ input[type=range].slider.is-danger .has-output-tooltip + output {
   width: 100%;
 }
 
+#about-hero,
+#contact-hero {
+  margin-bottom: 30px;
+}
+
+#about-hero .title,
+#contact-hero .title {
+  font-size: 4rem !important;
+}
+
+#contact-link {
+  color: inherit;
+  text-decoration: underline;
+  transition: 0.3s;
+}
+
+#contact-link:hover {
+  color: #3273dc;
+}
+
+#about-quote {
+  margin-top: 150px;
+  margin-bottom: 50px;
+}
+
 .icon-link {
   color: inherit;
   transition: 0.2s ease-in-out;
