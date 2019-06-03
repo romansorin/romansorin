@@ -22778,6 +22778,19 @@ input[type=range].slider.is-danger .has-output-tooltip + output {
   margin-bottom: 50px;
 }
 
+.icon-link {
+  color: inherit;
+  transition: 0.2s ease-in-out;
+}
+
+.icon-link:hover {
+  color: #3273dc;
+}
+
+.modal-content {
+  box-shadow: rgba(0, 0, 0, 0.22) 2px 3px 20px 0px;
+}
+
 #values-section-content .column {
   margin-bottom: 70px;
   padding-right: 1rem;
@@ -22800,19 +22813,6 @@ input[type=range].slider.is-danger .has-output-tooltip + output {
 
 #contact-info-list .list-item:hover {
   color: #333;
-}
-
-.icon-link {
-  color: inherit;
-  transition: 0.2s ease-in-out;
-}
-
-.icon-link:hover {
-  color: #3273dc;
-}
-
-.modal-content {
-  box-shadow: rgba(0, 0, 0, 0.22) 2px 3px 20px 0px;
 }
 
 .header-wrapper {

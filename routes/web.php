@@ -21,9 +21,6 @@ Route::get('/insights', function () {
         return view('insights');
 });
 Route::get('/works', function () {
-    if (env('APP_ENV') == 'production')
-        return view('errors.inprogress');
-    else
         return view('works');
 });
 
