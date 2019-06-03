@@ -1,5 +1,5 @@
 @extends('layouts.app')
-@section('title', 'Contact')
+@section('title', 'Contact -')
 
 @section('content')
 <section class="hero">
@@ -7,10 +7,10 @@
         <div class="container hero-wrapper" id="contact-hero">
             <div class="columns is-multiline is-mobile">
                 <div class="column is-full">
-                    <h1 class="title has-text-weight-bold has-text-black-ter is-size-1">Let's Chat</h1>
+                    <h1 class="title has-text-weight-semibold has-text-black-ter is-size-1">Let's Chat</h1>
                 </div>
                 <div class="column is-7">
-                    <h2 class="subtitle has-text-weight-normal has-text-grey-darker is-size-4">If you're looking to hire
+                    <h2 class="subtitle has-text-weight-normal has-text-grey-dark is-size-4">If you're looking to hire
                         me,
                         work on a project,
                         or anything else, I'm all ears!</h2>
