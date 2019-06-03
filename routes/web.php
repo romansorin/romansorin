@@ -13,12 +13,12 @@ Route::get('/about', function () {
 Route::get('/contact', function () {
     return view('contact');
 });
-Route::post('/contact', 'ContactFormController@store');
+// Route::post('/contact', 'ContactFormController@store');
 Route::get('/insights', function () {
-    return view('insights');
+    return view('errors.inprogress');
 });
 Route::get('/works', function () {
-    return view('works');
+    return view('errors.inprogress');
 });
 
 

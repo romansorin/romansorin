@@ -23,12 +23,14 @@
     <div class="container">
         <div class="columns">
             <div class="column">
-                <ul class="is-size-2 has-text-black-ter has-text-weight-semibold">
+                <ul class="is-size-2 has-text-weight-semibold is-shadowless list" id="contact-info-list">
                     {{-- blue to black transition on hover of links --}}
-                    <li><i data-feather="mail"></i> <a href="mailto:roman@romansorin.com">roman@romansorin.com</a>
+                    <li class="list-item"><i class="icon" data-feather="mail"></i><a
+                            href="mailto:roman@romansorin.com">roman@romansorin.com</a>
                     </li>
-                    <li><i data-feather="phone-call"></i> <a href="tel:4408971215">(440) 897 1215</a></li>
-                    <li><i data-feather="map-pin"></i>Cleveland, OH</li>
+                    <li class="list-item"><i class="icon" data-feather="phone-call"></i><a href="tel:4408971215">(440)
+                            897 1215</a></li>
+                    <li class="list-item"><i class="icon" data-feather="map-pin"></i>Cleveland, OH</li>
                     {{-- Maybe some kind of map on the right? --}}
                 </ul>
             </div>

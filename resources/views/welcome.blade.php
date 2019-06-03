@@ -83,52 +83,50 @@
                 <h1 class="has-text-weight-semibold is-size-1">Values</h1>
             </div>
             <div class="column has-text-white">
-                <div class="columns is-multiline">
+                <div class="columns is-multiline" id="values-section-content">
                     {{-- Need to increase the padding between the columns, maybe a non-CSS solution? --}}
                     {{-- Also need to increase padding between titles and content --}}
                     <div class="column is-half">
-                        <h6 class="has-text-weight-semibold is-size-3">UX is the sum of all things.</h6>
-                        <p class="has-text-weight-light has-text-grey-light is-size-5">There’s no style over
-                            substance
-                            here. I
-                            bring together form and the function to create something that looks good and performs
-                            brilliantly. Simple.</p>
-                    </div>
-                    <div class="column is-half">
-                        <h6 class="has-text-weight-semibold is-size-3">Perfection doesn’t do a 9-­5.</h6>
-                        <p class="has-text-weight-light has-text-grey-light is-size-5">And neither do I. I’m not bound
-                            to any time zones or tied to a desk. The project dictates where I need to be and who I need
-                            to collaborate with. Essentially, I always go the extra mile.</p>
-                    </div>
-                    <div class="column is-half">
-                        <h6 class="has-text-weight-semibold is-size-3">Clients. Curated.</h6>
-                        <p class="has-text-weight-light has-text-grey-light is-size-5">I take on a limited number of
-                            projects at one time. This quality control means I can give each one exactly what it needs –
-                            focus and time.</p>
-                    </div>
-                    <div class="column is-half">
-                        <h6 class="has-text-weight-semibold is-size-3">Creator. Partner. Collaborator.</h6>
-                        <p class="has-text-weight-light has-text-grey-light is-size-5">Ideas are far from linear. As
-                            designer and developer, I can spearhead, support or polish your project or product at any
-                            stage it needs it.
+                        <h6 class="has-text-weight-semibold is-size-3">Filler text, don't worry.</h6>
+                        <p class="has-text-weight-light has-text-grey-light is-size-5">Give me some time to think of
+                            good things to say, so I'm just going to put some basic filler text in here. Cool, right?
                         </p>
                     </div>
                     <div class="column is-half">
-                        <h6 class="has-text-weight-semibold is-size-3">Clean ­– In thinking, in style.</h6>
-                        <p class="has-text-weight-light has-text-grey-light is-size-5">Simple, minimal and effective.
-                            This is my mantra and method. Clean code, fuss-free interfaces and expert execution, design
-                            as it should be.</p>
+                        <h6 class="has-text-weight-semibold is-size-3">Portfolio in progress.</h6>
+                        <p class="has-text-weight-light has-text-grey-light is-size-5">There's a good amount of features
+                            and content I want to add to my portfolio but need some time to develop. Want it to be good,
+                            ya know?</p>
+                    </div>
+                    <div class="column is-half">
+                        <h6 class="has-text-weight-semibold is-size-3">Simple.</h6>
+                        <p class="has-text-weight-light has-text-grey-light is-size-5">I like simplicity and minimalism.
+                            That's all I have to say about that.
+                        </p>
+                    </div>
+                    <div class="column is-half">
+                        <h6 class="has-text-weight-semibold is-size-3">Okay. More filler text.</h6>
+                        <p class="has-text-weight-light has-text-grey-light is-size-5">Still need a bit of time to write
+                            up some expressive values, so don't mind this section.
+                        </p>
+                    </div>
+                    <div class="column is-half">
+                        <h6 class="has-text-weight-semibold is-size-3">No, seriously. Hold on.</h6>
+                        <p class="has-text-weight-light has-text-grey-light is-size-5">I don't want to release my
+                            portfolio without content and looking great, but I also don't want to show a 503 error to
+                            every single person who is remotely interested in my work.</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
+{{--
 <section class="section has-text-centered">
     <div class="container">
         <h1 class="has-text-black-ter has-text-weight-semibold is-size-1">Testimonials</h1>
     </div>
-</section>
+</section>--}}
 {{-- Has background color: #5546f2 --}}
 <section class="section has-text-centered" style="background-color: #5546f2">
     <div class="container">
@@ -137,7 +135,7 @@
         {{-- Increase padding by a bit --}}
         <h2 class="has-text-white has-text-weight-light is-size-3">Let's turn your ideas into reality.</h2>
         {{-- Increase the space between this h2 and the anchor --}}
-        <div class="columns has-text-centered">
+        <div class="columns has-text-centered" style="margin-top: 20px;">
             <div class="column">
                 <a href="/contact">
                     <p class="has-text-black-bis has-text-weight-semibold is-size-5">Message me</p>

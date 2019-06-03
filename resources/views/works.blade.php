@@ -4,13 +4,9 @@
 @php
 $posts = [
 [
-'title' => 'testtuek ibe ',
-'subtitle' => 'dasdasdasdsa'
+'title' => 'Coming soon.',
+'subtitle' => 'A full display of projects and insights need time to make perfect'
 ],
-[
-'title' => 'dsadasdsa',
-'subtitle' => 'dasdasdasdas'
-]
 ];
 @endphp
 
@@ -46,7 +42,7 @@ $posts = [
                 </div>
                 <div class="column is-offset-1-widescreen">
                     <div class="tile is-parent">
-                        <article-tile-short title="{{ $posts[1]['title'] }}" subtitle="{{ $posts[1]['subtitle'] }}" />
+                        <article-tile-short title="{{ $posts[0]['title'] }}" subtitle="{{ $posts[0]['subtitle'] }}" />
                     </div>
                 </div>
             </div>
