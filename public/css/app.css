@@ -22559,10 +22559,42 @@ input[type=range].slider.is-danger .has-output-tooltip + output {
 
 /* Implement AB testing for these */
 
+.has-text-accent-main {
+  color: #5546F2 !important;
+}
+
+.has-background-accent-main {
+  background-color: #5546F2 !important;
+}
+
+.has-text-accent-alt {
+  color: #7C69F4 !important;
+}
+
+.has-background-accent-alt {
+  background-color: #7C69F4 !important;
+}
+
+#see-work-btn {
+  background: #5546F2;
+  background: linear-gradient(to top, #5546F2, #7C69F4);
+  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.27);
+  border: none;
+}
+
+.button-cta {
+  border-color: transparent;
+  padding: 1.5rem !important;
+}
+
+.is-white:hover {
+  background-color: transparent !important;
+}
+
 .hero-wrapper {
   font-family: "Poppins", sans-serif;
   padding-top: 130px;
-  padding-bottom: 0px;
+  padding-bottom: 0;
   margin-bottom: 120px;
 }
 
@@ -22579,6 +22611,71 @@ input[type=range].slider.is-danger .has-output-tooltip + output {
 
 .hero-wrapper #description {
   font-weight: 400;
+}
+
+.header-wrapper {
+  font-family: "Poppins", sans-serif;
+  padding-top: 60px;
+  padding-bottom: 0;
+}
+
+.header-wrapper .hamburger {
+  margin-left: auto;
+}
+
+.header-wrapper .hamburger-box:focus {
+  outline: none;
+}
+
+.header-wrapper .hamburger-box:active {
+  outline: none;
+}
+
+.header-wrapper .hero-body {
+  padding: 0;
+}
+
+.header-wrapper .navbar-item {
+  transition: 0.2s ease-in;
+}
+
+.header-wrapper .navbar-item:hover {
+  color: #3273dc !important;
+  background-color: transparent;
+}
+
+.header-wrapper .header-li {
+  padding: 0.5rem 1.5rem;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 767px) {
+  .header-wrapper {
+    padding-top: 16px;
+  }
+}
+
+#values-section-content .column {
+  margin-bottom: 70px;
+  padding-right: 1rem;
+}
+
+#values-section-content h6 {
+  margin-bottom: 20px;
+}
+
+.icon-link {
+  color: inherit;
+  transition: 0.2s ease-in-out;
+}
+
+.icon-link:hover {
+  color: #3273dc;
+}
+
+.modal-content {
+  box-shadow: rgba(0, 0, 0, 0.22) 2px 3px 20px 0px;
 }
 
 .tile {
@@ -22737,14 +22834,6 @@ input[type=range].slider.is-danger .has-output-tooltip + output {
   margin-bottom: 40px;
 }
 
-.pr-0 {
-  padding-right: 0 !important;
-}
-
-.pl-0 {
-  padding-left: 0 !important;
-}
-
 .article-container {
   margin-bottom: 80px;
 }
@@ -22753,12 +22842,15 @@ input[type=range].slider.is-danger .has-output-tooltip + output {
   width: 100%;
 }
 
-#about-hero,
+#about-quote {
+  margin-top: 150px;
+  margin-bottom: 50px;
+}
+
 #contact-hero {
   margin-bottom: 30px;
 }
 
-#about-hero .title,
 #contact-hero .title {
   font-size: 4rem !important;
 }
@@ -22771,29 +22863,6 @@ input[type=range].slider.is-danger .has-output-tooltip + output {
 
 #contact-link:hover {
   color: #3273dc;
-}
-
-#about-quote {
-  margin-top: 150px;
-  margin-bottom: 50px;
-}
-
-.icon-link {
-  color: inherit;
-  transition: 0.2s ease-in-out;
-}
-
-.icon-link:hover {
-  color: #3273dc;
-}
-
-.modal-content {
-  box-shadow: rgba(0, 0, 0, 0.22) 2px 3px 20px 0px;
-}
-
-#values-section-content .column {
-  margin-bottom: 70px;
-  padding-right: 1rem;
 }
 
 #contact-info-list {
@@ -22813,64 +22882,5 @@ input[type=range].slider.is-danger .has-output-tooltip + output {
 
 #contact-info-list .list-item:hover {
   color: #333;
-}
-
-.header-wrapper {
-  font-family: "Poppins", sans-serif;
-  padding-top: 60px;
-  padding-bottom: 0px;
-}
-
-.header-wrapper .hamburger {
-  margin-left: auto;
-}
-
-.header-wrapper .hamburger-box:focus {
-  outline: none;
-}
-
-.header-wrapper .hamburger-box:active {
-  outline: none;
-}
-
-.header-wrapper .hero-body {
-  padding: 0;
-}
-
-.header-wrapper .navbar-item {
-  transition: 0.2s ease-in;
-}
-
-.header-wrapper .navbar-item:hover {
-  color: #3273dc !important;
-  background-color: transparent;
-}
-
-.header-wrapper .header-li {
-  padding: 0.5rem 1.5rem;
-  font-size: 17px;
-  font-weight: 500;
-}
-
-@media screen and (max-width: 767px) {
-  .header-wrapper {
-    padding-top: 16px;
-  }
-}
-
-#see-work-btn {
-  background: #5546f2;
-  background: linear-gradient(to top, #5546f2, #7d69f4);
-  box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.27);
-  border: none;
-}
-
-.button-cta {
-  border-color: transparent;
-  padding: 1.5rem !important;
-}
-
-.is-white:hover {
-  background-color: transparent !important;
 }
 

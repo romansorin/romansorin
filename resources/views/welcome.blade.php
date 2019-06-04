@@ -84,8 +84,6 @@
             </div>
             <div class="column has-text-white">
                 <div class="columns is-multiline" id="values-section-content">
-                    {{-- Need to increase the padding between the columns, maybe a non-CSS solution? --}}
-                    {{-- Also need to increase padding between titles and content --}}
                     <div class="column is-half">
                         <h6 class="has-text-weight-semibold is-size-3">Filler text, don't worry.</h6>
                         <p class="has-text-weight-light has-text-grey-light is-size-5">Give me some time to think of
@@ -127,14 +125,13 @@
         <h1 class="has-text-black-ter has-text-weight-semibold is-size-1">Testimonials</h1>
     </div>
 </section>--}}
-{{-- Has background color: #5546f2 --}}
-<section class="section has-text-centered" style="background-color: #5546f2">
+<section class="section has-text-centered has-background-accent-main">
     <div class="container">
         {{-- Make this h1 a bit bigger --}}
         <h1 class="has-text-white has-text-weight-semibold is-size-1">Ready to get started?</h1>
         {{-- Increase padding by a bit --}}
         <h2 class="has-text-white has-text-weight-light is-size-3">Let's turn your ideas into reality.</h2>
-        {{-- Increase the space between this h2 and the anchor --}}
+        {{-- Increase the space between this h2 and the anchor. Also move margin to stylesheet --}}
         <div class="columns has-text-centered" style="margin-top: 20px;">
             <div class="column">
                 <a href="/contact">

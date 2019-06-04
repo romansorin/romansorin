@@ -1,11 +1,7 @@
 #see-work-btn {
-    background: #5546f2;
-    background: -webkit-linear-gradient(bottom, #5546f2, #7d69f4);
-    background: -moz-linear-gradient(bottom, #5546f2, #7d69f4);
-    background: linear-gradient(to top, #5546f2, #7d69f4);
-    -webkit-box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.27);
-    -moz-box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.27);
-    box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.27);
+    background: $purple-dark;
+    background: linear-gradient(to top, $purple-dark, $purple-medium);
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.27);
     border: none;
 }
 

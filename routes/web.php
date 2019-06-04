@@ -15,9 +15,6 @@ Route::get('/contact', function () {
 });
 // Route::post('/contact', 'ContactFormController@store');
 Route::get('/insights', function () {
-    if (env('APP_ENV') == 'production')
-        return view('errors.inprogress');
-    else
         return view('insights');
 });
 Route::get('/works', function () {

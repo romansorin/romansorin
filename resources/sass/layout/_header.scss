@@ -1,7 +1,7 @@
 .header-wrapper {
     font-family: $font-main;
     padding-top: 60px;
-    padding-bottom: 0px;
+    padding-bottom: 0;
 
     .hamburger {
         margin-left: auto;
@@ -25,7 +25,7 @@
         transition: .2s ease-in;
 
         &:hover {
-            color: $hover-blue-2 !important;
+            color: $hover-blue-alt !important;
             background-color: transparent;
         }
     }
