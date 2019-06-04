@@ -1,0 +1,19 @@
+#contact-info-list {
+    svg {
+        margin-right: 15px;
+    }
+
+    border: none;
+
+    .list-item {
+        transition: .3s ease;
+        color: $main-text-black;
+        border-color: transparent;
+        padding-left: 0;
+
+        // Install hover.css library for color to shift from left to right.
+        &:hover {
+            color: $main-text-black;
+        }
+    }
+}
