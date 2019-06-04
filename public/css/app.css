@@ -22884,3 +22884,11 @@ input[type=range].slider.is-danger .has-output-tooltip + output {
   color: #333;
 }
 
+#contact-hero {
+  margin-bottom: 30px;
+}
+
+#contact-hero .title {
+  font-size: 4rem !important;
+}
+
