@@ -1,0 +1,11 @@
+$accents: ('accent-main': $purple-dark, 'accent-alt': $purple-medium);
+
+
+@each $name, $accent in $accents {
+    .has-text-#{$name} {
+        color: $accent !important;
+    }
+    .has-background-#{$name} {
+        background-color: $accent !important;
+    }
+}
