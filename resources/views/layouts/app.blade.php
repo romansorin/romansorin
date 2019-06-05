@@ -9,11 +9,10 @@
     <title>@yield('title') Roman Sorin ~ Software Developer</title>
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
     @yield('stylesheets')
-    <script src="{{ asset('js/hotjar.js') }}"></script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-141358938-1"></script>
     <script>
-    window.dataLayer = window.dataLayer || [];
+        window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
 
@@ -29,7 +28,6 @@
     </div>
     @yield('scripts')
     <script src="{{ asset('js/app.js') }}"></script>
-    <script src="{{ asset('js/feather.js') }}"></script>
 </body>
 
 </html>

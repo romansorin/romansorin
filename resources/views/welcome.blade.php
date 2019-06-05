@@ -134,9 +134,7 @@
         {{-- Increase the space between this h2 and the anchor. Also move margin to stylesheet --}}
         <div class="columns has-text-centered" style="margin-top: 20px;">
             <div class="column">
-                <a href="/contact">
-                    <p class="has-text-black-bis has-text-weight-semibold is-size-5">Message me</p>
-                </a>
+                <a href="/contact" class="has-text-weight-semibold is-size-5 cta-a has-text-black-bis">Message me</a>
             </div>
         </div>
     </div>

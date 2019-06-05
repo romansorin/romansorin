@@ -27432,6 +27432,14 @@ input[type=range].slider.is-danger .has-output-tooltip + output {
   font-weight: 400;
 }
 
+.cta-a {
+  transition: 0.3s ease;
+}
+
+.cta-a:hover {
+  color: white !important;
+}
+
 .header-wrapper {
   font-family: "Poppins", sans-serif;
   padding-top: 60px;

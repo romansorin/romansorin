@@ -19,3 +19,10 @@
         font-weight: $weight-normal;
     }
 }
+
+.cta-a {
+    transition: .3s ease;
+    &:hover {
+        color: white !important;
+    }
+}
