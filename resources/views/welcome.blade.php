@@ -1,4 +1,7 @@
 @extends('layouts.app')
+@section('description')
+I'm Roman Sorin, a software developer who builds applications for businesses and clients of all fields.
+@endsection
 @section('stylesheets')
 <link rel="stylesheet" href="{{ asset('css/animate.min.css') }}">
 @endsection

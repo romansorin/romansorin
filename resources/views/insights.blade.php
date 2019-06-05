@@ -1,5 +1,8 @@
 @extends('layouts.app')
 @section('title', 'Insights -')
+@section('description')
+Insights from Roman Sorin.
+@endsection
 @section('content')
 <section class="hero">
     <div class="hero-body">
