@@ -16,8 +16,9 @@
                 <div class="field">
                     <label class="label" for="email">Email</label>
                     <div class="control">
-                        <input class="input{{ $errors->has('email') ? ' is-danger' : '' }}" name="email" type="email"
-                            placeholder="you@email.com" value="{{ old('email') }}" required aria-required="true">
+                        <input class="input{{ $errors->has('email') ? ' is-danger' : '' }}" id="email" name="email"
+                            type="email" placeholder="you@email.com" value="{{ old('email') }}" required
+                            aria-required="true">
                     </div>
                     @if ($errors->has('email'))
                     <p class="help is-danger" role="alert">{{ $errors->first('email') }}</p>
@@ -27,8 +28,8 @@
                 <div class="field">
                     <label class="label" for="password">Password</label>
                     <div class="control">
-                        <input class="input{{ $errors->has('password') ? ' is-danger' : '' }}" name="password"
-                            type="password" placeholder="Password" required aria-required="true">
+                        <input class="input{{ $errors->has('password') ? ' is-danger' : '' }}" id="password"
+                            name="password" type="password" placeholder="Password" required aria-required="true">
                     </div>
                     @if ($errors->has('password'))
                     <p class="help is-danger" role="alert">{{ $errors->first('password') }}</p>
@@ -52,7 +53,8 @@
                     </div>
                     @if (Route::has('password.request'))
                     <div class="control">
-                        <a class="button is-text" href="{{ route('password.request') }}">Forgot Your Password?</a>
+                        <a class="button is-text" id="forgot-password" href="{{ route('password.request') }}">Forgot
+                            Your Password?</a>
                     </div>
                     @endif
                 </div>

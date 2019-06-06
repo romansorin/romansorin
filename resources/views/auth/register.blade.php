@@ -16,8 +16,8 @@
                 <div class="field">
                     <label class="label" for="name">Name</label>
                     <div class="control">
-                        <input class="input{{ $errors->has('name') ? ' is-danger' : '' }}" name="name" type="text"
-                            placeholder="Your name" value="{{ old('name') }}" required aria-required="true">
+                        <input class="input{{ $errors->has('name') ? ' is-danger' : '' }}" id="name" name="name"
+                            type="text" placeholder="Your name" value="{{ old('name') }}" required aria-required="true">
                     </div>
                     @if ($errors->has('name'))
                     <p class="help is-danger" role="alert">{{ $errors->first('name') }}</p>
@@ -27,8 +27,9 @@
                 <div class="field">
                     <label class="label" for="email">Email</label>
                     <div class="control">
-                        <input class="input{{ $errors->has('email') ? ' is-danger' : '' }}" name="email" type="email"
-                            placeholder="you@email.com" value="{{ old('email') }}" required aria-required="true">
+                        <input class="input{{ $errors->has('email') ? ' is-danger' : '' }}" id="email" name="email"
+                            type="email" placeholder="you@email.com" value="{{ old('email') }}" required
+                            aria-required="true">
                     </div>
                     @if ($errors->has('email'))
                     <p class="help is-danger" role="alert">{{ $errors->first('email') }}</p>
@@ -38,8 +39,8 @@
                 <div class="field">
                     <label class="label" for="password">Password</label>
                     <div class="control">
-                        <input class="input{{ $errors->has('password') ? ' is-danger' : '' }}" name="password"
-                            type="password" placeholder="Password" required aria-required="true">
+                        <input class="input{{ $errors->has('password') ? ' is-danger' : '' }}" id="password"
+                            name="password" type="password" placeholder="Password" required aria-required="true">
                     </div>
                     @if ($errors->has('password'))
                     <p class="help is-danger" role="alert">{{ $errors->first('password') }}</p>
@@ -47,11 +48,11 @@
                 </div>
 
                 <div class="field">
-                    <label class="label" for="password_confirmation">Confirm password</label>
+                    <label class="label" for="password-confirm">Confirm password</label>
                     <div class="control">
                         <input class="input{{ $errors->has('password_confirmation') ? ' is-danger' : '' }}"
-                            name="password_confirmation" type="password" placeholder="Confirm password" required
-                            aria-required="true">
+                            name="password_confirmation" type="password" id="password-confirm"
+                            placeholder="Confirm password" required aria-required="true">
                     </div>
                     @if ($errors->has('password_confirmation'))
                     <p class="help is-danger" role="alert">{{ $errors->first('password_confirmation') }}</p>
@@ -62,7 +63,8 @@
                     <div class="control">
                         {{-- Use Bulma extension checkbox here --}}
                         <label class="checkbox">
-                            <input type="checkbox" name="tos" id="tos" {{ old('tos') ? 'checked' : '' }} required aria-required="true">
+                            <input type="checkbox" name="tos" id="tos" {{ old('tos') ? 'checked' : '' }} required
+                                aria-required="true">
                             I agree to the <a href="#">terms and conditions</a>.
                         </label>
                     </div>
