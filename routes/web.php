@@ -14,6 +14,8 @@ Route::domain('dashboard.romanserver')->group(function() {
 ///////////////////
 // Public Routes //
 ///////////////////
+Route::domain('romanserver')->group(function() {
+
 Route::get('/', function () {
     return view('welcome');
 });
@@ -29,5 +31,6 @@ Route::get('/insights', function () {
 });
 Route::get('/works', function () {
         return view('works');
+});
 });
 
