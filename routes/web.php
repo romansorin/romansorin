@@ -1,6 +1,16 @@
 <?php
 
+// dashboard
+///////////////////
+// Public Routes //
+///////////////////
+Route::domain('dashboard.romanserver')->group(function() {
+    Auth::routes();
+    Route::get('/', 'DashboardController@index')->name('dashboard');
 
+});
+
+// portfolio
 ///////////////////
 // Public Routes //
 ///////////////////
@@ -21,10 +31,3 @@ Route::get('/works', function () {
         return view('works');
 });
 
-Route::domain('dashboard.romansorin.com')->group(function() {
-
-});
-
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
