@@ -128,14 +128,11 @@ I'm Roman Sorin, a software developer who builds applications for businesses and
         <h1 class="has-text-black-ter has-text-weight-semibold is-size-1">Testimonials</h1>
     </div>
 </section>--}}
-<section class="section has-text-centered has-background-accent-main">
+<section class="section has-text-centered has-background-accent-main" id="cta-section">
     <div class="container">
-        {{-- Make this h1 a bit bigger --}}
         <h1 class="has-text-white has-text-weight-semibold is-size-1">Ready to get started?</h1>
-        {{-- Increase padding by a bit --}}
         <h2 class="has-text-white has-text-weight-light is-size-3">Let's turn your ideas into reality.</h2>
-        {{-- Increase the space between this h2 and the anchor. Also move margin to stylesheet --}}
-        <div class="columns has-text-centered" style="margin-top: 20px;">
+        <div class="columns has-text-centered" id="cta-a-column">
             <div class="column">
                 <a href="/contact" class="has-text-weight-semibold is-size-5 cta-a has-text-black-bis">Message me</a>
             </div>

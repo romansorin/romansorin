@@ -27492,6 +27492,10 @@ input[type=range].slider.is-danger .has-output-tooltip + output {
   margin-bottom: 20px;
 }
 
+#cta-a-column {
+  margin-top: 30px;
+}
+
 .icon-link {
   color: inherit;
   transition: 0.2s ease-in-out;

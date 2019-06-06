@@ -2,7 +2,6 @@ require('./bulma-extensions');
 require('./bootstrap');
 const feather = require('feather-icons/dist/feather');
 
-
 window.Vue = require('vue');
 
 /**
