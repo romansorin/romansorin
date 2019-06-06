@@ -14,7 +14,7 @@ I'm Roman Sorin, a software developer who builds applications for businesses and
                 <div class="column is-two-thirds">
                     <h2
                         class="title animated slideInUp fast has-text-black-bis has-text-weight-normal is-size-1-tablet is-size-2-mobile">
-                        I'm Roman Sorin, Testing continuous deployment</h2>
+                        I'm Roman Sorin,</h2>
                     <h1
                         class="title animated slideInUp fast has-text-black-bis has-text-weight-bold is-size-1-tablet is-size-2-mobile">
                         a software developer.</h1>
