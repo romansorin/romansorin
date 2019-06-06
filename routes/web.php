@@ -21,6 +21,10 @@ Route::get('/works', function () {
         return view('works');
 });
 
+Route::domain('dashboard.romansorin.com')->group(function() {
+
+});
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
