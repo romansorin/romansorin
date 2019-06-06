@@ -21,11 +21,6 @@ Route::get('/works', function () {
         return view('works');
 });
 
-
-// Auth::routes();
-
-// Route::get('/home', 'HomeController@index')->name('home');
-
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
