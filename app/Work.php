@@ -4,7 +4,7 @@ namespace romansorin;
 
 use Illuminate\Database\Eloquent\Model;
 
-class ContactForm extends Model
+class Work extends Model
 {
-    protected $guarded = [];
+    //
 }
