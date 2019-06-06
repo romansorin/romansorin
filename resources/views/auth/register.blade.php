@@ -62,7 +62,7 @@
                     <div class="control">
                         {{-- Use Bulma extension checkbox here --}}
                         <label class="checkbox">
-                            <input type="checkbox" required aria-required="true">
+                            <input type="checkbox" name="tos" id="tos" {{ old('tos') ? 'checked' : '' }} required aria-required="true">
                             I agree to the <a href="#">terms and conditions</a>.
                         </label>
                     </div>
@@ -70,7 +70,7 @@
 
                 <div class="field">
                     <div class="control">
-                        <button type="submit" class="button is-link">Submit</button>
+                        <button type="submit" class="button is-primary">Register</button>
                     </div>
                 </div>
             </form>
