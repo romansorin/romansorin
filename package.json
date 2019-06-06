@@ -29,6 +29,7 @@
         "feather-icons": "^4.21.0",
         "glider-js": "^1.6.6",
         "hamburgers": "^1.1.3",
-        "hover.css": "^2.3.2"
+        "hover.css": "^2.3.2",
+        "vue-clazy-load": "^0.4.2"
     }
 }
