@@ -5,9 +5,8 @@
 // Public Routes //
 ///////////////////
 Route::domain('dashboard.romanserver')->group(function() {
-    Auth::routes();
+    Auth::routes(['verify' => true]);
     Route::get('/', 'DashboardController@index')->name('dashboard');
-
 });
 
 // portfolio
