@@ -1,7 +1,7 @@
 <?php
 
 // FOR AUTH STUFF, USE OUTGOING EMAIL: SECURITY@ROMANSORIN.COM
-
+// Eventually, change the dashboard route of all password / email related things to something different (i.e., not /password/reset or /email/verify). For now, it's functional
 // dashboard
 ///////////////////
 // Public Routes //

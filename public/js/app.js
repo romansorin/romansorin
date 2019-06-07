@@ -55127,6 +55127,13 @@ feather.replace(); // Hotjar Tracking Code for https://www.romansorin.com
   a.appendChild(r);
 })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
 
+(document.querySelectorAll('.notification .delete') || []).forEach(function ($delete) {
+  $notification = $delete.parentNode;
+  $delete.addEventListener('click', function () {
+    $notification.parentNode.removeChild($notification);
+  });
+});
+
 /***/ }),
 
 /***/ "./resources/js/bootstrap.js":

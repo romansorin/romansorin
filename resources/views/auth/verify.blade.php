@@ -6,7 +6,8 @@
         <div class="box">
             <h1 class="title">Verify Your Email Address</h1>
             @if (session('resent'))
-            <div class="alert alert-success" role="alert">
+            <div class="notification is-success" role="alert">
+                <button class="delete"></button>
                 {{ __('A fresh verification link has been sent to your email address.') }}
             </div>
             @endif

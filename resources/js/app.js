@@ -17,7 +17,7 @@ const files = require.context('./', true, /\.vue$/i)
 files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
 
 const app = new Vue({
-  el: '#app'
+    el: '#app'
 });
 
 // Get all "navbar-burger" elements
@@ -46,8 +46,8 @@ feather.replace();
 
 // Hotjar Tracking Code for https://www.romansorin.com
 (function (h, o, t, j, a, r) {
-  h.hj = h.hj || function () {
-    (h.hj.q = h.hj.q || []).push(arguments)
+    h.hj = h.hj || function () {
+        (h.hj.q = h.hj.q || []).push(arguments)
     };
     h._hjSettings = {
         hjid: 1327317,
@@ -59,3 +59,12 @@ feather.replace();
     r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
     a.appendChild(r);
 })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+
+
+
+(document.querySelectorAll('.notification .delete') || []).forEach(($delete) => {
+    $notification = $delete.parentNode;
+    $delete.addEventListener('click', () => {
+        $notification.parentNode.removeChild($notification);
+    });
+});

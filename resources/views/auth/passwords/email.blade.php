@@ -6,9 +6,9 @@
         <div class="box">
             <h1 class="title">{{ __('Reset Password') }}</h1>
 
-            {{-- What Bulma classes for this? --}}
             @if (session('status'))
-            <div class="alert alert-success" role="alert">
+            <div class="notification is-success" role="alert">
+                <button class="delete"></button>
                 {{ session('status') }}
             </div>
             @endif
