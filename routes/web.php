@@ -1,11 +1,13 @@
 <?php
+$BASE_URL = config('app')['base_url'];
+
 // FOR AUTH STUFF, USE OUTGOING EMAIL: SECURITY@ROMANSORIN.COM
 // Eventually, change the dashboard route of all password / email related things to something different (i.e., not /password/reset or /email/verify). For now, it's functional
 // dashboard
 ///////////////////
 // Public Routes //
 ///////////////////
-Route::domain('dashboard.' . config('app')['base_url'])->group(function () {
+Route::domain('dashboard.' . $BASE_URL)->group(function () {
     Auth::routes(['verify' => true]);
     Route::get('/', 'DashboardController@index')->name('dashboard');
 });
@@ -14,7 +16,7 @@ Route::domain('dashboard.' . config('app')['base_url'])->group(function () {
 ///////////////////
 // Public Routes //
 ///////////////////
-Route::domain(config('app')['base_url'])->group(function () {
+Route::domain($BASE_URL)->group(function () {
     Route::get('/', function () {
         return view('welcome');
     });
