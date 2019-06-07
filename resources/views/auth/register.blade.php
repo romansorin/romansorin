@@ -60,14 +60,9 @@
                 </div>
 
                 <div class="field">
-                    <div class="control">
-                        {{-- Use Bulma extension checkbox here --}}
-                        <label class="checkbox">
-                            <input type="checkbox" name="tos" id="tos" {{ old('tos') ? 'checked' : '' }} required
-                                aria-required="true">
-                            I agree to the <a href="#">terms and conditions</a>.
-                        </label>
-                    </div>
+                    <input class="is-checkradio" id="tos" type="checkbox" name="tos" {{ old('tos') ? 'checked' : '' }}
+                        required aria-required="true">
+                    <label class="is-marginless" for="tos">I agree to the <a href="#">terms and conditions</a>.</label>
                 </div>
 
                 <div class="field">

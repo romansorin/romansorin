@@ -36,15 +36,11 @@
                     @endif
                 </div>
 
+
                 <div class="field">
-                    <div class="control">
-                        {{-- Use Bulma extension checkbox here --}}
-                        <label class="checkbox" for="remember">
-                            <input type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}
-                                aria-required="false">
-                            Remember Me
-                        </label>
-                    </div>
+                    <input class="is-checkradio" type="checkbox" name="remember" id="remember"
+                        {{ old('remember') ? 'checked' : '' }} aria-required="false">
+                    <label class="is-marginless" for="remember">Remember Me</label>
                 </div>
 
                 <div class="field is-grouped">
