@@ -1,13 +1,14 @@
 <?php
 
+// FOR AUTH STUFF, USE OUTGOING EMAIL: SECURITY@ROMANSORIN.COM
+// Eventually, change the dashboard route of all password / email related things to something different (i.e., not /password/reset or /email/verify). For now, it's functional
 // dashboard
 ///////////////////
 // Public Routes //
 ///////////////////
 Route::domain('dashboard.romanserver')->group(function () {
-    Auth::routes();
+    Auth::routes(['verify' => true]);
     Route::get('/', 'DashboardController@index')->name('dashboard');
-
 });
 
 // portfolio
@@ -24,7 +25,7 @@ Route::domain('romanserver')->group(function () {
     Route::get('/contact', function () {
         return view('contact');
     });
-// Route::post('/contact', 'ContactFormController@store');
+    // Route::post('/contact', 'ContactFormController@store');
     Route::get('/insights', function () {
         return view('insights');
     });
@@ -32,4 +33,3 @@ Route::domain('romanserver')->group(function () {
         return view('works');
     });
 });
-

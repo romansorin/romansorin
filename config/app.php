@@ -171,7 +171,7 @@ return [
          */
         romansorin\Providers\AppServiceProvider::class,
         romansorin\Providers\AuthServiceProvider::class,
-        // romansorin\Providers\BroadcastServiceProvider::class,
+        //romansorin\Providers\BroadcastServiceProvider::class,
         romansorin\Providers\EventServiceProvider::class,
         //romansorin\Providers\TelescopeServiceProvider::class,
         romansorin\Providers\RouteServiceProvider::class,
