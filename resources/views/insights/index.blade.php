@@ -27,7 +27,11 @@ Insights from Roman Sorin.
 </section>
 <section class="section">
     <div class="container">
-
+        <ul>
+            @foreach($insights as $insight)
+            <li>{{ $insight->title }}</li>
+            @endforeach
+        </ul>
     </div>
 </section>
 @endsection
