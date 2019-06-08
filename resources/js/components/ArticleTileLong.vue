@@ -1,10 +1,10 @@
 <template>
   <div>
     <div class="tile article-tile is-child">
-      <a :href="insight">
+      <a :href="work.insight">
         <div class="article-tile-image article-tile-image--large">
           <figure class="image">
-            <img :src="image" :alt="alt">
+            <img :src="work.image" :alt="work.alt">
             <div class="image-overlay">
               <div class="columns is-mobile is-centered">
                 <div class="column is-half">
@@ -15,7 +15,7 @@
                       </a>
                     </div>
                     <div class="level-item has-text-centered">
-                      <a class="icon-link" :href="repo">
+                      <a class="icon-link" :href="work.repo">
                         <i data-feather="code"></i>
                       </a>
                     </div>
@@ -26,8 +26,8 @@
           </figure>
         </div>
         <div class="article-title-info">
-          <p class="title">{{ title }}</p>
-          <p class="subtitle">{{ subtitle }}</p>
+          <p class="title">{{ work.title }}</p>
+          <p class="subtitle">{{ work.subtitle }}</p>
         </div>
       </a>
     </div>
@@ -36,18 +36,21 @@
 <script>
 export default {
   props: {
-    title: String,
-    subtitle: String,
-    insight: String,
-    repo: String,
-    image: String,
-    alt: String
+    work: {
+      type: Object,
+      title: String,
+      subtitle: String,
+      insight: String,
+      repo: String,
+      image: String,
+      alt: String
+    }
   },
   methods: {
-    openModal: function (event) {
-      document.querySelector('.modal').classList.add('is-active');
-      document.getElementById('modal-image').setAttribute('src', this.image);
-      document.getElementById('modal-image').setAttribute('alt', this.alt);
+    openModal: function(event) {
+      document.querySelector(".modal").classList.add("is-active");
+      document.getElementById("modal-image").setAttribute("src", this.image);
+      document.getElementById("modal-image").setAttribute("alt", this.alt);
     }
   }
 };
