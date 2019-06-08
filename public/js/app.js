@@ -1881,19 +1881,13 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 /* harmony default export */ __webpack_exports__["default"] = ({
-  data: function data() {
-    return {
-      works: [{
-        title: "test title one",
-        subtitle: "test subtitle one",
-        repo: "https://github.com/romansorin",
-        image: "https://images.pexels.com/photos/1670187/pexels-photo-1670187.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
-      }, {
-        title: "test title two",
-        subtitle: "test subtitle two",
-        image: "https://images.pexels.com/photos/1670187/pexels-photo-1670187.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
-      }]
-    };
+  props: {
+    work_one: {
+      type: Object
+    },
+    work_two: {
+      type: Object
+    }
   }
 });
 
@@ -1997,16 +1991,16 @@ __webpack_require__.r(__webpack_exports__);
       title: String,
       subtitle: String,
       insight: String,
-      repo: String,
-      image: String,
-      alt: String
+      repo_link: String,
+      preview_image_link: String,
+      preview_image_alt: String
     }
   },
   methods: {
     openModal: function openModal(event) {
       document.querySelector(".modal").classList.add("is-active");
-      document.getElementById("modal-image").setAttribute("src", this.work.image);
-      document.getElementById("modal-image").setAttribute("alt", this.work.alt);
+      document.getElementById("modal-image").setAttribute("src", this.work.preview_image_link);
+      document.getElementById("modal-image").setAttribute("alt", this.work.preview_image_alt);
     }
   }
 });
@@ -42541,7 +42535,7 @@ var render = function() {
             _c(
               "div",
               { staticClass: "tile is-parent" },
-              [_c("article-tile-long", { attrs: { work: _vm.works[0] } })],
+              [_c("article-tile-long", { attrs: { work: _vm.work_one } })],
               1
             )
           ]),
@@ -42550,7 +42544,7 @@ var render = function() {
             _c(
               "div",
               { staticClass: "tile is-parent" },
-              [_c("article-tile-short", { attrs: { work: _vm.works[1] } })],
+              [_c("article-tile-short", { attrs: { work: _vm.work_two } })],
               1
             )
           ])
@@ -42637,7 +42631,12 @@ var render = function() {
           { staticClass: "article-tile-image article-tile-image--large" },
           [
             _c("figure", { staticClass: "image" }, [
-              _c("img", { attrs: { src: _vm.work.image, alt: _vm.work.alt } }),
+              _c("img", {
+                attrs: {
+                  src: _vm.work.preview_image_link,
+                  alt: _vm.work.preview_image_alt
+                }
+              }),
               _vm._v(" "),
               _c("div", { staticClass: "image-overlay" }, [
                 _c("div", { staticClass: "columns is-mobile is-centered" }, [
@@ -42658,7 +42657,7 @@ var render = function() {
                         ]
                       ),
                       _vm._v(" "),
-                      _vm.work.repo
+                      _vm.work.repo_link
                         ? _c(
                             "div",
                             { staticClass: "level-item has-text-centered" },
@@ -42667,7 +42666,7 @@ var render = function() {
                                 "a",
                                 {
                                   staticClass: "icon-link",
-                                  attrs: { href: _vm.work.repo }
+                                  attrs: { href: _vm.work.repo_link }
                                 },
                                 [_c("i", { attrs: { "data-feather": "code" } })]
                               )

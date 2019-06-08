@@ -26,13 +26,9 @@ Roman Sorin, a developer with a passion for simplicity, minimalism, and high-qua
     </div>
 </section>
 <section class="section">
-    @foreach ($works as $work)
-    @if ($loop->index % 2 == 0)
-    <article-row-long-short></article-row-long-short>
-    @else
+    <article-row-long-short v-bind:work_one="{{ $works[0] }}" v-bind:work_two="{{ $works[1] }}">
+    </article-row-long-short>
     <article-row-short-long></article-row-short-long>
-    @endif
-    @endforeach
 </section>
 
 <div class="modal">

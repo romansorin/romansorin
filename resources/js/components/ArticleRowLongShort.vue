@@ -5,12 +5,12 @@
         <div class="columns is-desktop">
           <div class="column">
             <div class="tile is-parent">
-              <article-tile-long v-bind:work="works[0]"/>
+              <article-tile-long v-bind:work="work_one"/>
             </div>
           </div>
           <div class="column is-offset-1-widescreen">
             <div class="tile is-parent">
-              <article-tile-short v-bind:work="works[1]"/>
+              <article-tile-short v-bind:work="work_two"/>
             </div>
           </div>
         </div>
@@ -20,24 +20,13 @@
 </template>
 <script>
 export default {
-  data() {
-    return {
-      works: [
-        {
-          title: "test title one",
-          subtitle: "test subtitle one",
-          repo: "https://github.com/romansorin",
-          image:
-            "https://images.pexels.com/photos/1670187/pexels-photo-1670187.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
-        },
-        {
-          title: "test title two",
-          subtitle: "test subtitle two",
-          image:
-            "https://images.pexels.com/photos/1670187/pexels-photo-1670187.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
-        }
-      ]
-    };
+  props: {
+    work_one: {
+      type: Object
+    },
+    work_two: {
+      type: Object
+    }
   }
 };
 </script>
