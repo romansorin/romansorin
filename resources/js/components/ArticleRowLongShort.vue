@@ -26,6 +26,7 @@ export default {
         {
           title: "test title one",
           subtitle: "test subtitle one",
+          repo: "https://github.com/romansorin",
           image:
             "https://images.pexels.com/photos/1670187/pexels-photo-1670187.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
         },

@@ -14,7 +14,7 @@
                         <i data-feather="eye"></i>
                       </a>
                     </div>
-                    <div class="level-item has-text-centered">
+                    <div class="level-item has-text-centered" v-if="work.repo">
                       <a class="icon-link" :href="work.repo">
                         <i data-feather="code"></i>
                       </a>
@@ -49,8 +49,10 @@ export default {
   methods: {
     openModal: function(event) {
       document.querySelector(".modal").classList.add("is-active");
-      document.getElementById("modal-image").setAttribute("src", this.image);
-      document.getElementById("modal-image").setAttribute("alt", this.alt);
+      document
+        .getElementById("modal-image")
+        .setAttribute("src", this.work.image);
+      document.getElementById("modal-image").setAttribute("alt", this.work.alt);
     }
   }
 };

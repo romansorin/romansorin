@@ -1886,6 +1886,7 @@ __webpack_require__.r(__webpack_exports__);
       works: [{
         title: "test title one",
         subtitle: "test subtitle one",
+        repo: "https://github.com/romansorin",
         image: "https://images.pexels.com/photos/1670187/pexels-photo-1670187.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
       }, {
         title: "test title two",
@@ -2004,8 +2005,8 @@ __webpack_require__.r(__webpack_exports__);
   methods: {
     openModal: function openModal(event) {
       document.querySelector(".modal").classList.add("is-active");
-      document.getElementById("modal-image").setAttribute("src", this.image);
-      document.getElementById("modal-image").setAttribute("alt", this.alt);
+      document.getElementById("modal-image").setAttribute("src", this.work.image);
+      document.getElementById("modal-image").setAttribute("alt", this.work.alt);
     }
   }
 });
@@ -2071,8 +2072,8 @@ __webpack_require__.r(__webpack_exports__);
   methods: {
     openModal: function openModal(event) {
       document.querySelector(".modal").classList.add("is-active");
-      document.getElementById("modal-image").setAttribute("src", this.image);
-      document.getElementById("modal-image").setAttribute("alt", this.alt);
+      document.getElementById("modal-image").setAttribute("src", this.work.image);
+      document.getElementById("modal-image").setAttribute("alt", this.work.alt);
     }
   }
 });
@@ -42657,20 +42658,22 @@ var render = function() {
                         ]
                       ),
                       _vm._v(" "),
-                      _c(
-                        "div",
-                        { staticClass: "level-item has-text-centered" },
-                        [
-                          _c(
-                            "a",
-                            {
-                              staticClass: "icon-link",
-                              attrs: { href: _vm.work.repo }
-                            },
-                            [_c("i", { attrs: { "data-feather": "code" } })]
+                      _vm.work.repo
+                        ? _c(
+                            "div",
+                            { staticClass: "level-item has-text-centered" },
+                            [
+                              _c(
+                                "a",
+                                {
+                                  staticClass: "icon-link",
+                                  attrs: { href: _vm.work.repo }
+                                },
+                                [_c("i", { attrs: { "data-feather": "code" } })]
+                              )
+                            ]
                           )
-                        ]
-                      )
+                        : _vm._e()
                     ])
                   ])
                 ])
@@ -42741,20 +42744,22 @@ var render = function() {
                         ]
                       ),
                       _vm._v(" "),
-                      _c(
-                        "div",
-                        { staticClass: "level-item has-text-centered" },
-                        [
-                          _c(
-                            "a",
-                            {
-                              staticClass: "icon-link",
-                              attrs: { href: _vm.work.repo }
-                            },
-                            [_c("i", { attrs: { "data-feather": "code" } })]
+                      _vm.work.repo
+                        ? _c(
+                            "div",
+                            { staticClass: "level-item has-text-centered" },
+                            [
+                              _c(
+                                "a",
+                                {
+                                  staticClass: "icon-link",
+                                  attrs: { href: _vm.work.repo }
+                                },
+                                [_c("i", { attrs: { "data-feather": "code" } })]
+                              )
+                            ]
                           )
-                        ]
-                      )
+                        : _vm._e()
                     ])
                   ])
                 ])
