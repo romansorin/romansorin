@@ -7,6 +7,11 @@ use Illuminate\Http\Request;
 
 class InsightPostController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth')->except(['index', 'show']);
+    }
+
     /**
      * Display a listing of the resource.
      *
@@ -14,7 +19,7 @@ class InsightPostController extends Controller
      */
     public function index()
     {
-        //
+        return view('insights.index');
     }
 
     /**
@@ -24,7 +29,7 @@ class InsightPostController extends Controller
      */
     public function create()
     {
-        //
+        return view('auth.insights.create');
     }
 
     /**
@@ -46,7 +51,7 @@ class InsightPostController extends Controller
      */
     public function show(InsightPost $insightPost)
     {
-        //
+        return view('insights.show', compact('insightPost'));
     }
 
     /**
@@ -57,7 +62,7 @@ class InsightPostController extends Controller
      */
     public function edit(InsightPost $insightPost)
     {
-        //
+        return view('auth.insights.edit', compact('insightPost'));
     }
 
     /**
