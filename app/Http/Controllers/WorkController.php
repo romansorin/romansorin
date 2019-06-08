@@ -9,7 +9,14 @@ class WorkController extends Controller
 {
     public function __construct()
     {
-        $this->middleware('auth');
+        $this->middleware('auth')->except(['index', 'show']);
+    }
+
+
+    public function index()
+    {
+        $work = Work::where('id', 1)->first();
+        return view('works', compact('work'));
     }
     /**
      * Show the form for creating a new resource.
@@ -28,6 +35,11 @@ class WorkController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
+    {
+        //
+    }
+
+    public function show(Work $work)
     {
         //
     }

@@ -44,8 +44,8 @@ $posts = [
             <div class="columns is-desktop">
                 <div class="column">
                     <div class="tile is-parent">
-                        <article-tile-long title="{{ $posts[0]['title'] }}" subtitle="{{ $posts[0]['subtitle'] }}"
-                            image="{{ $posts[0]['image'] }}" />
+                        <article-tile-long title="{{ $work->title }}" subtitle="{{ $work->subtitle }}"
+                            image="{{ $work->image }}" />
                     </div>
                 </div>
                 <div class="column is-offset-1-widescreen">
