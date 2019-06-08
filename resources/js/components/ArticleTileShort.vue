@@ -4,7 +4,7 @@
       <a :href="work.insight">
         <div class="article-tile-image article-tile-image--small">
           <figure class="image">
-            <img :src="work.image" :alt="work.alt">
+            <img :src="work.preview_image_link" :alt="work.preview_image_alt">
             <div class="image-overlay">
               <div class="columns is-mobile is-centered">
                 <div class="column is-half">
@@ -14,8 +14,8 @@
                         <i data-feather="eye"></i>
                       </a>
                     </div>
-                    <div class="level-item has-text-centered" v-if="work.repo">
-                      <a class="icon-link" :href="work.repo">
+                    <div class="level-item has-text-centered" v-if="work.repo_link">
+                      <a class="icon-link" :href="work.repo_link">
                         <i data-feather="code"></i>
                       </a>
                     </div>
@@ -41,9 +41,9 @@ export default {
       title: String,
       subtitle: String,
       insight: String,
-      repo: String,
-      image: String,
-      alt: String
+      repo_link_link: String,
+      preview_image_link: String,
+      preview_image_alt: String
     }
   },
   methods: {
@@ -51,8 +51,10 @@ export default {
       document.querySelector(".modal").classList.add("is-active");
       document
         .getElementById("modal-image")
-        .setAttribute("src", this.work.image);
-      document.getElementById("modal-image").setAttribute("alt", this.work.alt);
+        .setAttribute("src", this.work.preview_image_link);
+      document
+        .getElementById("modal-image")
+        .setAttribute("alt", this.work.preview_image_alt);
     }
   }
 };
