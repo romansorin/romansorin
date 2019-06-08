@@ -10,7 +10,7 @@
           </div>
           <div class="column is-offset-1-widescreen">
             <div class="tile is-parent">
-              <article-tile-short v-bind:work="work_two"/>
+              <article-tile-short v-if="work_two" v-bind:work="work_two"/>
             </div>
           </div>
         </div>
@@ -22,7 +22,8 @@
 export default {
   props: {
     work_one: {
-      type: Object
+      type: Object,
+      required: true
     },
     work_two: {
       type: Object

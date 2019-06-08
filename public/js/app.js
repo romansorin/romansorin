@@ -1883,7 +1883,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = ({
   props: {
     work_one: {
-      type: Object
+      type: Object,
+      required: true
     },
     work_two: {
       type: Object
@@ -1925,7 +1926,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = ({
   props: {
     work_one: {
-      type: Object
+      type: Object,
+      required: true
     },
     work_two: {
       type: Object
@@ -42539,7 +42541,11 @@ var render = function() {
             _c(
               "div",
               { staticClass: "tile is-parent" },
-              [_c("article-tile-short", { attrs: { work: _vm.work_two } })],
+              [
+                _vm.work_two
+                  ? _c("article-tile-short", { attrs: { work: _vm.work_two } })
+                  : _vm._e()
+              ],
               1
             )
           ])
@@ -42587,7 +42593,11 @@ var render = function() {
             _c(
               "div",
               { staticClass: "tile is-parent" },
-              [_c("article-tile-long", { attrs: { work: _vm.work_two } })],
+              [
+                _vm.work_two
+                  ? _c("article-tile-long", { attrs: { work: _vm.work_two } })
+                  : _vm._e()
+              ],
               1
             )
           ])

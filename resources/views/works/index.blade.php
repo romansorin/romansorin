@@ -27,8 +27,8 @@ Roman Sorin, a developer with a passion for simplicity, minimalism, and high-qua
 </section>
 <section class="section">
     {{-- Figure out a way to load the odd number... Might have to make another component as a big wrapper. --}}
-    <article-row-long-short></article-row-long-short>
-    <article-row-short-long></article-row-short-long>
+    <article-row-long-short v-bind:work_one="{{ $works[0] }}" v-bind:work_two="{{ $works[1] }}"></article-row-long-short>
+    <article-row-short-long v-bind:work_one="{{ $works[2] }}" v-bind:work_two="{{ $works[3] }}"></article-row-short-long>
 </section>
 
 <div class="modal">
