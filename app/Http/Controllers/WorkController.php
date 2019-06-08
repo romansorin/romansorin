@@ -7,16 +7,10 @@ use Illuminate\Http\Request;
 
 class WorkController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function index()
+    public function __construct()
     {
-        //
+        $this->middleware('auth');
     }
-
     /**
      * Show the form for creating a new resource.
      *
@@ -24,7 +18,7 @@ class WorkController extends Controller
      */
     public function create()
     {
-        //
+        return view('auth.works.create');
     }
 
     /**
@@ -39,17 +33,6 @@ class WorkController extends Controller
     }
 
     /**
-     * Display the specified resource.
-     *
-     * @param  \romansorin\Work  $work
-     * @return \Illuminate\Http\Response
-     */
-    public function show(Work $work)
-    {
-        //
-    }
-
-    /**
      * Show the form for editing the specified resource.
      *
      * @param  \romansorin\Work  $work
@@ -57,7 +40,7 @@ class WorkController extends Controller
      */
     public function edit(Work $work)
     {
-        //
+        return view('auth.works.edit', compact('work'));
     }
 
     /**

@@ -18,7 +18,7 @@ Route::get('/insights', function () {
     return view('insights.index');
 });
 Route::get('/works', function () {
-        return view('works');
+    return view('works');
 });
 
 
