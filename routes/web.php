@@ -15,7 +15,7 @@ Route::get('/contact', function () {
 });
 // Route::post('/contact', 'ContactFormController@store');
 Route::get('/insights', function () {
-        return view('insights');
+    return view('insights.index');
 });
 Route::get('/works', function () {
         return view('works');
