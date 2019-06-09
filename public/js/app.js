@@ -1868,8 +1868,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   props: {
     works: {
@@ -1877,19 +1875,29 @@ __webpack_require__.r(__webpack_exports__);
     }
   },
   methods: {
-    changeCurrentRow: function changeCurrentRow() {
-      if (this.currentRow === 'long-short') this.currentRow = 'short-long';else this.currentRow = 'long-short';
-    }
-  },
-  computed: {
-    changed: function changed() {
-      this.changeCurrentRow();
-      return this.currentRow;
+    getWorksCount: function getWorksCount() {
+      return this.works.length;
+    },
+    setRow: function setRow() {
+      this.rowLS = !this.rowLS;
+    },
+    getRow: function getRow() {
+      return this.rowLS;
+    },
+    generateArticleRow: function generateArticleRow() {
+      for (var i = 0; i < this.getWorksCount(); i++) {
+        if (this.getRow()) {
+          var component = '<article-row-long-short v-bind:work_one="works[0]" v-bind:work_two="works[1]"></article-row-long-short>';
+          this.works.shift();
+          this.works.shift();
+          return component;
+        }
+      }
     }
   },
   data: function data() {
     return {
-      currentRow: 'long-short'
+      rowLS: true
     };
   }
 });
@@ -42569,29 +42577,25 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c(
-    "div",
-    [
-      _c("button", { on: { click: _vm.changeCurrentRow } }, [
-        _vm._v("Click me")
-      ]),
-      _vm._v(" "),
-      _c("h1", { domProps: { textContent: _vm._s(_vm.currentRow) } }),
-      _vm._v(" "),
-      _vm._l(_vm.works, function(work, index) {
-        return _c("div", [
-          _vm._v(
-            "\n       " +
-              _vm._s(index) +
-              " . " +
-              _vm._s(_vm.changed) +
-              "\n\n    "
-          )
-        ])
-      })
-    ],
-    2
-  )
+  return _c("div", [
+    _c("h1", { domProps: { textContent: _vm._s(_vm.getWorksCount()) } }),
+    _vm._v(" "),
+    _c(
+      "button",
+      {
+        on: {
+          click: function($event) {
+            return _vm.setRow()
+          }
+        }
+      },
+      [_vm._v("Toggle row")]
+    ),
+    _vm._v(" "),
+    _c("h1", [_vm._v("Row is long-short? " + _vm._s(_vm.getRow()))]),
+    _vm._v(" "),
+    _c("h1", [_vm._v("Component? " + _vm._s(_vm.generateArticleRow()) + " ")])
+  ])
 }
 var staticRenderFns = []
 render._withStripped = true
