@@ -1856,9 +1856,43 @@ module.exports = function isBuffer (obj) {
   !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/ArticleContainer.vue?vue&type=script&lang=js& ***!
   \***************************************************************************************************************************************************************************/
 /*! exports provided: default */
-/***/ (function(module, exports) {
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-throw new Error("Module build failed (from ./node_modules/babel-loader/lib/index.js):\nSyntaxError: /Users/988244/Documents/romansorin/resources/js/components/ArticleContainer.vue: Unexpected token, expected \",\" (45:1)\n\n\u001b[0m \u001b[90m 43 | \u001b[39m    }\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 44 | \u001b[39m  }\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 45 | \u001b[39m}\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    | \u001b[39m \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 46 | \u001b[39m\u001b[0m\n    at Parser.raise (/Users/988244/Documents/romansorin/node_modules/@babel/parser/lib/index.js:3851:17)\n    at Parser.unexpected (/Users/988244/Documents/romansorin/node_modules/@babel/parser/lib/index.js:5165:16)\n    at Parser.expect (/Users/988244/Documents/romansorin/node_modules/@babel/parser/lib/index.js:5151:28)\n    at Parser.parseObj (/Users/988244/Documents/romansorin/node_modules/@babel/parser/lib/index.js:6639:14)\n    at Parser.parseExprAtom (/Users/988244/Documents/romansorin/node_modules/@babel/parser/lib/index.js:6276:21)\n    at Parser.parseExprSubscripts (/Users/988244/Documents/romansorin/node_modules/@babel/parser/lib/index.js:5916:23)\n    at Parser.parseMaybeUnary (/Users/988244/Documents/romansorin/node_modules/@babel/parser/lib/index.js:5896:21)\n    at Parser.parseExprOps (/Users/988244/Documents/romansorin/node_modules/@babel/parser/lib/index.js:5783:23)\n    at Parser.parseMaybeConditional (/Users/988244/Documents/romansorin/node_modules/@babel/parser/lib/index.js:5756:23)\n    at Parser.parseMaybeAssign (/Users/988244/Documents/romansorin/node_modules/@babel/parser/lib/index.js:5703:21)\n    at Parser.parseExportDefaultExpression (/Users/988244/Documents/romansorin/node_modules/@babel/parser/lib/index.js:8478:24)\n    at Parser.parseExport (/Users/988244/Documents/romansorin/node_modules/@babel/parser/lib/index.js:8373:31)\n    at Parser.parseStatementContent (/Users/988244/Documents/romansorin/node_modules/@babel/parser/lib/index.js:7397:27)\n    at Parser.parseStatement (/Users/988244/Documents/romansorin/node_modules/@babel/parser/lib/index.js:7293:17)\n    at Parser.parseBlockOrModuleBlockBody (/Users/988244/Documents/romansorin/node_modules/@babel/parser/lib/index.js:7879:25)\n    at Parser.parseBlockBody (/Users/988244/Documents/romansorin/node_modules/@babel/parser/lib/index.js:7866:10)\n    at Parser.parseTopLevel (/Users/988244/Documents/romansorin/node_modules/@babel/parser/lib/index.js:7222:10)\n    at Parser.parse (/Users/988244/Documents/romansorin/node_modules/@babel/parser/lib/index.js:8871:17)\n    at parse (/Users/988244/Documents/romansorin/node_modules/@babel/parser/lib/index.js:11133:38)\n    at parser (/Users/988244/Documents/romansorin/node_modules/@babel/core/lib/transformation/normalize-file.js:170:34)\n    at normalizeFile (/Users/988244/Documents/romansorin/node_modules/@babel/core/lib/transformation/normalize-file.js:138:11)\n    at runSync (/Users/988244/Documents/romansorin/node_modules/@babel/core/lib/transformation/index.js:44:43)\n    at runAsync (/Users/988244/Documents/romansorin/node_modules/@babel/core/lib/transformation/index.js:35:14)\n    at process.nextTick (/Users/988244/Documents/romansorin/node_modules/@babel/core/lib/transform.js:34:34)\n    at processTicksAndRejections (internal/process/next_tick.js:74:9)");
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ __webpack_exports__["default"] = ({
+  props: {
+    works: {
+      type: Array
+    }
+  },
+  methods: {
+    changeCurrentRow: function changeCurrentRow() {
+      if (this.currentRow === 'long-short') this.currentRow = 'short-long';else this.currentRow = 'long-short';
+    }
+  },
+  computed: {
+    changed: function changed() {
+      this.changeCurrentRow();
+      return this.currentRow;
+    }
+  },
+  data: function data() {
+    return {
+      currentRow: 'long-short'
+    };
+  }
+});
 
 /***/ }),
 
@@ -42531,8 +42565,36 @@ exports.clearImmediate = (typeof self !== "undefined" && self.clearImmediate) ||
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
-var render = function () {}
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "div",
+    [
+      _c("button", { on: { click: _vm.changeCurrentRow } }, [
+        _vm._v("Click me")
+      ]),
+      _vm._v(" "),
+      _c("h1", { domProps: { textContent: _vm._s(_vm.currentRow) } }),
+      _vm._v(" "),
+      _vm._l(_vm.works, function(work, index) {
+        return _c("div", [
+          _vm._v(
+            "\n       " +
+              _vm._s(index) +
+              " . " +
+              _vm._s(_vm.changed) +
+              "\n\n    "
+          )
+        ])
+      })
+    ],
+    2
+  )
+}
 var staticRenderFns = []
+render._withStripped = true
 
 
 
@@ -55148,14 +55210,15 @@ bulmaTagsinput.attach();
 /*!******************************************************!*\
   !*** ./resources/js/components/ArticleContainer.vue ***!
   \******************************************************/
-/*! exports provided: default */
+/*! no static exports found */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _ArticleContainer_vue_vue_type_template_id_af394dd4___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./ArticleContainer.vue?vue&type=template&id=af394dd4& */ "./resources/js/components/ArticleContainer.vue?vue&type=template&id=af394dd4&");
 /* harmony import */ var _ArticleContainer_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ArticleContainer.vue?vue&type=script&lang=js& */ "./resources/js/components/ArticleContainer.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _ArticleContainer_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _ArticleContainer_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
 
 
@@ -55185,7 +55248,7 @@ component.options.__file = "resources/js/components/ArticleContainer.vue"
 /*!*******************************************************************************!*\
   !*** ./resources/js/components/ArticleContainer.vue?vue&type=script&lang=js& ***!
   \*******************************************************************************/
-/*! exports provided: default */
+/*! no static exports found */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -55507,8 +55570,8 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /Users/988244/Documents/romansorin/resources/js/app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! /Users/988244/Documents/romansorin/resources/sass/app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! E:\Documents\GitHub\romansorin\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! E:\Documents\GitHub\romansorin\resources\sass\app.scss */"./resources/sass/app.scss");
 
 
 /***/ })
