@@ -1,8 +1,8 @@
 require('./bulma-extensions');
 require('./bootstrap');
-const VueClazyLoad = require('vue-clazy-load')
+// const VueClazyLoad = require('vue-clazy-load')
 window.Vue = require('vue');
-Vue.use(VueClazyLoad);
+// Vue.use(VueClazyLoad);
 const feather = require('feather-icons/dist/feather');
 
 /**
@@ -13,11 +13,11 @@ const feather = require('feather-icons/dist/feather');
  * Eg. ./components/ExampleComponent.vue -> <example-component></example-component>
  */
 
-const files = require.context('./', true, /\.vue$/i)
-files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
+const files = require.context('./', true, /\.vue$/i);
+files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default));
 
 const app = new Vue({
-  el: '#app'
+    el: '#app'
 });
 
 // Get all "navbar-burger" elements
@@ -46,8 +46,8 @@ feather.replace();
 
 // Hotjar Tracking Code for https://www.romansorin.com
 (function (h, o, t, j, a, r) {
-  h.hj = h.hj || function () {
-    (h.hj.q = h.hj.q || []).push(arguments)
+    h.hj = h.hj || function () {
+        (h.hj.q = h.hj.q || []).push(arguments)
     };
     h._hjSettings = {
         hjid: 1327317,

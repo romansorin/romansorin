@@ -15,8 +15,8 @@ class WorkController extends Controller
 
     public function index()
     {
-        $work = Work::where('id', 1)->first();
-        return view('works', compact('work'));
+        $works = Work::all();
+        return view('works.index', compact('works'));
     }
     /**
      * Show the form for creating a new resource.
