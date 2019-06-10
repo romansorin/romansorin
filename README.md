@@ -6,6 +6,7 @@ This repository serves as a place to host my personal site's contents, in the ca
 
 * [Bulma](https://bulma.io) - The CSS framework used
 * [Laravel](https://laravel.com) - The Laravel framework used
+* [VueJS](https://vuejs.org) - The Javascript framework used
 * [NodeJS](https://nodejs.org)
 * [NPM](https://npmjs.org)
 * [MySQL](https://mysql.com) - The database used
