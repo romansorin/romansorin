@@ -3,8 +3,6 @@
 namespace romansorin\Listeners;
 
 use Illuminate\Auth\Events\Verified;
-use Illuminate\Queue\InteractsWithQueue;
-use Illuminate\Contracts\Queue\ShouldQueue;
 
 class AddStripeCustomerOnVerification
 {
