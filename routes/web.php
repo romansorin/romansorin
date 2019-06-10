@@ -11,6 +11,21 @@ $BASE_URL = config('app')['base_url'];
 Route::domain('dashboard.' . $BASE_URL)->group(function () {
     Auth::routes(['verify' => true]);
     Route::get('/', 'DashboardController@index')->name('dashboard');
+    Route::get('/subscriptions', function () {
+        return view('auth.subscriptions');
+    });
+    Route::get('/invoices', function () {
+        return view('auth.invoices');
+    });
+    Route::get('/customers', function () {
+        return view('auth.customers');
+    });
+    Route::get('/payments', function () {
+        return view('auth.payments');
+    });
+    Route::get('/users', function () {
+        return view('auth.users');
+    });
 });
 
 // portfolio
