@@ -11,9 +11,10 @@ $BASE_URL = config('app')['base_url'];
 Route::domain('dashboard.' . $BASE_URL)->group(function () {
     Auth::routes(['verify' => true]);
     Route::get('/', 'DashboardController@index')->name('dashboard');
+    // Make controllers for all of these. Show different views based on user status
     Route::get('/subscriptions', function () {
-        return view('auth.subscriptions');
-    });
+        return view('auth.test');
+    })->middleware('admin');
     Route::get('/invoices', function () {
         return view('auth.invoices');
     });
