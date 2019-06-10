@@ -50,4 +50,11 @@ class User extends Authenticatable implements MustVerifyEmail, CanResetPassword
     {
         $this->notify(new ResetPasswordNotification($token));
     }
+
+    public function createCustomer() {
+        $this->createAsStripeCustomer([
+            'description' => 'Customer automatically created through registration at romansorin.com',
+            'name' => $this->name
+        ]);
+    }
 }
