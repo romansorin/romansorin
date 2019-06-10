@@ -1873,32 +1873,6 @@ __webpack_require__.r(__webpack_exports__);
     works: {
       type: Array
     }
-  },
-  methods: {
-    getWorksCount: function getWorksCount() {
-      return this.works.length;
-    },
-    setRow: function setRow() {
-      this.rowLS = !this.rowLS;
-    },
-    getRow: function getRow() {
-      return this.rowLS;
-    },
-    generateArticleRow: function generateArticleRow() {
-      for (var i = 0; i < this.getWorksCount(); i++) {
-        if (this.getRow()) {
-          var component = '<article-row-long-short v-bind:work_one="works[0]" v-bind:work_two="works[1]"></article-row-long-short>';
-          this.works.shift();
-          this.works.shift();
-          return component;
-        }
-      }
-    }
-  },
-  data: function data() {
-    return {
-      rowLS: true
-    };
   }
 });
 
@@ -42577,25 +42551,31 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", [
-    _c("h1", { domProps: { textContent: _vm._s(_vm.getWorksCount()) } }),
-    _vm._v(" "),
-    _c(
-      "button",
-      {
-        on: {
-          click: function($event) {
-            return _vm.setRow()
-          }
-        }
-      },
-      [_vm._v("Toggle row")]
-    ),
-    _vm._v(" "),
-    _c("h1", [_vm._v("Row is long-short? " + _vm._s(_vm.getRow()))]),
-    _vm._v(" "),
-    _c("h1", [_vm._v("Component? " + _vm._s(_vm.generateArticleRow()) + " ")])
-  ])
+  return _c(
+    "div",
+    _vm._l(_vm.works.length / 2, function(work, index) {
+      return _c(
+        "div",
+        [
+          index % 2 == 0
+            ? _c("article-row-long-short", {
+                attrs: {
+                  work_one: _vm.works[index * 2],
+                  work_two: _vm.works[index * 2 + 1]
+                }
+              })
+            : _c("article-row-short-long", {
+                attrs: {
+                  work_one: _vm.works[index * 2],
+                  work_two: _vm.works[index * 2 + 1]
+                }
+              })
+        ],
+        1
+      )
+    }),
+    0
+  )
 }
 var staticRenderFns = []
 render._withStripped = true
@@ -55214,15 +55194,14 @@ bulmaTagsinput.attach();
 /*!******************************************************!*\
   !*** ./resources/js/components/ArticleContainer.vue ***!
   \******************************************************/
-/*! no static exports found */
+/*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _ArticleContainer_vue_vue_type_template_id_af394dd4___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./ArticleContainer.vue?vue&type=template&id=af394dd4& */ "./resources/js/components/ArticleContainer.vue?vue&type=template&id=af394dd4&");
 /* harmony import */ var _ArticleContainer_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ArticleContainer.vue?vue&type=script&lang=js& */ "./resources/js/components/ArticleContainer.vue?vue&type=script&lang=js&");
-/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _ArticleContainer_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _ArticleContainer_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__[key]; }) }(__WEBPACK_IMPORT_KEY__));
-/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
 
 
@@ -55252,7 +55231,7 @@ component.options.__file = "resources/js/components/ArticleContainer.vue"
 /*!*******************************************************************************!*\
   !*** ./resources/js/components/ArticleContainer.vue?vue&type=script&lang=js& ***!
   \*******************************************************************************/
-/*! no static exports found */
+/*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
