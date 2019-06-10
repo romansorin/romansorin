@@ -7,7 +7,8 @@ use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Contracts\Auth\CanResetPassword;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Laravel\Cashier\Billable;
-use romansorin\Notifications\ResetPasswordNotification;
+use romansorin\Notifications\ResetPassword;
+use romansorin\Notifications\VerifyEmail;
 
 class User extends Authenticatable implements MustVerifyEmail, CanResetPassword
 {
@@ -40,6 +41,7 @@ class User extends Authenticatable implements MustVerifyEmail, CanResetPassword
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
     /**
      * Send the password reset notification.
      *
@@ -48,6 +50,16 @@ class User extends Authenticatable implements MustVerifyEmail, CanResetPassword
      */
     public function sendPasswordResetNotification($token)
     {
-        $this->notify(new ResetPasswordNotification($token));
+        $this->notify(new ResetPassword($token));
     }
+
+    /**
+     * Send the email verification notification.
+     *
+     * @return void
+     */
+    public function sendEmailVerificationNotification() {
+        $this->notify(new VerifyEmail());
+    }
+   
 }

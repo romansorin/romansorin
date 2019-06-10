@@ -6,7 +6,7 @@ use Illuminate\Support\Facades\Lang;
 use Illuminate\Notifications\Notification;
 use Illuminate\Notifications\Messages\MailMessage;
 
-class ResetPasswordNotification extends Notification
+class ResetPassword extends Notification
 {
     /**
      * The password reset token.
@@ -57,6 +57,7 @@ class ResetPasswordNotification extends Notification
         }
 
         return (new MailMessage)
+            ->from('security@romansorin.com', 'romansorin Security')
             ->subject(Lang::getFromJson('Reset Password Notification'))
             ->line(Lang::getFromJson('You are receiving this email because we received a password reset request for your account.'))
             ->action(Lang::getFromJson('Reset Password'), url(route('password.reset', ['token' => $this->token], false)))
