@@ -13,12 +13,12 @@ class InvoicesController extends Controller
 
     public function index()
     {
-        return view('auth.users.index');
+        return view('auth.admin.invoices.index');
     }
 
     public function create()
     {
-        //
+        return view('auth.admin.invoices.index');        
     }
 
     public function store(Request $request)
@@ -28,12 +28,12 @@ class InvoicesController extends Controller
 
     public function show(Work $work)
     {
-        //
+        return view('auth.admin.invoices.index');
     }
 
     public function edit(Work $work)
     {
-        //
+        return view('auth.admin.invoices.index');        
     }
 
     public function update(Request $request, Work $work)

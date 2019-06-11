@@ -2,7 +2,7 @@
 
 namespace romansorin\Http\Controllers;
 
-use Illuminate\Http\Request;
+use romansorin\User;
 
 class UsersController extends Controller
 {
@@ -13,7 +13,8 @@ class UsersController extends Controller
 
     public function index()
     {
-        return view('auth.admin.users.index');
+        $users = User::simplePaginate(15);
+        return view('auth.admin.users.index', compact('users'));
     }
 
     public function create()
@@ -21,19 +22,26 @@ class UsersController extends Controller
         return view('auth.admin.users.create');
     }
 
-    public function store(Request $request)
+    public function store()
     {
-        //
+        $attributes = request()->validate([
+            'name' => ['required', 'string'],
+            'email' => ['required', 'email', 'unique']
+        ]);
+        User::create($attributes);
+        return back()->with('status', 'User successfully created.');
     }
 
-    public function show(Work $work)
+    public function show($id)
     {
-        return view('auth.admin.users.show');
+        $user = User::where('id', $id)->get();
+        return view('auth.admin.users.show', compact('user'));
     }
 
-    public function edit(Work $work)
+    public function edit($id)
     {
-        return view('auth.admin.users.edit');
+        $user = User::where('id', $id)->get();
+        return view('auth.admin.users.edit', compact('user'));
     }
 
     public function update(Request $request, Work $work)
