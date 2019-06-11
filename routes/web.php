@@ -13,11 +13,11 @@ $BASE_URL = config('app')['base_url'];
 Route::domain('dashboard.' . $BASE_URL)->group(function () {
     Auth::routes(['verify' => true]);
     Route::get('/', 'DashboardController@index')->name('dashboard');
-    Route::resource('/users', 'UsersController');
-    Route::resource('/subscriptions', 'SubscriptionsController');
+    Route::resource('/customers', 'CustomersController');
     Route::resource('/invoices', 'InvoicesController');
     Route::resource('/payments', 'PaymentsController');
-    Route::resource('/customers', 'CustomersController');
+    Route::resource('/subscriptions', 'SubscriptionsController');
+    Route::resource('/users', 'UsersController');
 });
 
 // portfolio
@@ -26,18 +26,18 @@ Route::domain('dashboard.' . $BASE_URL)->group(function () {
 ///////////////////
 Route::domain($BASE_URL)->group(function () {
     Route::get('/', function () {
-        return view('welcome');
+        return view('public.welcome');
     });
     Route::get('/about', function () {
-        return view('about');
+        return view('public.about');
     });
     Route::get('/contact', function () {
-        return view('contact');
+        return view('public.contact');
     });
     Route::get('/insights', function () {
-        return view('insights');
+        return view('public.insights');
     });
     Route::get('/works', function () {
-        return view('works');
+        return view('public.works');
     });
 });

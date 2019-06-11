@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.public.app')
 @section('title', 'Contact -')
 @section('description')
 Looking to contact me for services, projects, or hire? I'm available at 4408971215 and roman@romansorin.com.

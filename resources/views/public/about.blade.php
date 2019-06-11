@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.public.app')
 @section('title', 'About -')
 @section('description')
 My name is Roman Sorin and I'm a self-taught software developer who additionally plays violin, takes photos, and loves minimalism.
