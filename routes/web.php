@@ -41,3 +41,8 @@ Route::domain($BASE_URL)->group(function () {
         return view('public.works');
     });
 });
+
+Route::post(
+    'stripe/webhook',
+    '\Laravel\Cashier\Http\Controllers\WebhookController@handleWebhook'
+);
