@@ -3,6 +3,7 @@
 namespace romansorin\Http\Controllers;
 
 use Illuminate\Http\Request;
+use romansorin\User;
 
 class InvoicesController extends Controller
 {
@@ -13,7 +14,12 @@ class InvoicesController extends Controller
 
     public function index()
     {
-        return view('auth.admin.invoices.index');
+        $user_invoices = $customer->invoices();
+        if (Auth::user()->is_admin) {
+            return view('auth.admin.invoices.index', compact('invoices'));
+        } else {
+            return view('auth.users.invoices.index', compact('user_invoices'));
+        }
     }
 
     public function create()
@@ -26,9 +32,11 @@ class InvoicesController extends Controller
         //
     }
 
-    public function show(Work $work)
+    public function show($customer_id)
     {
-        return view('auth.admin.invoices.index');
+        $user = User::where('stripe_id', $customer_id)->first();
+        $invoices = $user->invoicesIncludingPending();
+        return view('auth.admin.invoices.show', compact('invoices'));
     }
 
     public function edit(Work $work)

@@ -6,9 +6,10 @@ use romansorin\User;
 
 class UsersController extends Controller
 {
+    // Need views for these and also validation.
     public function __construct()
     {
-        $this->middleware(['auth', 'admin']);
+        $this->middleware(['auth', 'admin'])->except('edit', 'delete', 'update');
     }
 
     public function index()
@@ -41,7 +42,11 @@ class UsersController extends Controller
     public function edit($id)
     {
         $user = User::where('id', $id)->get();
-        return view('auth.admin.users.edit', compact('user'));
+        if (Auth::user()->is_admin) {
+            return view('auth.admin.users.edit', compact('user'));
+        } else {
+            return view('auth.user.users.edit', compact('user'));
+        }
     }
 
     public function update(Request $request, Work $work)

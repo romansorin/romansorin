@@ -44,5 +44,5 @@ Route::domain($BASE_URL)->group(function () {
 
 Route::post(
     'stripe/webhook',
-    '\Laravel\Cashier\Http\Controllers\WebhookController@handleWebhook'
+    '\romansorin\Http\Controllers\WebhookController@handleWebhook'
 );
