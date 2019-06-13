@@ -2,18 +2,20 @@
 
 namespace romansorin\Http\Controllers;
 
-use Illuminate\Http\Request;
-
 class PaymentsController extends Controller
 {
     public function __construct()
     {
         $this->middleware(['auth']);
+        \Stripe\Stripe::setApiKey(config('services')['stripe']['secret']);
+
     }
 
     public function index()
     {
-        return view('auth.users.index');
+        $payments = \Stripe\BalanceTransaction::all();
+
+        return view('auth.admin.payments.index', compact('payments'));
     }
 
     public function create()

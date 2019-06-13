@@ -49,13 +49,16 @@ class UsersController extends Controller
         }
     }
 
-    public function update(Request $request, Work $work)
+    public function update($id)
     {
-        //
+        $attributes = request()->validate([
+            'name' => ['required', 'string'],
+            'email' => ['required', 'email', 'unique']
+        ]);
     }
 
-    public function destroy(Work $work)
+    public function destroy($id)
     {
-        //
+        User::where('id', $id)->delete();
     }
 }
