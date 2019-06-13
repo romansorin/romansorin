@@ -20,7 +20,7 @@ class CreateWorksTable extends Migration
             $table->string('repo_link')->nullable();
             $table->string('preview_image_link')->references('image_link')->on('images')->nullable();
             $table->string('preview_image_alt')->references('image_alt')->on('images')->nullable();
-            $table->text('content');
+            $table->text('content')->nullable();
             $table->timestamps();
         });
     }
