@@ -1868,6 +1868,19 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   props: {
     works: {
@@ -42551,31 +42564,40 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c(
-    "div",
-    _vm._l(_vm.works.length / 2, function(work, index) {
-      return _c(
-        "div",
-        [
-          index % 2 === 0
-            ? _c("article-row-long-short", {
-                attrs: {
-                  work_one: _vm.works[index * 2],
-                  work_two: _vm.works[index * 2 + 1]
-                }
-              })
-            : _c("article-row-short-long", {
-                attrs: {
-                  work_one: _vm.works[index * 2],
-                  work_two: _vm.works[index * 2 + 1]
-                }
-              })
-        ],
-        1
-      )
-    }),
-    0
-  )
+  return _c("div", [
+    _vm.works.length > 1
+      ? _c(
+          "div",
+          _vm._l(_vm.works.length / 2, function(work, index) {
+            return _c(
+              "div",
+              { key: work.id },
+              [
+                index % 2 === 0
+                  ? _c("article-row-long-short", {
+                      attrs: {
+                        work_one: _vm.works[index * 2],
+                        work_two: _vm.works[index * 2 + 1]
+                      }
+                    })
+                  : _c("article-row-short-long", {
+                      attrs: {
+                        work_one: _vm.works[index * 2],
+                        work_two: _vm.works[index * 2 + 1]
+                      }
+                    })
+              ],
+              1
+            )
+          }),
+          0
+        )
+      : _c(
+          "div",
+          [_c("article-row-long-short", { attrs: { work_one: _vm.works[0] } })],
+          1
+        )
+  ])
 }
 var staticRenderFns = []
 render._withStripped = true
@@ -55553,8 +55575,8 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! E:\Documents\GitHub\romansorin\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! E:\Documents\GitHub\romansorin\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! /Users/988244/Documents/romansorin/resources/js/app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! /Users/988244/Documents/romansorin/resources/sass/app.scss */"./resources/sass/app.scss");
 
 
 /***/ })
