@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="tile article-tile is-child">
-      <a :href="work.insight">
+      <a href="#">
         <div class="article-tile-image article-tile-image--small">
           <figure class="image">
             <img :src="work.preview_image_link" :alt="work.preview_image_alt">
@@ -40,8 +40,7 @@ export default {
       type: Object,
       title: String,
       subtitle: String,
-      insight: String,
-      repo_link_link: String,
+      repo_link: String,
       preview_image_link: String,
       preview_image_alt: String
     }

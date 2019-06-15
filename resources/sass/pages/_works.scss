@@ -7,6 +7,10 @@
   }
 }
 
+#modal-image {
+  height: auto;
+}
+
 .modal-content {
   box-shadow: rgba(0, 0, 0, 0.22) 2px 3px 20px 0px;
 }
@@ -157,4 +161,8 @@
   .columns {
     width: 100%;
   }
+}
+
+.image {
+  overflow: hidden;
 }

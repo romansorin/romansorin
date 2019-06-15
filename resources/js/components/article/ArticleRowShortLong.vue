@@ -22,8 +22,7 @@
 export default {
   props: {
     work_one: {
-      type: Object,
-      required: true
+      type: Object
     },
     work_two: {
       type: Object

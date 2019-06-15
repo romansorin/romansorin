@@ -1923,8 +1923,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = ({
   props: {
     work_one: {
-      type: Object,
-      required: true
+      type: Object
     },
     work_two: {
       type: Object
@@ -1966,8 +1965,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = ({
   props: {
     work_one: {
-      type: Object,
-      required: true
+      type: Object
     },
     work_two: {
       type: Object
@@ -2027,7 +2025,6 @@ __webpack_require__.r(__webpack_exports__);
       type: Object,
       title: String,
       subtitle: String,
-      insight: String,
       repo_link: String,
       preview_image_link: String,
       preview_image_alt: String
@@ -2094,8 +2091,7 @@ __webpack_require__.r(__webpack_exports__);
       type: Object,
       title: String,
       subtitle: String,
-      insight: String,
-      repo_link_link: String,
+      repo_link: String,
       preview_image_link: String,
       preview_image_alt: String
     }
@@ -42727,7 +42723,7 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c("div", [
     _c("div", { staticClass: "tile article-tile is-child" }, [
-      _c("a", { attrs: { href: _vm.work.insight } }, [
+      _c("a", { attrs: { href: "#" } }, [
         _c(
           "div",
           { staticClass: "article-tile-image article-tile-image--large" },
@@ -42818,7 +42814,7 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c("div", [
     _c("div", { staticClass: "tile article-tile is-child" }, [
-      _c("a", { attrs: { href: _vm.work.insight } }, [
+      _c("a", { attrs: { href: "#" } }, [
         _c(
           "div",
           { staticClass: "article-tile-image article-tile-image--small" },
@@ -55575,8 +55571,8 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /Users/988244/Documents/romansorin/resources/js/app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! /Users/988244/Documents/romansorin/resources/sass/app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! E:\Documents\GitHub\romansorin\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! E:\Documents\GitHub\romansorin\resources\sass\app.scss */"./resources/sass/app.scss");
 
 
 /***/ })
