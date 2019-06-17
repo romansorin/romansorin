@@ -15,7 +15,7 @@ My name is Roman Sorin and I'm a self-taught software developer who additionally
                 </div>
                 <div class="column is-7">
                     <h2 class="subtitle has-text-weight-normal has-text-black-ter is-size-4 is-size-5-mobile">A
-                        15 year old self-taught software developer, violinist, avid photographer, and lover
+                        16 year old self-taught software developer, violinist, avid photographer, and lover
                         of everything minimalist.
                     </h2>
                 </div>
