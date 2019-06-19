@@ -10,10 +10,10 @@ Looking to contact me for services, projects, or hire? I'm available at 44089712
         <div class="container hero-wrapper" id="contact-hero">
             <div class="columns is-multiline is-mobile">
                 <div class="column is-full">
-                    <h1 class="title has-text-weight-semibold has-text-black-ter is-size-1">Let's Chat</h1>
+                    <h1 class="title has-text-weight-semibold has-text-black-ter is-size-1 is-size-2-mobile">Let's Chat</h1>
                 </div>
                 <div class="column is-7">
-                    <h2 class="subtitle has-text-weight-normal has-text-grey-dark is-size-4">If you're looking to hire
+                    <h2 class="subtitle has-text-weight-normal has-text-grey-dark is-size-4 is-size-5-mobile">If you're looking to hire
                         me,
                         work on a project,
                         or anything else, I'm all ears!</h2>
@@ -26,7 +26,7 @@ Looking to contact me for services, projects, or hire? I'm available at 44089712
     <div class="container">
         <div class="columns">
             <div class="column">
-                <ul class="is-size-2 has-text-weight-semibold is-shadowless list" id="contact-info-list">
+                <ul class="is-size-2 is-size-4-mobile has-text-weight-semibold is-shadowless list" id="contact-info-list">
                     {{-- blue to black transition on hover of links --}}
                     <li class="list-item"><i class="icon" data-feather="mail"></i><a
                             href="mailto:roman@romansorin.com">roman@romansorin.com</a>
