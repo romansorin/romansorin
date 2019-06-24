@@ -27548,13 +27548,14 @@ input[type=range].slider.is-danger .has-output-tooltip + output {
 @media screen and (max-width: 767.98px) {
   .tile .article-tile .image-overlay {
     width: auto;
-    height: 300px;
+    height: 100%;
+    max-height: 300px;
   }
 }
 
 @media screen and (max-width: 1215px) {
   .tile .article-tile .image-overlay {
-    height: 300px;
+    max-height: 300px;
   }
 }
 
@@ -27587,8 +27588,8 @@ input[type=range].slider.is-danger .has-output-tooltip + output {
   overflow: hidden;
   background-size: cover;
   /**
-        Need to clean all of these media queries up.
-        */
+  Need to clean all of these media queries up.
+  */
 }
 
 .tile .article-tile .article-tile-image--large {
@@ -27600,13 +27601,14 @@ input[type=range].slider.is-danger .has-output-tooltip + output {
 @media screen and (max-width: 767.98px) {
   .tile .article-tile .article-tile-image--large {
     width: auto;
-    height: 300px;
+    height: 100%;
+    max-height: 300px;
   }
 }
 
 @media screen and (max-width: 1215px) {
   .tile .article-tile .article-tile-image--large {
-    height: 300px;
+    max-height: 300px;
   }
 }
 
@@ -27630,7 +27632,8 @@ input[type=range].slider.is-danger .has-output-tooltip + output {
 @media screen and (max-width: 767.98px) {
   .tile .article-tile .article-tile-image--small {
     width: auto;
-    height: 300px;
+    height: 100%;
+    max-height: 300px;
   }
 }
 

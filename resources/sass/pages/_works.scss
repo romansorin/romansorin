@@ -1,168 +1,173 @@
 .icon-link {
-  color: inherit;
-  transition: 0.2s ease-in-out;
+    color: inherit;
+    transition: 0.2s ease-in-out;
 
-  &:hover {
-    color: $hover-blue-alt;
-  }
+    &:hover {
+        color: $hover-blue-alt;
+    }
 }
 
 #modal-image {
-  height: auto;
+    height: auto;
 }
 
 .modal-content {
-  box-shadow: rgba(0, 0, 0, 0.22) 2px 3px 20px 0px;
+    box-shadow: rgba(0, 0, 0, 0.22) 2px 3px 20px 0px;
 }
+
 .tile {
-  margin-bottom: 40px;
-  margin-top: 40px;
-  .article-tile {
-    .image-overlay {
-      background: rgba(0, 0, 0, 0.7);
-      bottom: 0;
-      color: white;
-      left: 0;
-      opacity: 0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      overflow: hidden;
-      position: absolute;
-      text-align: center;
-      top: 0;
-      right: 0;
-      -webkit-transition: 0.4s;
-      transition: 0.4s;
+    margin-bottom: 40px;
+    margin-top: 40px;
 
-      svg {
-        width: 60px;
-        height: 60px;
-        stroke-width: 1px;
-      }
+    .article-tile {
+        .image-overlay {
+            background: rgba(0, 0, 0, 0.7);
+            bottom: 0;
+            color: white;
+            left: 0;
+            opacity: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            position: absolute;
+            text-align: center;
+            top: 0;
+            right: 0;
+            -webkit-transition: 0.4s;
+            transition: 0.4s;
 
-      &:hover {
-        opacity: 1;
-      }
+            svg {
+                width: 60px;
+                height: 60px;
+                stroke-width: 1px;
+            }
 
-      @media screen and (max-width: 767.98px) {
-        width: auto;
-        height: 300px;
-      }
+            &:hover {
+                opacity: 1;
+            }
 
-      @include until-widescreen {
-        height: 300px;
-      }
+            @media screen and (max-width: 767.98px) {
+                width: auto;
+                height: 100%;
+                max-height: 300px;
+            }
 
-      @media screen and (min-width: 1024px) and (max-width: 1215.98px) {
-        width: auto;
-        height: 300px;
-      }
-    }
+            @include until-widescreen {
+                max-height: 300px;
+            }
 
-    .image-overlay:after,
-    .image-overlay:before {
-      content: "";
-      opacity: 0;
-      position: absolute;
-      -webkit-transform: scale(1.5);
-      -ms-transform: scale(1.5);
-      transform: scale(1.5);
-      -webkit-transition: 0.4s 0.2s;
-      transition: 0.4s 0.2s;
-    }
+            @media screen and (min-width: 1024px) and (max-width: 1215.98px) {
+                width: auto;
+                height: 300px;
+            }
+        }
 
-    .image-overlay:hover:after,
-    .image-overlay:hover:before {
-      -webkit-transform: scale(1);
-      -ms-transform: scale(1);
-      transform: scale(1);
-      opacity: 1;
-    }
+        .image-overlay:after,
+        .image-overlay:before {
+            content: "";
+            opacity: 0;
+            position: absolute;
+            -webkit-transform: scale(1.5);
+            -ms-transform: scale(1.5);
+            transform: scale(1.5);
+            -webkit-transition: 0.4s 0.2s;
+            transition: 0.4s 0.2s;
+        }
 
-    .article-tile-image {
-      box-shadow: rgba(0, 0, 0, 0.22) 2px 2px 20px 0;
-      overflow: hidden;
-      background-size: cover;
+        .image-overlay:hover:after,
+        .image-overlay:hover:before {
+            -webkit-transform: scale(1);
+            -ms-transform: scale(1);
+            transform: scale(1);
+            opacity: 1;
+        }
 
-      /**
+        .article-tile-image {
+            box-shadow: rgba(0, 0, 0, 0.22) 2px 2px 20px 0;
+            overflow: hidden;
+            background-size: cover;
+
+            /**
             Need to clean all of these media queries up.
             */
-      &--large {
-        height: 50vh;
-        max-height: 470px;
-        width: 700px;
+            &--large {
+                height: 50vh;
+                max-height: 470px;
+                width: 700px;
 
-        @media screen and (max-width: 767.98px) {
-          width: auto;
-          height: 300px;
+                @media screen and (max-width: 767.98px) {
+                    width: auto;
+                    height: 100%;
+                    max-height: 300px;
+                }
+
+                @include until-widescreen {
+                    max-height: 300px;
+                }
+
+                @media screen and (min-width: 1024px) and (max-width: 1215.98px) {
+                    width: auto;
+                    height: 300px;
+                }
+
+                .image-overlay {
+                    height: 50vh;
+                }
+            }
+
+            &--small {
+                height: 35vh;
+                max-height: 330px;
+                width: auto;
+
+                @media screen and (max-width: 767.98px) {
+                    width: auto;
+                    height: 100%;
+                    max-height: 300px;
+                }
+
+                @media screen and (min-width: 767.98px) and (max-width: 1023.98px) {
+                    width: 700px;
+                }
+
+                @media screen and (min-width: 1024px) and (max-width: 1215.98px) {
+                    width: auto;
+                    height: 300px;
+                }
+
+                @include until-widescreen {
+                    height: 300px;
+                }
+
+                .image-overlay {
+                    height: 35vh;
+                }
+            }
         }
-
-        @include until-widescreen {
-          height: 300px;
-        }
-
-        @media screen and (min-width: 1024px) and (max-width: 1215.98px) {
-          width: auto;
-          height: 300px;
-        }
-
-        .image-overlay {
-          height: 50vh;
-        }
-      }
-
-      &--small {
-        height: 35vh;
-        max-height: 330px;
-        width: auto;
-
-        @media screen and (max-width: 767.98px) {
-          width: auto;
-          height: 300px;
-        }
-
-        @media screen and (min-width: 767.98px) and (max-width: 1023.98px) {
-          width: 700px;
-        }
-
-        @media screen and (min-width: 1024px) and (max-width: 1215.98px) {
-          width: auto;
-          height: 300px;
-        }
-
-        @include until-widescreen {
-          height: 300px;
-        }
-
-        .image-overlay {
-          height: 35vh;
-        }
-      }
     }
-  }
 
-  .image img {
-    max-width: unset !important;
-  }
-
-  .article-title-info {
-    margin-top: 20px;
-
-    .title {
-      margin-bottom: 40px;
+    .image img {
+        max-width: unset !important;
     }
-  }
+
+    .article-title-info {
+        margin-top: 20px;
+
+        .title {
+            margin-bottom: 40px;
+        }
+    }
 }
 
 .article-container {
-  margin-bottom: 80px;
+    margin-bottom: 80px;
 
-  .columns {
-    width: 100%;
-  }
+    .columns {
+        width: 100%;
+    }
 }
 
 .image {
-  overflow: hidden;
+    overflow: hidden;
 }
