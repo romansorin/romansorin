@@ -6,7 +6,7 @@
           <figure class="image">
             <img :src="work.preview_image_link" :alt="work.preview_image_alt">
             <div class="image-overlay">
-              <div class="columns is-mobile is-centered">
+              <!-- <div class="columns is-mobile is-centered">
                 <div class="column is-half">
                   <nav class="level">
                     <div class="level-item has-text-centered">
@@ -21,7 +21,7 @@
                     </div>
                   </nav>
                 </div>
-              </div>
+              </div> -->
             </div>
           </figure>
         </div>
@@ -46,15 +46,15 @@ export default {
     }
   },
   methods: {
-    openModal: function(event) {
-      document.querySelector(".modal").classList.add("is-active");
-      document
-        .getElementById("modal-image")
-        .setAttribute("src", this.work.preview_image_link);
-      document
-        .getElementById("modal-image")
-        .setAttribute("alt", this.work.preview_image_alt);
-    }
+    // openModal: function(event) {
+    //   document.querySelector(".modal").classList.add("is-active");
+    //   document
+    //     .getElementById("modal-image")
+    //     .setAttribute("src", this.work.preview_image_link);
+    //   document
+    //     .getElementById("modal-image")
+    //     .setAttribute("alt", this.work.preview_image_alt);
+    // }
   }
 };
 </script>

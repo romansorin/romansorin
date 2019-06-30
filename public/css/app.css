@@ -27615,7 +27615,7 @@ input[type=range].slider.is-danger .has-output-tooltip + output {
 @media screen and (min-width: 1024px) and (max-width: 1215.98px) {
   .tile .article-tile .article-tile-image--large {
     width: auto;
-    height: 300px;
+    height: 100%;
   }
 }
 
@@ -27646,13 +27646,13 @@ input[type=range].slider.is-danger .has-output-tooltip + output {
 @media screen and (min-width: 1024px) and (max-width: 1215.98px) {
   .tile .article-tile .article-tile-image--small {
     width: auto;
-    height: 300px;
+    height: 100%;
   }
 }
 
 @media screen and (max-width: 1215px) {
   .tile .article-tile .article-tile-image--small {
-    height: 300px;
+    max-height: 300px;
   }
 }
 

@@ -2030,12 +2030,15 @@ __webpack_require__.r(__webpack_exports__);
       preview_image_alt: String
     }
   },
-  methods: {
-    openModal: function openModal(event) {
-      document.querySelector(".modal").classList.add("is-active");
-      document.getElementById("modal-image").setAttribute("src", this.work.preview_image_link);
-      document.getElementById("modal-image").setAttribute("alt", this.work.preview_image_alt);
-    }
+  methods: {// openModal: function(event) {
+    //   document.querySelector(".modal").classList.add("is-active");
+    //   document
+    //     .getElementById("modal-image")
+    //     .setAttribute("src", this.work.preview_image_link);
+    //   document
+    //     .getElementById("modal-image")
+    //     .setAttribute("alt", this.work.preview_image_alt);
+    // }
   }
 });
 
@@ -2096,12 +2099,15 @@ __webpack_require__.r(__webpack_exports__);
       preview_image_alt: String
     }
   },
-  methods: {
-    openModal: function openModal(event) {
-      document.querySelector(".modal").classList.add("is-active");
-      document.getElementById("modal-image").setAttribute("src", this.work.preview_image_link);
-      document.getElementById("modal-image").setAttribute("alt", this.work.preview_image_alt);
-    }
+  methods: {// openModal: function(event) {
+    //   document.querySelector(".modal").classList.add("is-active");
+    //   document
+    //     .getElementById("modal-image")
+    //     .setAttribute("src", this.work.preview_image_link);
+    //   document
+    //     .getElementById("modal-image")
+    //     .setAttribute("alt", this.work.preview_image_alt);
+    // }
   }
 });
 
@@ -42736,45 +42742,7 @@ var render = function() {
                 }
               }),
               _vm._v(" "),
-              _c("div", { staticClass: "image-overlay" }, [
-                _c("div", { staticClass: "columns is-mobile is-centered" }, [
-                  _c("div", { staticClass: "column is-half" }, [
-                    _c("nav", { staticClass: "level" }, [
-                      _c(
-                        "div",
-                        { staticClass: "level-item has-text-centered" },
-                        [
-                          _c(
-                            "a",
-                            {
-                              staticClass: "icon-link modal-link",
-                              on: { click: _vm.openModal }
-                            },
-                            [_c("i", { attrs: { "data-feather": "eye" } })]
-                          )
-                        ]
-                      ),
-                      _vm._v(" "),
-                      _vm.work.repo_link
-                        ? _c(
-                            "div",
-                            { staticClass: "level-item has-text-centered" },
-                            [
-                              _c(
-                                "a",
-                                {
-                                  staticClass: "icon-link",
-                                  attrs: { href: _vm.work.repo_link }
-                                },
-                                [_c("i", { attrs: { "data-feather": "code" } })]
-                              )
-                            ]
-                          )
-                        : _vm._e()
-                    ])
-                  ])
-                ])
-              ])
+              _c("div", { staticClass: "image-overlay" })
             ])
           ]
         ),
@@ -42827,45 +42795,7 @@ var render = function() {
                 }
               }),
               _vm._v(" "),
-              _c("div", { staticClass: "image-overlay" }, [
-                _c("div", { staticClass: "columns is-mobile is-centered" }, [
-                  _c("div", { staticClass: "column is-half" }, [
-                    _c("nav", { staticClass: "level" }, [
-                      _c(
-                        "div",
-                        { staticClass: "level-item has-text-centered" },
-                        [
-                          _c(
-                            "a",
-                            {
-                              staticClass: "icon-link modal-link",
-                              on: { click: _vm.openModal }
-                            },
-                            [_c("i", { attrs: { "data-feather": "eye" } })]
-                          )
-                        ]
-                      ),
-                      _vm._v(" "),
-                      _vm.work.repo_link
-                        ? _c(
-                            "div",
-                            { staticClass: "level-item has-text-centered" },
-                            [
-                              _c(
-                                "a",
-                                {
-                                  staticClass: "icon-link",
-                                  attrs: { href: _vm.work.repo_link }
-                                },
-                                [_c("i", { attrs: { "data-feather": "code" } })]
-                              )
-                            ]
-                          )
-                        : _vm._e()
-                    ])
-                  ])
-                ])
-              ])
+              _c("div", { staticClass: "image-overlay" })
             ])
           ]
         ),
