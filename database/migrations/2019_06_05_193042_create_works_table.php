@@ -17,9 +17,11 @@ class CreateWorksTable extends Migration
             $table->bigIncrements('id');
             $table->string('title');
             $table->string('subtitle');
+            $table->string('slug');
             $table->string('repo_link')->nullable();
-            $table->string('preview_image_link')->references('image_link')->on('images')->nullable();
-            $table->string('preview_image_alt')->references('image_alt')->on('images')->nullable();
+            $table->string('demo_link')->nullable();
+            $table->string('preview_image_link')->nullable();
+            $table->string('preview_image_alt')->nullable();
             $table->text('content')->nullable();
             $table->timestamps();
         });
