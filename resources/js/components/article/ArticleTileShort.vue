@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="tile article-tile is-child">
-      <a href="#">
+      <a :href="work.repo_link">
         <div class="article-tile-image article-tile-image--small">
           <figure class="image">
             <img :src="work.preview_image_link" :alt="work.preview_image_alt">
