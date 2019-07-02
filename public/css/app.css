@@ -27440,6 +27440,16 @@ input[type=range].slider.is-danger .has-output-tooltip + output {
   color: white !important;
 }
 
+.section-sidebar .list {
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
+}
+
+.section-sidebar .list-item {
+  padding-left: 0;
+  border-bottom: none;
+}
+
 .header-wrapper {
   font-family: "Poppins", sans-serif;
   padding-top: 60px;
