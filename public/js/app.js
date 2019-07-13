@@ -42729,7 +42729,7 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c("div", [
     _c("div", { staticClass: "tile article-tile is-child" }, [
-      _c("a", { attrs: { href: "#" } }, [
+      _c("a", { attrs: { href: _vm.work.repo_link } }, [
         _c(
           "div",
           { staticClass: "article-tile-image article-tile-image--large" },
@@ -42782,7 +42782,7 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c("div", [
     _c("div", { staticClass: "tile article-tile is-child" }, [
-      _c("a", { attrs: { href: "#" } }, [
+      _c("a", { attrs: { href: _vm.work.repo_link } }, [
         _c(
           "div",
           { staticClass: "article-tile-image article-tile-image--small" },
@@ -55501,8 +55501,8 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! E:\Documents\GitHub\romansorin\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! E:\Documents\GitHub\romansorin\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! /Users/988244/Documents/romansorin/resources/js/app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! /Users/988244/Documents/romansorin/resources/sass/app.scss */"./resources/sass/app.scss");
 
 
 /***/ })

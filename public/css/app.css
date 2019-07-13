@@ -27444,10 +27444,16 @@ input[type=range].slider.is-danger .has-output-tooltip + output {
   font-family: "Poppins", sans-serif;
   padding-top: 60px;
   padding-bottom: 0;
+  padding-left: 12px;
+  padding-right: 12px;
 }
 
 .header-wrapper .hamburger {
   margin-left: auto;
+}
+
+.header-wrapper .hamburger-box {
+  top: 13px;
 }
 
 .header-wrapper .hamburger-box:focus {
