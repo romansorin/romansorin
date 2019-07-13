@@ -2,12 +2,16 @@
     font-family: $font-main;
     padding-top: 60px;
     padding-bottom: 0;
+    padding-left: 12px;
+    padding-right: 12px;
 
     .hamburger {
         margin-left: auto;
     }
 
     .hamburger-box {
+        top: 13px;
+
         &:focus {
             outline: none;
         }
