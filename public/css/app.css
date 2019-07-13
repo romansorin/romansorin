@@ -27733,3 +27733,7 @@ input[type=range].slider.is-danger .has-output-tooltip + output {
   font-size: 4rem !important;
 }
 
+#insights-hero .hero-body {
+  padding-top: 0;
+}
+

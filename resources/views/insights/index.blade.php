@@ -4,8 +4,8 @@
 Insights from Roman Sorin.
 @endsection
 @section('content')
-<section class="hero is-paddingless">
-    <div class="hero-body is-paddingless">
+<section class="hero" id="insights-hero">
+    <div class="hero-body">
         <div class="container hero-wrapper">
             <div class="columns">
                 <div class="column is-two-thirds">
@@ -35,15 +35,15 @@ Insights from Roman Sorin.
             </ul>
             <h3 class="is-size-4 has-text-black-bis has-text-weight-bold">Follow</h3>
             <ul class="list is-shadowless">
-                <li class="list-item">icon<a href="https://">Instagram</a></li>
-                <li class="list-item">icon<a href="https://">LinkedIn</a></li>
-                <li class="list-item">icon<a href="https://">Twitter</a></li>
+                <li class="list-item"><a href="https://">Instagram</a></li>
+                <li class="list-item"><a href="https://">LinkedIn</a></li>
+                <li class="list-item"><a href="https://">Twitter</a></li>
             </ul>
         </aside>
     </div>
     <div class="column">
         <main>
-            oyoyyooy
+            Main
                 <ul>
                         {{-- @foreach($insights as $insight)
                         <li>{{ $insight->title }}</li>
@@ -56,6 +56,7 @@ Insights from Roman Sorin.
                     </ul>
                 </div>
         </main>
-    </div></div>
+    </div>
+</div>
 </section>
 @endsection
