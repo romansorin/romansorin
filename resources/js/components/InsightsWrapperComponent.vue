@@ -1,18 +1,12 @@
 <template>
   <div class="container">
-    <div class="columns">
-      <div class="column is-3">
-        <insights-sidebar-component></insights-sidebar-component>
-      </div>
-      <div class="column">
-        <insights-main-component></insights-main-component>
-      </div>
-    </div>
+    <InsightsMainComponent />
   </div>
 </template>
 
 <script>
-export default {};
+import InsightsMainComponent from "./InsightsMainComponent";
+export default { components: { InsightsMainComponent } };
 </script>
 
 <style>
