@@ -22,41 +22,6 @@ Insights from Roman Sorin.
     </div>
 </section>
 <section class="section">
-    <div class="container">
-        <div class="columns">
-            <div class="column is-3">
-        <aside class="section-sidebar">
-            <h3 class="is-size-4 has-text-black-bis has-text-weight-bold">Categories</h3>
-            <ul class="list is-shadowless">
-                <li class="list-item">icon<a href="https://">Category 1</a></li>
-                <li class="list-item">icon<a href="https://">Category 2</a></li>
-                <li class="list-item">icon<a href="https://">Category 3</a></li>
-                <li class="list-item">icon<a href="https://">Category 4</a></li>
-            </ul>
-            <h3 class="is-size-4 has-text-black-bis has-text-weight-bold">Follow</h3>
-            <ul class="list is-shadowless">
-                <li class="list-item"><a href="https://">Instagram</a></li>
-                <li class="list-item"><a href="https://">LinkedIn</a></li>
-                <li class="list-item"><a href="https://">Twitter</a></li>
-            </ul>
-        </aside>
-    </div>
-    <div class="column">
-        <main>
-            Main
-                <ul>
-                        {{-- @foreach($insights as $insight)
-                        <li>{{ $insight->title }}</li>
-                        @endforeach --}}
-
-                        {{-- Coming soon: an insight and
-                                    overview of developing a dashboard on my portfolio, utilizing the Stripe API for managing
-                                    invoices, creating ease for clients, and serving as a centralized CRUD for even a simple
-                                    portfolio. Stay tuned. --}}
-                    </ul>
-                </div>
-        </main>
-    </div>
-</div>
+    <insights-wrapper-component></insights-wrapper-component>
 </section>
 @endsection

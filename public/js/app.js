@@ -2005,6 +2005,11 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.r(__webpack_exports__);
 //
 //
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({});
 
 /***/ }),
@@ -2020,6 +2025,40 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.r(__webpack_exports__);
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({});
 
 /***/ }),
@@ -2033,6 +2072,17 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 /* harmony default export */ __webpack_exports__["default"] = ({});
@@ -42987,9 +43037,16 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div")
+  return _vm._m(0)
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("main", [_vm._v("\n  Main\n  "), _c("ul")])
+  }
+]
 render._withStripped = true
 
 
@@ -43011,9 +43068,64 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div")
+  return _vm._m(0)
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("aside", { staticClass: "section-sidebar" }, [
+      _c(
+        "h3",
+        { staticClass: "is-size-4 has-text-black-bis has-text-weight-bold" },
+        [_vm._v("Categories")]
+      ),
+      _vm._v(" "),
+      _c("ul", { staticClass: "list is-shadowless" }, [
+        _c("li", { staticClass: "list-item" }, [
+          _vm._v("\n      icon\n      "),
+          _c("a", { attrs: { href: "https://" } }, [_vm._v("Category 1")])
+        ]),
+        _vm._v(" "),
+        _c("li", { staticClass: "list-item" }, [
+          _vm._v("\n      icon\n      "),
+          _c("a", { attrs: { href: "https://" } }, [_vm._v("Category 2")])
+        ]),
+        _vm._v(" "),
+        _c("li", { staticClass: "list-item" }, [
+          _vm._v("\n      icon\n      "),
+          _c("a", { attrs: { href: "https://" } }, [_vm._v("Category 3")])
+        ]),
+        _vm._v(" "),
+        _c("li", { staticClass: "list-item" }, [
+          _vm._v("\n      icon\n      "),
+          _c("a", { attrs: { href: "https://" } }, [_vm._v("Category 4")])
+        ])
+      ]),
+      _vm._v(" "),
+      _c(
+        "h3",
+        { staticClass: "is-size-4 has-text-black-bis has-text-weight-bold" },
+        [_vm._v("Follow")]
+      ),
+      _vm._v(" "),
+      _c("ul", { staticClass: "list is-shadowless" }, [
+        _c("li", { staticClass: "list-item" }, [
+          _c("a", { attrs: { href: "https://" } }, [_vm._v("Instagram")])
+        ]),
+        _vm._v(" "),
+        _c("li", { staticClass: "list-item" }, [
+          _c("a", { attrs: { href: "https://" } }, [_vm._v("LinkedIn")])
+        ]),
+        _vm._v(" "),
+        _c("li", { staticClass: "list-item" }, [
+          _c("a", { attrs: { href: "https://" } }, [_vm._v("Twitter")])
+        ])
+      ])
+    ])
+  }
+]
 render._withStripped = true
 
 
@@ -43035,7 +43147,18 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div")
+  return _c("div", { staticClass: "container" }, [
+    _c("div", { staticClass: "columns" }, [
+      _c(
+        "div",
+        { staticClass: "column is-3" },
+        [_c("insights-sidebar-component")],
+        1
+      ),
+      _vm._v(" "),
+      _c("div", { staticClass: "column" }, [_c("insights-main-component")], 1)
+    ])
+  ])
 }
 var staticRenderFns = []
 render._withStripped = true
