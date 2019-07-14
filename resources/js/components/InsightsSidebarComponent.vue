@@ -4,19 +4,19 @@
     <ul class="list is-shadowless">
       <li class="list-item">
         icon
-        <a href="https://">Category 1</a>
+        <a href="#category-1" v-on:click="$emit('categoryChanged', '1')">Category 1</a>
       </li>
       <li class="list-item">
         icon
-        <a href="https://">Category 2</a>
+        <a href="#category-2" v-on:click="$emit('categoryChanged', '2')">Category 2</a>
       </li>
       <li class="list-item">
         icon
-        <a href="https://">Category 3</a>
+        <a href="#category-3" v-on:click="$emit('categoryChanged', '3')">Category 3</a>
       </li>
       <li class="list-item">
         icon
-        <a href="https://">Category 4</a>
+        <a href="#category-4" v-on:click="$emit('categoryChanged', '4')">Category 4</a>
       </li>
     </ul>
     <h3 class="is-size-4 has-text-black-bis has-text-weight-bold">Follow</h3>
@@ -35,7 +35,12 @@
 </template>
 
 <script>
-export default {};
+import InsightsMainComponent from "./InsightsMainComponent";
+export default {
+  extends: {
+    InsightsMainComponent
+  }
+};
 </script>
 
 <style>
