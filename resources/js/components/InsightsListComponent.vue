@@ -8,7 +8,14 @@
 
 <script>
 export default {
-  props: ["item"]
+  props: {
+    item: {
+      type: Object,
+      title: String,
+      category: String,
+      date_published: String
+    }
+  }
 };
 </script>
 

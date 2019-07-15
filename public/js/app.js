@@ -1997,7 +1997,14 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 /* harmony default export */ __webpack_exports__["default"] = ({
-  props: ["item"]
+  props: {
+    item: {
+      type: Object,
+      title: String,
+      category: String,
+      date_published: String
+    }
+  }
 });
 
 /***/ }),
@@ -2040,19 +2047,19 @@ __webpack_require__.r(__webpack_exports__);
       items: [{
         title: "cat 1",
         category: "1",
-        date_published: "Dec. 13, 2019"
+        date_published: Date()
       }, {
         title: "cat 2",
         category: "2",
-        date_published: "Dec. 13, 2019"
+        date_published: Date()
       }, {
         title: "cat 4",
         category: "4",
-        date_published: "Dec. 13, 2019"
+        date_published: Date()
       }, {
         title: "cat 3",
         category: "3",
-        date_published: "Dec. 13, 2019"
+        date_published: Date()
       }]
     };
   },
