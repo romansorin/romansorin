@@ -2334,19 +2334,24 @@ __webpack_require__.r(__webpack_exports__);
 //
 /* harmony default export */ __webpack_exports__["default"] = ({
   props: {
-    title: String,
-    subtitle: String,
-    insight: String,
-    repo: String,
-    image: String,
-    alt: String
-  },
-  methods: {
-    openModal: function openModal(event) {
-      document.querySelector('.modal').classList.add('is-active');
-      document.getElementById('modal-image').setAttribute('src', this.image);
-      document.getElementById('modal-image').setAttribute('alt', this.alt);
+    work: {
+      type: Object,
+      title: String,
+      subtitle: String,
+      repo_link: String,
+      preview_image_link: String,
+      preview_image_alt: String
     }
+  },
+  methods: {// openModal: function(event) {
+    //   document.querySelector(".modal").classList.add("is-active");
+    //   document
+    //     .getElementById("modal-image")
+    //     .setAttribute("src", this.work.preview_image_link);
+    //   document
+    //     .getElementById("modal-image")
+    //     .setAttribute("alt", this.work.preview_image_alt);
+    // }
   }
 });
 
@@ -2398,19 +2403,24 @@ __webpack_require__.r(__webpack_exports__);
 //
 /* harmony default export */ __webpack_exports__["default"] = ({
   props: {
-    title: String,
-    subtitle: String,
-    insight: String,
-    repo: String,
-    image: String,
-    alt: String
-  },
-  methods: {
-    openModal: function openModal(event) {
-      document.querySelector('.modal').classList.add('is-active');
-      document.getElementById('modal-image').setAttribute('src', this.image);
-      document.getElementById('modal-image').setAttribute('alt', this.alt);
+    work: {
+      type: Object,
+      title: String,
+      subtitle: String,
+      repo_link: String,
+      preview_image_link: String,
+      preview_image_alt: String
     }
+  },
+  methods: {// openModal: function(event) {
+    //   document.querySelector(".modal").classList.add("is-active");
+    //   document
+    //     .getElementById("modal-image")
+    //     .setAttribute("src", this.work.preview_image_link);
+    //   document
+    //     .getElementById("modal-image")
+    //     .setAttribute("alt", this.work.preview_image_alt);
+    // }
   }
 });
 
@@ -44217,59 +44227,30 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c("div", [
     _c("div", { staticClass: "tile article-tile is-child" }, [
-      _c("a", { attrs: { href: _vm.insight } }, [
+      _c("a", { attrs: { href: _vm.work.repo_link } }, [
         _c(
           "div",
           { staticClass: "article-tile-image article-tile-image--large" },
           [
             _c("figure", { staticClass: "image" }, [
-              _c("img", { attrs: { src: _vm.image, alt: _vm.alt } }),
+              _c("img", {
+                attrs: {
+                  src: _vm.work.preview_image_link,
+                  alt: _vm.work.preview_image_alt
+                }
+              }),
               _vm._v(" "),
-              _c("div", { staticClass: "image-overlay" }, [
-                _c("div", { staticClass: "columns is-mobile is-centered" }, [
-                  _c("div", { staticClass: "column is-half" }, [
-                    _c("nav", { staticClass: "level" }, [
-                      _c(
-                        "div",
-                        { staticClass: "level-item has-text-centered" },
-                        [
-                          _c(
-                            "a",
-                            {
-                              staticClass: "icon-link modal-link",
-                              on: { click: _vm.openModal }
-                            },
-                            [_c("i", { attrs: { "data-feather": "eye" } })]
-                          )
-                        ]
-                      ),
-                      _vm._v(" "),
-                      _c(
-                        "div",
-                        { staticClass: "level-item has-text-centered" },
-                        [
-                          _c(
-                            "a",
-                            {
-                              staticClass: "icon-link",
-                              attrs: { href: _vm.repo }
-                            },
-                            [_c("i", { attrs: { "data-feather": "code" } })]
-                          )
-                        ]
-                      )
-                    ])
-                  ])
-                ])
-              ])
+              _c("div", { staticClass: "image-overlay" })
             ])
           ]
         ),
         _vm._v(" "),
         _c("div", { staticClass: "article-title-info" }, [
-          _c("p", { staticClass: "title" }, [_vm._v(_vm._s(_vm.title))]),
+          _c("p", { staticClass: "title" }, [_vm._v(_vm._s(_vm.work.title))]),
           _vm._v(" "),
-          _c("p", { staticClass: "subtitle" }, [_vm._v(_vm._s(_vm.subtitle))])
+          _c("p", { staticClass: "subtitle" }, [
+            _vm._v(_vm._s(_vm.work.subtitle))
+          ])
         ])
       ])
     ])
@@ -44299,59 +44280,30 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c("div", [
     _c("div", { staticClass: "tile article-tile is-child" }, [
-      _c("a", { attrs: { href: _vm.insight } }, [
+      _c("a", { attrs: { href: _vm.work.repo_link } }, [
         _c(
           "div",
           { staticClass: "article-tile-image article-tile-image--small" },
           [
             _c("figure", { staticClass: "image" }, [
-              _c("img", { attrs: { src: _vm.image, alt: _vm.alt } }),
+              _c("img", {
+                attrs: {
+                  src: _vm.work.preview_image_link,
+                  alt: _vm.work.preview_image_alt
+                }
+              }),
               _vm._v(" "),
-              _c("div", { staticClass: "image-overlay" }, [
-                _c("div", { staticClass: "columns is-mobile is-centered" }, [
-                  _c("div", { staticClass: "column is-half" }, [
-                    _c("nav", { staticClass: "level" }, [
-                      _c(
-                        "div",
-                        { staticClass: "level-item has-text-centered" },
-                        [
-                          _c(
-                            "a",
-                            {
-                              staticClass: "icon-link modal-link",
-                              on: { click: _vm.openModal }
-                            },
-                            [_c("i", { attrs: { "data-feather": "eye" } })]
-                          )
-                        ]
-                      ),
-                      _vm._v(" "),
-                      _c(
-                        "div",
-                        { staticClass: "level-item has-text-centered" },
-                        [
-                          _c(
-                            "a",
-                            {
-                              staticClass: "icon-link",
-                              attrs: { href: _vm.repo }
-                            },
-                            [_c("i", { attrs: { "data-feather": "code" } })]
-                          )
-                        ]
-                      )
-                    ])
-                  ])
-                ])
-              ])
+              _c("div", { staticClass: "image-overlay" })
             ])
           ]
         ),
         _vm._v(" "),
         _c("div", { staticClass: "article-title-info" }, [
-          _c("p", { staticClass: "title" }, [_vm._v(_vm._s(_vm.title))]),
+          _c("p", { staticClass: "title" }, [_vm._v(_vm._s(_vm.work.title))]),
           _vm._v(" "),
-          _c("p", { staticClass: "subtitle" }, [_vm._v(_vm._s(_vm.subtitle))])
+          _c("p", { staticClass: "subtitle" }, [
+            _vm._v(_vm._s(_vm.work.subtitle))
+          ])
         ])
       ])
     ])
