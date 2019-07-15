@@ -6,14 +6,13 @@
         color: $hover-blue-alt;
     }
 
-    .list {
-        padding-top: 1.5rem;
-        padding-bottom: 3.5rem;
+    .dropdown-item {
+        padding: 0.75rem 1rem;
     }
 
     .list-item {
-        padding-left: 0;
         border-bottom: none;
+        padding-left: 0;
 
         a {
             transition: .3s ease;
@@ -23,4 +22,11 @@
             }
         }
     }
+
+    .list {
+        padding-top: 1.5rem;
+        padding-bottom: 3.5rem;
+    }
 }
+
+#insights-sidebar-desktop {}
