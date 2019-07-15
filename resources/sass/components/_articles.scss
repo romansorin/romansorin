@@ -2,7 +2,9 @@
 
 .insight-article {
     padding: 2.35rem;
-
+    @media screen and (max-width: 1023px) {
+        padding-left: 0;
+    }
 }
 
 .insight-articles-wrapper {
@@ -24,4 +26,9 @@
 
     }
 
+}
+
+#insights-article-return {
+    border-bottom: 2px solid $main-text-black;
+    padding-bottom: 25px;
 }
