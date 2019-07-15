@@ -1,0 +1,26 @@
+.insights-sidebar {
+    .feather {
+        position: relative;
+        top: 4px;
+        margin-right: 12px;
+        color: $hover-blue-alt;
+    }
+
+    .list {
+        padding-top: 1.5rem;
+        padding-bottom: 3.5rem;
+    }
+
+    .list-item {
+        padding-left: 0;
+        border-bottom: none;
+
+        a {
+            transition: .3s ease;
+
+            &:hover {
+                color: $hover-blue-alt !important;
+            }
+        }
+    }
+}
