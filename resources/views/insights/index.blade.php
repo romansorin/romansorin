@@ -24,4 +24,23 @@ Insights from Roman Sorin.
 <section class="section">
     <insights-wrapper-component></insights-wrapper-component>
 </section>
+<section class="section is-medium has-background-black-bis has-text-centered is-hidden-desktop">
+    <div class="container">
+        <h1 class="has-text-white has-text-weight-semibold is-size-1">Like what you see?</h1>
+        <h2 class="has-text-white has-text-weight-light is-size-3">Follow me on:</h2>
+        <nav class="level is-mobile" id="insights-social-nav">
+            <div class="level-item"></div>
+            <div class="level-item has-text-centered">
+                <a href="https://instagram.com/romansorinn"><i data-feather="instagram" class="icon is-medium"></i></a>
+            </div>
+            <div class="level-item has-text-centered">
+                <a href="https://linkedin.com/in/romansorin"><i data-feather="linkedin" class="icon is-medium"></i></a>
+            </div>
+            <div class="level-item has-text-centered">
+                <a href="https://twitter.com/romansorinn"><i data-feather="twitter" class="icon is-medium"></i></a>
+            </div>
+            <div class="level-item"></div>
+        </nav>
+    </div>
+</section>
 @endsection
