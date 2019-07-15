@@ -5,32 +5,32 @@
       <li class="list-item">
         <i data-feather="layers"></i>
         <a
-          href="#development"
-          v-on:click="$emit('categoryChanged', 'development')"
+          href="javascript:;"
+          v-on:click="$emit('categoryChanged', 'development'); return false;"
           class="has-text-black-ter"
         >Development</a>
       </li>
       <li class="list-item">
         <i data-feather="layout"></i>
         <a
-          href="#design"
-          v-on:click="$emit('categoryChanged', 'design')"
+          href="javascript:;"
+          v-on:click="$emit('categoryChanged', 'design'); return false;"
           class="has-text-black-ter"
         >Design</a>
       </li>
       <li class="list-item">
         <i data-feather="briefcase"></i>
         <a
-          href="#business"
-          v-on:click="$emit('categoryChanged', 'business')"
+          href="javascript:;"
+          v-on:click="$emit('categoryChanged', 'business'); return false;"
           class="has-text-black-ter"
         >Business</a>
       </li>
       <li class="list-item">
         <i data-feather="coffee"></i>
         <a
-          href="#personal"
-          v-on:click="$emit('categoryChanged', 'personal')"
+          href="javascript:;"
+          v-on:click="$emit('categoryChanged', 'personal'); return false;"
           class="has-text-black-ter"
         >Personal</a>
       </li>

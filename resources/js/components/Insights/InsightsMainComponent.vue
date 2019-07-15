@@ -1,13 +1,22 @@
 <template>
   <div class="columns is-multiline">
     <div class="column is-3 is-hidden-touch">
-      <InsightsSidebarComponent v-on:categoryChanged="setCategory($event)" />
+      <InsightsSidebarComponent v-on:categoryChanged="setCategory($event); return false;" />
     </div>
     <div class="column is-hidden-desktop is-12">
-      <InsightsMobileComponent v-on:categoryChanged="setCategory($event)" />
+      <InsightsMobileComponent v-on:categoryChanged="setCategory($event); return false;" />
     </div>
     <div class="column">
-      <main class="insight-articles-wrapper">
+      <main class="insight-articles-wrapper" v-if="selectedCategory == ''">
+        <InsightsListComponent
+          v-for="(item, index) in filteredItems"
+          v-bind:item="item"
+          v-bind:index="index"
+          v-bind:key="item.id"
+        />
+      </main>
+      <main class="insight-articles-wrapper" v-else>
+        <a href="javascript:;" v-on:click="resetFilter(); return false;">Reset filter</a>
         <InsightsListComponent
           v-for="(item, index) in filteredItems"
           v-bind:item="item"
@@ -70,9 +79,19 @@ export default {
             item.category.toLowerCase() == this.selectedCategory.toLowerCase()
           );
         });
+    },
+    resetFilter() {
+      if (this.selectedCategory !== "") {
+        this.setCategory("");
+        this.filteredItems();
+      }
     }
   },
-  components: { InsightsSidebarComponent, InsightsMainComponent, InsightsMobileComponent }
+  components: {
+    InsightsSidebarComponent,
+    InsightsMainComponent,
+    InsightsMobileComponent
+  }
 };
 </script>
 
