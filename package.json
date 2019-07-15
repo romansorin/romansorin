@@ -16,7 +16,7 @@
         "cross-env": "^5.1",
         "jquery": "^3.4.0",
         "laravel-mix": "^4.0.7",
-        "lodash": "^4.17.5",
+        "lodash": "^4.17.13",
         "popper.js": "^1.15.0",
         "resolve-url-loader": "^2.3.1",
         "sass": "^1.19.0",
@@ -30,6 +30,7 @@
         "glider-js": "^1.6.6",
         "hamburgers": "^1.1.3",
         "hover.css": "^2.3.2",
+        "moment": "^2.24.0",
         "vue-clazy-load": "^0.4.2"
     }
 }

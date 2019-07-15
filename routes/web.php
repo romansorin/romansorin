@@ -19,7 +19,13 @@ Route::get('/insights', function () {
 });
 Route::get('/works', 'WorkController@index');
 
+Route::get('/terms', function () {
+    return view('terms');
+});
 
+Route::get('/privacy', function () {
+    return view('privacy');
+});
 
 // Auth::routes();
 
