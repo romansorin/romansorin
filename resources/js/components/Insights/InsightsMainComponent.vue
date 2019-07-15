@@ -41,30 +41,30 @@ export default {
     return {
       selectedCategory: "",
       items: [
-        {
-          title: "Lorem ipsum development mething",
-          category: "Development",
-          date_published: Date(),
-          link: ""
-        },
-        {
-          title: "Dolor design blah blah",
-          category: "Design",
-          date_published: Date(),
-          link: ""
-        },
-        {
-          title: "For whatever reason, personal life on a portfolio",
-          category: "Personal",
-          date_published: Date(),
-          link: ""
-        },
-        {
-          title: "Something something wantepreneur?",
-          category: "Business",
-          date_published: Date(),
-          link: ""
-        }
+        // {
+        //   title: "Lorem ipsum development mething",
+        //   category: "Development",
+        //   date_published: Date(),
+        //   link: ""
+        // },
+        // {
+        //   title: "Dolor design blah blah",
+        //   category: "Design",
+        //   date_published: Date(),
+        //   link: ""
+        // },
+        // {
+        //   title: "For whatever reason, personal life on a portfolio",
+        //   category: "Personal",
+        //   date_published: Date(),
+        //   link: ""
+        // },
+        // {
+        //   title: "Something something wantepreneur?",
+        //   category: "Business",
+        //   date_published: Date(),
+        //   link: ""
+        // }
       ]
     };
   },
