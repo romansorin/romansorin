@@ -25311,6 +25311,12 @@ input[type=range].slider.is-danger .has-output-tooltip + output {
   padding: 2.35rem;
 }
 
+@media screen and (max-width: 1023px) {
+  .insight-article {
+    padding-left: 0;
+  }
+}
+
 .insight-articles-wrapper article:not(:last-child) {
   border-bottom: 1px #3273dc solid;
 }
@@ -25326,6 +25332,11 @@ input[type=range].slider.is-danger .has-output-tooltip + output {
 
 .insight-article-title a:hover {
   color: #333;
+}
+
+#insights-article-return {
+  border-bottom: 2px solid #333;
+  padding-bottom: 25px;
 }
 
 .hero-wrapper {
@@ -25410,6 +25421,10 @@ input[type=range].slider.is-danger .has-output-tooltip + output {
 
 .insights-sidebar .dropdown-item {
   padding: 0.75rem 1rem;
+}
+
+.insights-sidebar .dropdown-trigger {
+  margin-bottom: 50px;
 }
 
 .insights-sidebar .list-item {

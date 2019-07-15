@@ -1926,6 +1926,11 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
 
 
 
@@ -2045,7 +2050,17 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-/* harmony default export */ __webpack_exports__["default"] = ({});
+//
+//
+//
+//
+/* harmony default export */ __webpack_exports__["default"] = ({
+  data: function data() {
+    return {
+      expanded: false
+    };
+  }
+});
 
 /***/ }),
 
@@ -43706,31 +43721,38 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("article", { staticClass: "insight-article" }, [
-    _c(
-      "h4",
-      { staticClass: "has-text-grey-dark insight-article-category is-size-5" },
-      [_vm._v(_vm._s(_vm._f("capitalize")(_vm.item.category)))]
-    ),
-    _vm._v(" "),
-    _c(
-      "h2",
-      {
-        staticClass: "insight-article-title is-size-3 has-text-weight-semibold"
-      },
-      [
-        _c("a", { attrs: { href: _vm.item.link } }, [
-          _vm._v(_vm._s(_vm.item.title))
-        ])
-      ]
-    ),
-    _vm._v(" "),
-    _c(
-      "p",
-      { staticClass: "has-text-weight-light insight-article-date is-size-6" },
-      [_vm._v(_vm._s(_vm.item.date_published))]
-    )
-  ])
+  return _vm.item
+    ? _c("article", { staticClass: "insight-article" }, [
+        _c(
+          "h4",
+          {
+            staticClass: "has-text-grey-dark insight-article-category is-size-5"
+          },
+          [_vm._v(_vm._s(_vm._f("capitalize")(_vm.item.category)))]
+        ),
+        _vm._v(" "),
+        _c(
+          "h2",
+          {
+            staticClass:
+              "insight-article-title is-size-3 has-text-weight-semibold"
+          },
+          [
+            _c("a", { attrs: { href: _vm.item.link } }, [
+              _vm._v(_vm._s(_vm.item.title))
+            ])
+          ]
+        ),
+        _vm._v(" "),
+        _c(
+          "p",
+          {
+            staticClass: "has-text-weight-light insight-article-date is-size-6"
+          },
+          [_vm._v(_vm._s(_vm.item.date_published))]
+        )
+      ])
+    : _vm._e()
 }
 var staticRenderFns = []
 render._withStripped = true
@@ -43790,30 +43812,58 @@ var render = function() {
         "main",
         { staticClass: "insight-articles-wrapper" },
         [
-          _c(
-            "a",
-            {
-              staticClass:
-                "is-size-3 has-text-black-bis has-text-weight-semibold",
-              attrs: { href: "javascript:;" },
-              on: {
-                click: function($event) {
-                  return _vm.resetFilter()
-                }
-              }
-            },
-            [
-              _c("i", { attrs: { "data-feather": "x-circle" } }),
-              _vm._v("Back\n      ")
-            ]
-          ),
+          _vm.selectedCategory !== ""
+            ? _c(
+                "h3",
+                {
+                  staticClass:
+                    "is-size-3 has-text-black-bis has-text-weight-semibold",
+                  attrs: { id: "insights-article-return" }
+                },
+                [
+                  _vm._v(
+                    '\n        Showing results for "' +
+                      _vm._s(_vm._f("capitalize")(_vm.selectedCategory)) +
+                      '".\n        '
+                  ),
+                  _c(
+                    "a",
+                    {
+                      attrs: { href: "javascript:;" },
+                      on: {
+                        click: function($event) {
+                          return _vm.resetFilter()
+                        }
+                      }
+                    },
+                    [
+                      _c("i", { attrs: { "data-feather": "x" } }),
+                      _vm._v("Go Back")
+                    ]
+                  )
+                ]
+              )
+            : _vm._e(),
           _vm._v(" "),
           _vm._l(_vm.filteredItems, function(item, index) {
             return _c("InsightsListComponent", {
               key: item.id,
               attrs: { item: item, index: index }
             })
-          })
+          }),
+          _vm._v(" "),
+          _vm.items.length === 0
+            ? _c("article", { staticClass: "insight-article" }, [
+                _c(
+                  "h2",
+                  {
+                    staticClass:
+                      "insight-article-title is-size-3 has-text-weight-semibold"
+                  },
+                  [_vm._v("Nothing to see here! Try checking back later :)")]
+                )
+              ])
+            : _vm._e()
         ],
         2
       )
@@ -43842,94 +43892,106 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "dropdown is-active insights-sidebar" }, [
-    _vm._m(0),
-    _vm._v(" "),
-    _c(
-      "div",
-      {
-        staticClass: "dropdown-menu",
-        attrs: { id: "dropdown-menu", role: "menu" }
-      },
-      [
-        _c(
-          "div",
-          {
-            staticClass: "dropdown-content is-size-5 has-text-weight-semibold"
-          },
-          [
-            _c(
-              "a",
-              {
-                staticClass: "has-text-black-ter dropdown-item",
-                attrs: { href: "#development" },
-                on: {
-                  click: function($event) {
-                    return _vm.$emit("categoryChanged", "development")
+  return _c(
+    "div",
+    {
+      staticClass: "dropdown insights-sidebar",
+      class: { "is-active": _vm.expanded },
+      on: {
+        click: function($event) {
+          _vm.expanded = !_vm.expanded
+        }
+      }
+    },
+    [
+      _vm._m(0),
+      _vm._v(" "),
+      _c(
+        "div",
+        {
+          staticClass: "dropdown-menu",
+          attrs: { id: "dropdown-menu", role: "menu" }
+        },
+        [
+          _c(
+            "div",
+            {
+              staticClass: "dropdown-content is-size-5 has-text-weight-semibold"
+            },
+            [
+              _c(
+                "a",
+                {
+                  staticClass: "has-text-black-ter dropdown-item",
+                  attrs: { href: "javascript:;" },
+                  on: {
+                    click: function($event) {
+                      return _vm.$emit("categoryChanged", "development")
+                    }
                   }
-                }
-              },
-              [
-                _c("i", { attrs: { "data-feather": "layers" } }),
-                _vm._v("\n        Development\n      ")
-              ]
-            ),
-            _vm._v(" "),
-            _c(
-              "a",
-              {
-                staticClass: "has-text-black-ter dropdown-item",
-                attrs: { href: "#design" },
-                on: {
-                  click: function($event) {
-                    return _vm.$emit("categoryChanged", "design")
+                },
+                [
+                  _c("i", { attrs: { "data-feather": "layers" } }),
+                  _vm._v("\n        Development\n      ")
+                ]
+              ),
+              _vm._v(" "),
+              _c(
+                "a",
+                {
+                  staticClass: "has-text-black-ter dropdown-item",
+                  attrs: { href: "javascript:;" },
+                  on: {
+                    click: function($event) {
+                      return _vm.$emit("categoryChanged", "design")
+                    }
                   }
-                }
-              },
-              [
-                _c("i", { attrs: { "data-feather": "layout" } }),
-                _vm._v("\n        Design\n      ")
-              ]
-            ),
-            _vm._v(" "),
-            _c(
-              "a",
-              {
-                staticClass: "has-text-black-ter dropdown-item",
-                attrs: { href: "#business" },
-                on: {
-                  click: function($event) {
-                    return _vm.$emit("categoryChanged", "business")
+                },
+                [
+                  _c("i", { attrs: { "data-feather": "layout" } }),
+                  _vm._v("\n        Design\n      ")
+                ]
+              ),
+              _vm._v(" "),
+              _c(
+                "a",
+                {
+                  staticClass: "has-text-black-ter dropdown-item",
+                  attrs: { href: "javascript:;" },
+                  on: {
+                    click: function($event) {
+                      return _vm.$emit("categoryChanged", "business")
+                    }
                   }
-                }
-              },
-              [
-                _c("i", { attrs: { "data-feather": "briefcase" } }),
-                _vm._v("\n        Business\n      ")
-              ]
-            ),
-            _vm._v(" "),
-            _c(
-              "a",
-              {
-                staticClass: "has-text-black-ter dropdown-item",
-                attrs: { href: "#personal" },
-                on: {
-                  click: function($event) {
-                    return _vm.$emit("categoryChanged", "personal")
+                },
+                [
+                  _c("i", { attrs: { "data-feather": "briefcase" } }),
+                  _vm._v("\n        Business\n      ")
+                ]
+              ),
+              _vm._v(" "),
+              _c(
+                "a",
+                {
+                  staticClass: "has-text-black-ter dropdown-item",
+                  attrs: { href: "javascript:;" },
+                  on: {
+                    click: function($event) {
+                      return _vm.$emit("categoryChanged", "personal")
+                    }
                   }
-                }
-              },
-              [
-                _c("i", { attrs: { "data-feather": "coffee" } }),
-                _vm._v("\n        Personal\n      ")
-              ]
-            )
-          ]
-        )
-      ]
-    )
-  ])
+                },
+                [
+                  _c("i", { attrs: { "data-feather": "coffee" } }),
+                  _vm._v("\n        Personal\n      ")
+                ]
+              )
+            ]
+          )
+        ]
+      )
+    ]
+  )
 }
 var staticRenderFns = [
   function() {
@@ -43944,12 +44006,12 @@ var staticRenderFns = [
           attrs: { "aria-haspopup": "true", "aria-controls": "dropdown-menu" }
         },
         [
-          _c("span", [_vm._v("Dropdown button")]),
+          _c("span", [_vm._v("Choose a category...")]),
           _vm._v(" "),
-          _c("span", { staticClass: "icon is-small" }, [
+          _c("span", { staticClass: "icon" }, [
             _c("i", {
-              staticClass: "fas fa-angle-down",
-              attrs: { "aria-hidden": "true" }
+              staticStyle: { "margin-right": "0", top: "1px" },
+              attrs: { "data-feather": "chevron-down" }
             })
           ])
         ]
