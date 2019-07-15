@@ -1996,13 +1996,18 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   props: {
     item: {
       type: Object,
       title: String,
       category: String,
-      date_published: String
+      date_published: String,
+      link: String
     }
   }
 });
@@ -2045,21 +2050,25 @@ __webpack_require__.r(__webpack_exports__);
     return {
       selectedCategory: "",
       items: [{
-        title: "cat 1",
-        category: "1",
-        date_published: Date()
+        title: "Lorem ipsum development mething",
+        category: "Development",
+        date_published: Date(),
+        link: ""
       }, {
-        title: "cat 2",
-        category: "2",
-        date_published: Date()
+        title: "Dolor design blah blah",
+        category: "Design",
+        date_published: Date(),
+        link: ""
       }, {
-        title: "cat 4",
-        category: "4",
-        date_published: Date()
+        title: "For whatever reason, personal life on a portfolio",
+        category: "Personal",
+        date_published: Date(),
+        link: ""
       }, {
-        title: "cat 3",
-        category: "3",
-        date_published: Date()
+        title: "Something something wantepreneur?",
+        category: "Business",
+        date_published: Date(),
+        link: ""
       }]
     };
   },
@@ -43094,12 +43103,30 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("article", [
-    _c("p", [_vm._v(_vm._s(_vm.item.category))]),
+  return _c("article", { staticClass: "insight-article" }, [
+    _c(
+      "h4",
+      { staticClass: "has-text-grey-dark insight-article-category is-size-5" },
+      [_vm._v(_vm._s(_vm.item.category))]
+    ),
     _vm._v(" "),
-    _c("p", [_vm._v(_vm._s(_vm.item.title))]),
+    _c(
+      "h2",
+      {
+        staticClass: "insight-article-title is-size-3 has-text-weight-semibold"
+      },
+      [
+        _c("a", { attrs: { href: _vm.item.link } }, [
+          _vm._v(_vm._s(_vm.item.title))
+        ])
+      ]
+    ),
     _vm._v(" "),
-    _c("p", [_vm._v(_vm._s(_vm.item.date_published))])
+    _c(
+      "p",
+      { staticClass: "has-text-weight-light insight-article-date is-size-6" },
+      [_vm._v(_vm._s(_vm.item.date_published))]
+    )
   ])
 }
 var staticRenderFns = []
@@ -43143,6 +43170,7 @@ var render = function() {
     _c("div", { staticClass: "column" }, [
       _c(
         "main",
+        { staticClass: "insight-articles-wrapper" },
         _vm._l(_vm.filteredItems, function(item, index) {
           return _c("InsightsListComponent", {
             key: item.id,

@@ -27410,6 +27410,29 @@ input[type=range].slider.is-danger .has-output-tooltip + output {
   background-color: transparent !important;
 }
 
+/* Implement AB testing for these */
+
+.insight-article {
+  padding: 2.35rem;
+}
+
+.insight-articles-wrapper article:not(:last-child) {
+  border-bottom: 1px #3273dc solid;
+}
+
+.insight-article-title {
+  margin-bottom: 5px;
+}
+
+.insight-article-title a {
+  color: #3273dc;
+  transition: 0.225s ease;
+}
+
+.insight-article-title a:hover {
+  color: #333;
+}
+
 .hero-wrapper {
   font-family: "Poppins", sans-serif;
   padding-top: 130px;
