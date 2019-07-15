@@ -25373,10 +25373,16 @@ input[type=range].slider.is-danger .has-output-tooltip + output {
   font-family: "Poppins", sans-serif;
   padding-top: 60px;
   padding-bottom: 0;
+  padding-left: 12px;
+  padding-right: 12px;
 }
 
 .header-wrapper .hamburger {
   margin-left: auto;
+}
+
+.header-wrapper .hamburger-box {
+  top: 13px;
 }
 
 .header-wrapper .hamburger-box:focus {
@@ -25467,6 +25473,10 @@ input[type=range].slider.is-danger .has-output-tooltip + output {
   color: #3273dc;
 }
 
+#modal-image {
+  height: auto;
+}
+
 .modal-content {
   box-shadow: rgba(0, 0, 0, 0.22) 2px 3px 20px 0px;
 }
@@ -25506,13 +25516,14 @@ input[type=range].slider.is-danger .has-output-tooltip + output {
 @media screen and (max-width: 767.98px) {
   .tile .article-tile .image-overlay {
     width: auto;
-    height: 300px;
+    height: 100%;
+    max-height: 300px;
   }
 }
 
 @media screen and (max-width: 1215px) {
   .tile .article-tile .image-overlay {
-    height: 300px;
+    max-height: 300px;
   }
 }
 
@@ -25556,20 +25567,21 @@ input[type=range].slider.is-danger .has-output-tooltip + output {
 @media screen and (max-width: 767.98px) {
   .tile .article-tile .article-tile-image--large {
     width: auto;
-    height: 300px;
+    height: 100%;
+    max-height: 300px;
   }
 }
 
 @media screen and (max-width: 1215px) {
   .tile .article-tile .article-tile-image--large {
-    height: 300px;
+    max-height: 300px;
   }
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1215.98px) {
   .tile .article-tile .article-tile-image--large {
     width: auto;
-    height: 300px;
+    height: 100%;
   }
 }
 
@@ -25586,7 +25598,8 @@ input[type=range].slider.is-danger .has-output-tooltip + output {
 @media screen and (max-width: 767.98px) {
   .tile .article-tile .article-tile-image--small {
     width: auto;
-    height: 300px;
+    height: 100%;
+    max-height: 300px;
   }
 }
 
@@ -25599,13 +25612,13 @@ input[type=range].slider.is-danger .has-output-tooltip + output {
 @media screen and (min-width: 1024px) and (max-width: 1215.98px) {
   .tile .article-tile .article-tile-image--small {
     width: auto;
-    height: 300px;
+    height: 100%;
   }
 }
 
 @media screen and (max-width: 1215px) {
   .tile .article-tile .article-tile-image--small {
-    height: 300px;
+    max-height: 300px;
   }
 }
 
@@ -25631,6 +25644,10 @@ input[type=range].slider.is-danger .has-output-tooltip + output {
 
 .article-container .columns {
   width: 100%;
+}
+
+.image {
+  overflow: hidden;
 }
 
 #about-quote {

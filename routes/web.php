@@ -17,8 +17,14 @@ Route::get('/contact', function () {
 Route::get('/insights', function () {
     return view('insights.index');
 });
-Route::get('/works', function () {
-    return view('works');
+Route::get('/works', 'WorkController@index');
+
+Route::get('/terms', function () {
+    return view('terms');
+});
+
+Route::get('/privacy', function () {
+    return view('privacy');
 });
 
 // Auth::routes();

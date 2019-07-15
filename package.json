@@ -30,6 +30,7 @@
         "glider-js": "^1.6.6",
         "hamburgers": "^1.1.3",
         "hover.css": "^2.3.2",
+        "moment": "^2.24.0",
         "vue-clazy-load": "^0.4.2"
     }
 }
