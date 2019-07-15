@@ -1,8 +1,12 @@
 <template>
-  <article>
-    <p>{{item.category}}</p>
-    <p>{{item.title}}</p>
-    <p>{{item.date_published}}</p>
+  <article class="insight-article">
+    <h4 class="has-text-grey-dark insight-article-category is-size-5">{{item.category }}</h4>
+    <h2 class="insight-article-title is-size-3 has-text-weight-semibold">
+      <a v-bind:href="item.link">{{item.title}}</a>
+    </h2>
+    <p
+      class="has-text-weight-light insight-article-date is-size-6"
+    >{{item.date_published}}</p>
   </article>
 </template>
 
@@ -13,7 +17,8 @@ export default {
       type: Object,
       title: String,
       category: String,
-      date_published: String
+      date_published: String,
+      link: String
     }
   }
 };
