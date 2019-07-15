@@ -25408,14 +25408,13 @@ input[type=range].slider.is-danger .has-output-tooltip + output {
   color: #3273dc;
 }
 
-.insights-sidebar .list {
-  padding-top: 1.5rem;
-  padding-bottom: 3.5rem;
+.insights-sidebar .dropdown-item {
+  padding: 0.75rem 1rem;
 }
 
 .insights-sidebar .list-item {
-  padding-left: 0;
   border-bottom: none;
+  padding-left: 0;
 }
 
 .insights-sidebar .list-item a {
@@ -25424,6 +25423,11 @@ input[type=range].slider.is-danger .has-output-tooltip + output {
 
 .insights-sidebar .list-item a:hover {
   color: #3273dc !important;
+}
+
+.insights-sidebar .list {
+  padding-top: 1.5rem;
+  padding-bottom: 3.5rem;
 }
 
 #values-section-content .column {
