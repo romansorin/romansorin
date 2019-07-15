@@ -1,6 +1,6 @@
 <template>
   <div class="columns">
-    <div class="column is-3">
+    <div class="column is-3 is-hidden-mobile">
       <InsightsSidebarComponent v-on:categoryChanged="setCategory($event)" />
     </div>
     <div class="column">
@@ -42,7 +42,7 @@ export default {
       if (this.selectedCategory == "") return this.items;
       else
         return this.items.filter(item => {
-          return item.category == this.selectedCategory;
+          return item.category.toLowerCase() == this.selectedCategory.toLowerCase();
         });
     }
   },
