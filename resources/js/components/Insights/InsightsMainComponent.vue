@@ -1,22 +1,20 @@
 <template>
   <div class="columns is-multiline">
     <div class="column is-3 is-hidden-touch">
-      <InsightsSidebarComponent v-on:categoryChanged="setCategory($event); return false;" />
+      <InsightsSidebarComponent v-on:categoryChanged="setCategory($event)" />
     </div>
     <div class="column is-hidden-desktop is-12">
-      <InsightsMobileComponent v-on:categoryChanged="setCategory($event); return false;" />
+      <InsightsMobileComponent v-on:categoryChanged="setCategory($event)" />
     </div>
     <div class="column">
-      <main class="insight-articles-wrapper" v-if="selectedCategory == ''">
-        <InsightsListComponent
-          v-for="(item, index) in filteredItems"
-          v-bind:item="item"
-          v-bind:index="index"
-          v-bind:key="item.id"
-        />
-      </main>
-      <main class="insight-articles-wrapper" v-else>
-        <a href="javascript:;" v-on:click="resetFilter(); return false;">Reset filter</a>
+      <main class="insight-articles-wrapper">
+        <a
+          href="javascript:;"
+          v-on:click="resetFilter();"
+          class="is-size-3 has-text-black-bis has-text-weight-semibold"
+        >
+          <i data-feather="x-circle"></i>Back
+        </a>
         <InsightsListComponent
           v-for="(item, index) in filteredItems"
           v-bind:item="item"
@@ -68,6 +66,11 @@ export default {
   methods: {
     setCategory(category) {
       this.selectedCategory = category;
+    },
+    resetFilter() {
+      if (this.selectedCategory !== "") {
+        this.setCategory("");
+      }
     }
   },
   computed: {
@@ -79,12 +82,6 @@ export default {
             item.category.toLowerCase() == this.selectedCategory.toLowerCase()
           );
         });
-    },
-    resetFilter() {
-      if (this.selectedCategory !== "") {
-        this.setCategory("");
-        this.filteredItems();
-      }
     }
   },
   components: {

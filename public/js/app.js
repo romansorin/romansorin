@@ -1926,8 +1926,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
 
 
 
@@ -1961,6 +1959,11 @@ __webpack_require__.r(__webpack_exports__);
   methods: {
     setCategory: function setCategory(category) {
       this.selectedCategory = category;
+    },
+    resetFilter: function resetFilter() {
+      if (this.selectedCategory !== "") {
+        this.setCategory("");
+      }
     }
   },
   computed: {
@@ -1970,12 +1973,6 @@ __webpack_require__.r(__webpack_exports__);
       if (this.selectedCategory == "") return this.items;else return this.items.filter(function (item) {
         return item.category.toLowerCase() == _this.selectedCategory.toLowerCase();
       });
-    },
-    resetFilter: function resetFilter() {
-      if (this.selectedCategory !== "") {
-        this.setCategory("");
-        this.filteredItems();
-      }
     }
   },
   components: {
@@ -43765,8 +43762,7 @@ var render = function() {
         _c("InsightsSidebarComponent", {
           on: {
             categoryChanged: function($event) {
-              _vm.setCategory($event)
-              return false
+              return _vm.setCategory($event)
             }
           }
         })
@@ -43781,8 +43777,7 @@ var render = function() {
         _c("InsightsMobileComponent", {
           on: {
             categoryChanged: function($event) {
-              _vm.setCategory($event)
-              return false
+              return _vm.setCategory($event)
             }
           }
         })
@@ -43791,45 +43786,37 @@ var render = function() {
     ),
     _vm._v(" "),
     _c("div", { staticClass: "column" }, [
-      _vm.selectedCategory == ""
-        ? _c(
-            "main",
-            { staticClass: "insight-articles-wrapper" },
-            _vm._l(_vm.filteredItems, function(item, index) {
-              return _c("InsightsListComponent", {
-                key: item.id,
-                attrs: { item: item, index: index }
-              })
-            }),
-            1
-          )
-        : _c(
-            "main",
-            { staticClass: "insight-articles-wrapper" },
+      _c(
+        "main",
+        { staticClass: "insight-articles-wrapper" },
+        [
+          _c(
+            "a",
+            {
+              staticClass:
+                "is-size-3 has-text-black-bis has-text-weight-semibold",
+              attrs: { href: "javascript:;" },
+              on: {
+                click: function($event) {
+                  return _vm.resetFilter()
+                }
+              }
+            },
             [
-              _c(
-                "a",
-                {
-                  attrs: { href: "javascript:;" },
-                  on: {
-                    click: function($event) {
-                      _vm.resetFilter()
-                      return false
-                    }
-                  }
-                },
-                [_vm._v("Reset filter")]
-              ),
-              _vm._v(" "),
-              _vm._l(_vm.filteredItems, function(item, index) {
-                return _c("InsightsListComponent", {
-                  key: item.id,
-                  attrs: { item: item, index: index }
-                })
-              })
-            ],
-            2
-          )
+              _c("i", { attrs: { "data-feather": "x-circle" } }),
+              _vm._v("Back\n      ")
+            ]
+          ),
+          _vm._v(" "),
+          _vm._l(_vm.filteredItems, function(item, index) {
+            return _c("InsightsListComponent", {
+              key: item.id,
+              attrs: { item: item, index: index }
+            })
+          })
+        ],
+        2
+      )
     ])
   ])
 }
