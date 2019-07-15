@@ -4,7 +4,7 @@
       <InsightsSidebarComponent v-on:categoryChanged="setCategory($event)" />
     </div>
     <div class="column">
-      <main>
+      <main class="insight-articles-wrapper">
         <InsightsListComponent
           v-for="(item, index) in filteredItems"
           v-bind:item="item"
@@ -25,10 +25,10 @@ export default {
     return {
       selectedCategory: "",
       items: [
-        { title: "cat 1", category: "1", date_published: Date() },
-        { title: "cat 2", category: "2", date_published: Date() },
-        { title: "cat 4", category: "4", date_published: Date() },
-        { title: "cat 3", category: "3", date_published: Date() }
+        { title: "Lorem ipsum development mething", category: "Development", date_published: Date(), link: "" },
+        { title: "Dolor design blah blah", category: "Design", date_published: Date(), link: "" },
+        { title: "For whatever reason, personal life on a portfolio", category: "Personal", date_published: Date(), link: "" },
+        { title: "Something something wantepreneur?", category: "Business", date_published: Date(), link: "" }
       ]
     };
   },
