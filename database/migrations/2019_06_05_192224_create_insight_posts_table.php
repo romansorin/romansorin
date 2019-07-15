@@ -17,6 +17,7 @@ class CreateInsightPostsTable extends Migration
             $table->bigIncrements('id');
             $table->string('title');
             $table->string('subtitle')->nullable();
+            $table->string('category')->nullable();
             $table->date('date_published')->nullable();
             $table->text('content');
             $table->timestamps();
