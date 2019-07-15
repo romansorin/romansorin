@@ -25423,7 +25423,7 @@ input[type=range].slider.is-danger .has-output-tooltip + output {
   padding: 0.75rem 1rem;
 }
 
-.insights-sidebar .dropdown-trigger {
+.insights-sidebar .dropdown {
   margin-bottom: 50px;
 }
 
