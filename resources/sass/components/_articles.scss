@@ -1,0 +1,32 @@
+@import "../base/colors";
+
+.insight-article {
+    padding: 2.35rem;
+
+}
+
+.insight-articles-wrapper {
+    article:not(:last-child) {
+        border-bottom: 1px $hover-blue-alt solid;
+    }
+}
+
+
+.insight-article-category {}
+
+.insight-article-title {
+    margin-bottom: 5px;
+
+    a {
+        color: $hover-blue-alt;
+        transition: .225s ease;
+
+        &:hover {
+            color: $main-text-black;
+        }
+
+    }
+
+}
+
+.insight-article-date {}
