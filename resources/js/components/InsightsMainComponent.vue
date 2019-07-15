@@ -4,7 +4,14 @@
       <InsightsSidebarComponent v-on:categoryChanged="setCategory($event)" />
     </div>
     <div class="column">
-      <InsightsListComponent v-bind:filteredItems="filteredItems" />
+      <main>
+        <InsightsListComponent
+          v-for="(item, index) in filteredItems"
+          v-bind:item="item"
+          v-bind:index="index"
+          v-bind:key="item.id"
+        />
+      </main>
     </div>
   </div>
 </template>
@@ -18,10 +25,10 @@ export default {
     return {
       selectedCategory: "",
       items: [
-        { name: "cat 1", type: "1" },
-        { name: "cat 2", type: "2" },
-        { name: "cat 4", type: "4" },
-        { name: "cat 3", type: "3" }
+        { title: "cat 1", category: "1", date_published: "Dec. 13, 2019" },
+        { title: "cat 2", category: "2", date_published: "Dec. 13, 2019" },
+        { title: "cat 4", category: "4", date_published: "Dec. 13, 2019" },
+        { title: "cat 3", category: "3", date_published: "Dec. 13, 2019" }
       ]
     };
   },
@@ -35,7 +42,7 @@ export default {
       if (this.selectedCategory == "") return this.items;
       else
         return this.items.filter(item => {
-          return item.type == this.selectedCategory;
+          return item.category == this.selectedCategory;
         });
     }
   },

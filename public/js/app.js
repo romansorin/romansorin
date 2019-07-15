@@ -1996,10 +1996,8 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
-  props: ['filteredItems']
+  props: ["item"]
 });
 
 /***/ }),
@@ -2026,6 +2024,13 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -2033,17 +2038,21 @@ __webpack_require__.r(__webpack_exports__);
     return {
       selectedCategory: "",
       items: [{
-        name: "cat 1",
-        type: "1"
+        title: "cat 1",
+        category: "1",
+        date_published: "Dec. 13, 2019"
       }, {
-        name: "cat 2",
-        type: "2"
+        title: "cat 2",
+        category: "2",
+        date_published: "Dec. 13, 2019"
       }, {
-        name: "cat 4",
-        type: "4"
+        title: "cat 4",
+        category: "4",
+        date_published: "Dec. 13, 2019"
       }, {
-        name: "cat 3",
-        type: "3"
+        title: "cat 3",
+        category: "3",
+        date_published: "Dec. 13, 2019"
       }]
     };
   },
@@ -2057,7 +2066,7 @@ __webpack_require__.r(__webpack_exports__);
       var _this = this;
 
       if (this.selectedCategory == "") return this.items;else return this.items.filter(function (item) {
-        return item.type == _this.selectedCategory;
+        return item.category == _this.selectedCategory;
       });
     }
   },
@@ -43073,14 +43082,12 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("main", [
-    _c(
-      "ul",
-      _vm._l(_vm.filteredItems, function(item) {
-        return _c("div", [_c("p", [_vm._v(_vm._s(item.name))])])
-      }),
-      0
-    )
+  return _c("article", [
+    _c("p", [_vm._v(_vm._s(_vm.item.category))]),
+    _vm._v(" "),
+    _c("p", [_vm._v(_vm._s(_vm.item.title))]),
+    _vm._v(" "),
+    _c("p", [_vm._v(_vm._s(_vm.item.date_published))])
   ])
 }
 var staticRenderFns = []
@@ -43121,16 +43128,18 @@ var render = function() {
       1
     ),
     _vm._v(" "),
-    _c(
-      "div",
-      { staticClass: "column" },
-      [
-        _c("InsightsListComponent", {
-          attrs: { filteredItems: _vm.filteredItems }
-        })
-      ],
-      1
-    )
+    _c("div", { staticClass: "column" }, [
+      _c(
+        "main",
+        _vm._l(_vm.filteredItems, function(item, index) {
+          return _c("InsightsListComponent", {
+            key: item.id,
+            attrs: { item: item, index: index }
+          })
+        }),
+        1
+      )
+    ])
   ])
 }
 var staticRenderFns = []
