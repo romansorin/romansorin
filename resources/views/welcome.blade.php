@@ -34,15 +34,15 @@ I'm Roman Sorin, a software developer who builds applications for businesses and
             </div>
             <div class="columns">
                 <div class="column is-two-thirds">
-                    <div class="field is-grouped">
-                        <p class="control">
-                            <a href="/works" class="button button-cta is-rounded is-link animated fadeIn slow"
-                                id="see-work-btn">See my work</a>
-                        </p>
-                        <p class="control">
-                            <a class="button button-cta is-rounded is-white animated fadeIn slow" href="/about">Know
-                                more</a>
-                        </p>
+                    <div class="buttons">
+
+                        <a href="/works" class="button button-cta is-rounded is-link animated fadeIn slow"
+                            id="see-work-btn">See my work</a>
+
+
+                        <a class="button button-cta is-rounded is-white animated fadeIn slow" href="/about">Know
+                            more</a>
+
                     </div>
                 </div>
             </div>

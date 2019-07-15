@@ -1,0 +1,34 @@
+.insights-sidebar {
+    .feather {
+        position: relative;
+        top: 4px;
+        margin-right: 12px;
+        color: $hover-blue-alt;
+    }
+
+    .dropdown-item {
+        padding: 0.75rem 1rem;
+    }
+
+    .dropdown {
+        margin-bottom: 50px;
+    }
+
+    .list-item {
+        border-bottom: none;
+        padding-left: 0;
+
+        a {
+            transition: .3s ease;
+
+            &:hover {
+                color: $hover-blue-alt !important;
+            }
+        }
+    }
+
+    .list {
+        padding-top: 1.5rem;
+        padding-bottom: 3.5rem;
+    }
+}

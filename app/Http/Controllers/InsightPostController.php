@@ -3,10 +3,14 @@
 namespace romansorin\Http\Controllers;
 
 use romansorin\InsightPost;
-use Illuminate\Http\Request;
 
 class InsightPostController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth')->except(['index', 'show']);
+    }
+
     /**
      * Display a listing of the resource.
      *
@@ -14,7 +18,8 @@ class InsightPostController extends Controller
      */
     public function index()
     {
-        //
+        $insights = InsightPost::simplePaginate(15);
+        return view('insights.index', compact('insights'));
     }
 
     /**
@@ -24,7 +29,7 @@ class InsightPostController extends Controller
      */
     public function create()
     {
-        //
+        return view('auth.insights.create');
     }
 
     /**
@@ -33,9 +38,11 @@ class InsightPostController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store()
     {
-        //
+        $attributes = request()->validate([]);
+
+        InsightPost::create($attributes);
     }
 
     /**
@@ -46,7 +53,9 @@ class InsightPostController extends Controller
      */
     public function show(InsightPost $insightPost)
     {
-        //
+        // Decide what to use as parameter
+        $insight = InsightPost::where('...');
+        return view('insights.show', compact('insight'));
     }
 
     /**
@@ -57,7 +66,8 @@ class InsightPostController extends Controller
      */
     public function edit(InsightPost $insightPost)
     {
-        //
+        $insight = InsightPost::where('...');
+        return view('auth.insights.edit', compact('insight'));
     }
 
     /**
@@ -80,6 +90,7 @@ class InsightPostController extends Controller
      */
     public function destroy(InsightPost $insightPost)
     {
-        //
+        // Destroy where id matches given post
+        InsightPost::destroy('...');
     }
 }
