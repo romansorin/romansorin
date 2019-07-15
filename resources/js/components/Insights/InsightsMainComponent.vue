@@ -8,19 +8,24 @@
     </div>
     <div class="column">
       <main class="insight-articles-wrapper">
-        <a
-          href="javascript:;"
-          v-on:click="resetFilter();"
-          class="is-size-3 has-text-black-bis has-text-weight-semibold"
-        >
-          <i data-feather="x-circle"></i>Back
-        </a>
+        <h3 id="insights-article-return" class="is-size-3 has-text-black-bis has-text-weight-semibold" v-if="selectedCategory !== ''">
+          Showing results for "{{selectedCategory | capitalize}}".
+          <a
+            href="javascript:;"
+            v-on:click="resetFilter();"
+          ><i data-feather="x"></i>Go Back</a>
+        </h3>
         <InsightsListComponent
           v-for="(item, index) in filteredItems"
           v-bind:item="item"
           v-bind:index="index"
           v-bind:key="item.id"
         />
+        <article class="insight-article" v-if="items.length === 0">
+          <h2
+            class="insight-article-title is-size-3 has-text-weight-semibold"
+          >Nothing to see here! Try checking back later :)</h2>
+        </article>
       </main>
     </div>
   </div>
