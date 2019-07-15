@@ -1,34 +1,50 @@
 <template>
-  <aside class="section-sidebar">
-    <h3 class="is-size-4 has-text-black-bis has-text-weight-bold">Categories</h3>
-    <ul class="list is-shadowless">
+  <aside class="insights-sidebar">
+    <h3 class="is-size-3 has-text-black-bis has-text-weight-semibold">Categories</h3>
+    <ul class="list is-shadowless is-size-5 has-text-weight-semibold">
       <li class="list-item">
-        icon
-        <a href="#category-1" v-on:click="$emit('categoryChanged', '1')">Category 1</a>
+        <i data-feather="layers"></i>
+        <a
+          href="#development"
+          v-on:click="$emit('categoryChanged', 'development')"
+          class="has-text-black-ter"
+        >Development</a>
       </li>
       <li class="list-item">
-        icon
-        <a href="#category-2" v-on:click="$emit('categoryChanged', '2')">Category 2</a>
+        <i data-feather="layout"></i>
+        <a
+          href="#design"
+          v-on:click="$emit('categoryChanged', 'design')"
+          class="has-text-black-ter"
+        >Design</a>
       </li>
       <li class="list-item">
-        icon
-        <a href="#category-3" v-on:click="$emit('categoryChanged', '3')">Category 3</a>
+        <i data-feather="briefcase"></i>
+        <a
+          href="#business"
+          v-on:click="$emit('categoryChanged', 'business')"
+          class="has-text-black-ter"
+        >Business</a>
       </li>
       <li class="list-item">
-        icon
-        <a href="#category-4" v-on:click="$emit('categoryChanged', '4')">Category 4</a>
+        <i data-feather="coffee"></i>
+        <a
+          href="#personal"
+          v-on:click="$emit('categoryChanged', 'personal')"
+          class="has-text-black-ter"
+        >Personal</a>
       </li>
     </ul>
-    <h3 class="is-size-4 has-text-black-bis has-text-weight-bold">Follow</h3>
-    <ul class="list is-shadowless">
+    <h3 class="is-size-3 has-text-black-bis has-text-weight-semibold">Follow</h3>
+    <ul class="list is-shadowless is-size-5 has-text-weight-semibold">
       <li class="list-item">
-        <a href="https://">Instagram</a>
+        <a href="https://instagram.com/romansorinn" class="has-text-black-ter">Instagram</a>
       </li>
       <li class="list-item">
-        <a href="https://">LinkedIn</a>
+        <a href="https://linkedin.com/in/romansorin" class="has-text-black-ter">LinkedIn</a>
       </li>
       <li class="list-item">
-        <a href="https://">Twitter</a>
+        <a href="https://twitter.com/romansorinn" class="has-text-black-ter">Twitter</a>
       </li>
     </ul>
   </aside>
