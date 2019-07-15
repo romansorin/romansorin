@@ -6,4 +6,20 @@
 {{-- Possibly title + subtitle --}}
 @endsection
 @section('content')
+<section class="hero">
+    <div class="hero-body">
+        <div class="container hero-wrapper">
+            <h1 class="title">{{ $insight->title }}</h1>
+            <h2 class="subtitle">{{ $insight->subtitle }}</h2>
+            <p>{{ $insight->date_published }}</p>
+        </div>
+    </div>
+</section>
+<section class="section">
+    <div class="container">
+        <div class="content">
+            {{ $insight->content }}
+        </div>
+    </div>
+</section>
 @endsection

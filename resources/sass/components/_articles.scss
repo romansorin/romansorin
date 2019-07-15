@@ -1,0 +1,34 @@
+@import "../base/colors";
+
+.insight-article {
+    padding: 2.35rem;
+    @media screen and (max-width: 1023px) {
+        padding-left: 0;
+    }
+}
+
+.insight-articles-wrapper {
+    article:not(:last-child) {
+        border-bottom: 1px $hover-blue-alt solid;
+    }
+}
+
+.insight-article-title {
+    margin-bottom: 5px;
+
+    a {
+        color: $hover-blue-alt;
+        transition: .225s ease;
+
+        &:hover {
+            color: $main-text-black;
+        }
+
+    }
+
+}
+
+#insights-article-return {
+    border-bottom: 2px solid $main-text-black;
+    padding-bottom: 25px;
+}
