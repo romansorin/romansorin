@@ -4,7 +4,7 @@
       <a :href="work.repo_link">
         <div class="article-tile-image article-tile-image--large">
           <figure class="image">
-            <img :src="work.preview_image_link" :alt="work.preview_image_alt">
+            <img :src="work.preview_image_link" :alt="work.preview_image_alt" />
             <div class="image-overlay">
               <!-- <div class="columns is-mobile is-centered">
                 <div class="column is-half">
@@ -21,7 +21,7 @@
                     </div>
                   </nav>
                 </div>
-              </div> -->
+              </div>-->
             </div>
           </figure>
         </div>
