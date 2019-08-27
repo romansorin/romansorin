@@ -1,7 +1,8 @@
 @extends('layouts.app')
 @section('title', 'About -')
 @section('description')
-My name is Roman Sorin and I'm a self-taught software developer who additionally plays violin, takes photos, and loves minimalism.
+My name is Roman Sorin and I'm a self-taught software developer who additionally plays violin, takes photos, and loves
+minimalism.
 @endsection
 @section('content')
 <section class="hero">
@@ -15,7 +16,7 @@ My name is Roman Sorin and I'm a self-taught software developer who additionally
                 </div>
                 <div class="column is-7">
                     <h2 class="subtitle has-text-weight-normal has-text-black-ter is-size-4 is-size-5-mobile">A
-                        16 year old self-taught software developer, violinist, avid photographer, and lover
+                        self-taught software developer, violinist, avid photographer, and lover
                         of everything minimalist.
                     </h2>
                 </div>
