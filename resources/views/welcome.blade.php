@@ -7,8 +7,17 @@ I'm Roman Sorin, a software developer who builds applications for businesses and
 @endsection
 
 @section('content')
+
 <section class="hero">
     <div class="hero-body">
+        <div class="container">
+            <div class="notification is-success">
+                <strong>Hey!</strong> I've created a status page that'll be keeping track of the soon-to-be-released
+                client
+                dashboard, hosting services, API, and more. Check it out <a href="https://status.romansorin.com"
+                    target="_blank">here!</a>
+            </div>
+        </div>
         <div class="container hero-wrapper">
             <div class="columns">
                 <div class="column is-two-thirds">
