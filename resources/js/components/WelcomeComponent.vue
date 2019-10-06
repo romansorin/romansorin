@@ -3,9 +3,11 @@
     <div class="columns">
       <div class="column is-two-thirds-touch">
         <div class="landing-copy">
-          <h1 class="landing-heading">Building products and experiences that businesses love</h1>
+          <h1
+            class="landing-heading font-semibold"
+          >Building products and experiences that businesses love</h1>
           <h2
-            class="landing-subheading"
+            class="landing-subheading font-light"
           >I’m currently rebuilding and redesigning my portfolio with an updated stack, layout, and improved accessability. Feel free to check in for updates!</h2>
         </div>
         <nav class="level">

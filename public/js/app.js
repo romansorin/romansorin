@@ -2985,6 +2985,8 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({});
@@ -44728,11 +44730,11 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "landing-copy" }, [
-      _c("h1", { staticClass: "landing-heading" }, [
+      _c("h1", { staticClass: "landing-heading font-semibold" }, [
         _vm._v("Building products and experiences that businesses love")
       ]),
       _vm._v(" "),
-      _c("h2", { staticClass: "landing-subheading" }, [
+      _c("h2", { staticClass: "landing-subheading font-light" }, [
         _vm._v(
           "I’m currently rebuilding and redesigning my portfolio with an updated stack, layout, and improved accessability. Feel free to check in for updates!"
         )

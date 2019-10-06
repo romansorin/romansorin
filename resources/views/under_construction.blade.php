@@ -3,7 +3,8 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="description" content="@yield('description')">
+    <meta name="description"
+        content="Roman Sorin is a full-stack software developer who builds, designs, and engineers custom solutions for businesses of all sizes.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>Roman Sorin ~ Software Developer</title>

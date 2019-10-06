@@ -4,3 +4,65 @@
 // @import 'components/module';
 // @import 'layout/module';
 // @import 'pages/module';
+
+@font-face {
+    font-family: 'Inter Light BETA';
+    src: url('hinted-Inter-LightBETA.woff2') format('woff2'),
+        url('hinted-Inter-LightBETA.woff') format('woff'),
+        url('hinted-Inter-LightBETA.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Inter Semi';
+    src: url('hinted-Inter-SemiBold.woff2') format('woff2'),
+        url('hinted-Inter-SemiBold.woff') format('woff'),
+        url('hinted-Inter-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Inter Light BETA';
+    src: url('hinted-Inter-LightBETA.woff2') format('woff2'),
+        url('hinted-Inter-LightBETA.woff') format('woff'),
+        url('hinted-Inter-LightBETA.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Inter Semi';
+    src: url('hinted-Inter-SemiBold.woff2') format('woff2'),
+        url('hinted-Inter-SemiBold.woff') format('woff'),
+        url('hinted-Inter-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Inter Semi';
+    src: url('hinted-Inter-SemiBold.woff2') format('woff2'),
+        url('hinted-Inter-SemiBold.woff') format('woff'),
+        url('hinted-Inter-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Inter Light BETA';
+    src: url('hinted-Inter-LightBETA.woff2') format('woff2'),
+        url('hinted-Inter-LightBETA.woff') format('woff'),
+        url('hinted-Inter-LightBETA.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+.font-semibold {
+    font-family: 'Inter Semi';
+}
+
+.font-light {
+    font-family: 'Inter Light BETA';
+}

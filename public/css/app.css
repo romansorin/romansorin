@@ -19972,3 +19972,53 @@ input[type=range].slider.is-danger .has-output-tooltip + output {
   }
 }
 
+@font-face {
+  font-family: "Inter Light BETA";
+  src: url(/fonts/hinted-Inter-LightBETA.woff2?e464167774c524f4f15377143905c7c6) format("woff2"), url(/fonts/hinted-Inter-LightBETA.woff?a289bbbc45d6b376e25eef7071a84ec9) format("woff"), url(/fonts/hinted-Inter-LightBETA.ttf?1f92016a3f13ec7d3fd33fa03a6e1d45) format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Inter Semi";
+  src: url(/fonts/hinted-Inter-SemiBold.woff2?98e91152186d27f4dc6a6e0b430ccffd) format("woff2"), url(/fonts/hinted-Inter-SemiBold.woff?47e61073cc0138b2d8657404c7e11c24) format("woff"), url(/fonts/hinted-Inter-SemiBold.ttf?519479a7551ac518124847e4fec043dc) format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Inter Light BETA";
+  src: url(/fonts/hinted-Inter-LightBETA.woff2?e464167774c524f4f15377143905c7c6) format("woff2"), url(/fonts/hinted-Inter-LightBETA.woff?a289bbbc45d6b376e25eef7071a84ec9) format("woff"), url(/fonts/hinted-Inter-LightBETA.ttf?1f92016a3f13ec7d3fd33fa03a6e1d45) format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Inter Semi";
+  src: url(/fonts/hinted-Inter-SemiBold.woff2?98e91152186d27f4dc6a6e0b430ccffd) format("woff2"), url(/fonts/hinted-Inter-SemiBold.woff?47e61073cc0138b2d8657404c7e11c24) format("woff"), url(/fonts/hinted-Inter-SemiBold.ttf?519479a7551ac518124847e4fec043dc) format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Inter Semi";
+  src: url(/fonts/hinted-Inter-SemiBold.woff2?98e91152186d27f4dc6a6e0b430ccffd) format("woff2"), url(/fonts/hinted-Inter-SemiBold.woff?47e61073cc0138b2d8657404c7e11c24) format("woff"), url(/fonts/hinted-Inter-SemiBold.ttf?519479a7551ac518124847e4fec043dc) format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Inter Light BETA";
+  src: url(/fonts/hinted-Inter-LightBETA.woff2?e464167774c524f4f15377143905c7c6) format("woff2"), url(/fonts/hinted-Inter-LightBETA.woff?a289bbbc45d6b376e25eef7071a84ec9) format("woff"), url(/fonts/hinted-Inter-LightBETA.ttf?1f92016a3f13ec7d3fd33fa03a6e1d45) format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+.font-semibold {
+  font-family: "Inter Semi";
+}
+
+.font-light {
+  font-family: "Inter Light BETA";
+}
+
