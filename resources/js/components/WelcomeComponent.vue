@@ -18,7 +18,7 @@
 
         </div>
         <div class='column'>
-         
+         <LandingIllustration/>
         </div>
       </div>
     </div>
@@ -27,6 +27,7 @@
 
 <script>
 import * as Icons from './icons'
+import LandingIllustration from './LandingIllustration'
 export default {};
 </script>
 
