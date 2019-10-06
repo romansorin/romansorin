@@ -1,4 +1,4 @@
-@import "../base/colors";
+@import '../base/colors';
 
 .insight-article {
     padding: 2.35rem;
@@ -18,14 +18,12 @@
 
     a {
         color: $hover-blue-alt;
-        transition: .225s ease;
+        transition: 0.225s ease;
 
         &:hover {
             color: $main-text-black;
         }
-
     }
-
 }
 
 #insights-article-return {

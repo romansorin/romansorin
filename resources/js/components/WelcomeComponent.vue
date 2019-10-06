@@ -3,18 +3,27 @@
     <div class="container">
       <div class="columns">
         <div class="column">
-          <h1
-            class="title is-1 landing-heading"
-          >Building products and experiences that businesses love</h1>
+          <h1 class="landing-heading">Building products and experiences that businesses love</h1>
           <h2
-            class="subtitle is-3 landing-subheading"
+            class="landing-subheading"
           >I’m currently rebuilding and redesigning my portfolio with an updated stack, layout, and accessability. Feel free to check in for updates!</h2>
-
-          <GithubIcon fill="#525f7f" />
-          <TwitterIcon fill="#525f7f" />
-          <LinkedinIcon fill="#525f7f" />
-          <PhoneIcon fill="#525f7f" />
-          <EmailIcon fill="#525f7f" />
+          <nav class="level">
+            <div class="level-item">
+              <GithubIcon class="landing-icon" />
+            </div>
+            <div class="level-item">
+              <TwitterIcon class="landing-icon" />
+            </div>
+            <div class="level-item">
+              <LinkedinIcon class="landing-icon" />
+            </div>
+            <div class="level-item">
+              <PhoneIcon class="landing-icon" />
+            </div>
+            <div class="level-item">
+              <EmailIcon class="landing-icon" />
+            </div>
+          </nav>
         </div>
         <div class="column">
           <LandingIllustration />
@@ -50,5 +59,12 @@ export default {};
   /* or 52px */
 
   color: #424770;
+}
+.landing-icon {
+  cursor: pointer;
+  fill: #525f7f;
+}
+.landing-icon:hover {
+  fill: #6772e5;
 }
 </style>

@@ -2981,6 +2981,15 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({});
@@ -24505,7 +24514,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\n.landing-heading {\r\n  font-weight: 600;\r\n  font-size: 84px;\r\n  line-height: 132.46%;\r\n  /* or 111px */\r\n  letter-spacing: -0.04em;\r\n\r\n  color: #32325d;\r\n\r\n  text-shadow: 0px 4px 5px rgba(50, 50, 93, 0.09);\n}\n.landing-subheading {\r\n  font-style: normal;\r\n  font-weight: 300;\r\n  font-size: 37px;\r\n  line-height: 139.6%;\r\n  /* or 52px */\r\n\r\n  color: #424770;\n}\r\n", ""]);
+exports.push([module.i, "\n.landing-heading {\r\n  font-weight: 600;\r\n  font-size: 84px;\r\n  line-height: 132.46%;\r\n  /* or 111px */\r\n  letter-spacing: -0.04em;\r\n\r\n  color: #32325d;\r\n\r\n  text-shadow: 0px 4px 5px rgba(50, 50, 93, 0.09);\n}\n.landing-subheading {\r\n  font-style: normal;\r\n  font-weight: 300;\r\n  font-size: 37px;\r\n  line-height: 139.6%;\r\n  /* or 52px */\r\n\r\n  color: #424770;\n}\n.landing-icon {\r\n  cursor: pointer;\r\n  fill: #525f7f;\n}\n.landing-icon:hover {\r\n  fill: #6772e5;\n}\r\n", ""]);
 
 // exports
 
@@ -47088,32 +47097,54 @@ var render = function() {
   return _c("main", { staticClass: "section" }, [
     _c("div", { staticClass: "container" }, [
       _c("div", { staticClass: "columns" }, [
-        _c(
-          "div",
-          { staticClass: "column" },
-          [
-            _c("h1", { staticClass: "title is-1 landing-heading" }, [
-              _vm._v("Building products and experiences that businesses love")
-            ]),
+        _c("div", { staticClass: "column" }, [
+          _c("h1", { staticClass: "landing-heading" }, [
+            _vm._v("Building products and experiences that businesses love")
+          ]),
+          _vm._v(" "),
+          _c("h2", { staticClass: "landing-subheading" }, [
+            _vm._v(
+              "I’m currently rebuilding and redesigning my portfolio with an updated stack, layout, and accessability. Feel free to check in for updates!"
+            )
+          ]),
+          _vm._v(" "),
+          _c("nav", { staticClass: "level" }, [
+            _c(
+              "div",
+              { staticClass: "level-item" },
+              [_c("GithubIcon", { staticClass: "landing-icon" })],
+              1
+            ),
             _vm._v(" "),
-            _c("h2", { staticClass: "subtitle is-3 landing-subheading" }, [
-              _vm._v(
-                "I’m currently rebuilding and redesigning my portfolio with an updated stack, layout, and accessability. Feel free to check in for updates!"
-              )
-            ]),
+            _c(
+              "div",
+              { staticClass: "level-item" },
+              [_c("TwitterIcon", { staticClass: "landing-icon" })],
+              1
+            ),
             _vm._v(" "),
-            _c("GithubIcon", { attrs: { fill: "#525f7f" } }),
+            _c(
+              "div",
+              { staticClass: "level-item" },
+              [_c("LinkedinIcon", { staticClass: "landing-icon" })],
+              1
+            ),
             _vm._v(" "),
-            _c("TwitterIcon", { attrs: { fill: "#525f7f" } }),
+            _c(
+              "div",
+              { staticClass: "level-item" },
+              [_c("PhoneIcon", { staticClass: "landing-icon" })],
+              1
+            ),
             _vm._v(" "),
-            _c("LinkedinIcon", { attrs: { fill: "#525f7f" } }),
-            _vm._v(" "),
-            _c("PhoneIcon", { attrs: { fill: "#525f7f" } }),
-            _vm._v(" "),
-            _c("EmailIcon", { attrs: { fill: "#525f7f" } })
-          ],
-          1
-        ),
+            _c(
+              "div",
+              { staticClass: "level-item" },
+              [_c("EmailIcon", { staticClass: "landing-icon" })],
+              1
+            )
+          ])
+        ]),
         _vm._v(" "),
         _c("div", { staticClass: "column" }, [_c("LandingIllustration")], 1)
       ])
