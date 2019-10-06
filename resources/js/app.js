@@ -3,13 +3,13 @@ require('./bootstrap')
 // const VueClazyLoad = require('vue-clazy-load')
 window.Vue = require('vue')
 // Vue.use(VueClazyLoad);
-const feather = require('feather-icons/dist/feather')
+// const feather = require('feather-icons/dist/feather')
 
-Vue.filter('capitalize', function (value) {
-  if (!value) return ''
-  value = value.toString()
-  return value.charAt(0).toUpperCase() + value.slice(1)
-})
+// Vue.filter('capitalize', function (value) {
+//   if (!value) return ''
+//   value = value.toString()
+//   return value.charAt(0).toUpperCase() + value.slice(1)
+// })
 /**
  * The following block of code may be used to automatically register your
  * Vue components. It will recursively scan this directory for the Vue
@@ -33,29 +33,29 @@ const app = new Vue({
   el: '#app'
 })
 
-// Get all "navbar-burger" elements
-const $navbarBurgers = Array.prototype.slice.call(
-  document.querySelectorAll('.hamburger'),
-  0
-)
+  // // Get all "navbar-burger" elements
+  // const $navbarBurgers = Array.prototype.slice.call(
+  //   document.querySelectorAll('.hamburger'),
+  //   0
+  // )
 
-// Check if there are any navbar burgers
-if ($navbarBurgers.length > 0) {
-  // Add a click event on each of them
-  $navbarBurgers.forEach(el => {
-    el.addEventListener('click', () => {
-      // Get the target from the "data-target" attribute
-      const target = el.dataset.target
-      const $target = document.getElementById(target)
+  // // Check if there are any navbar burgers
+  // if ($navbarBurgers.length > 0) {
+  //   // Add a click event on each of them
+  //   $navbarBurgers.forEach(el => {
+  //     el.addEventListener('click', () => {
+  //       // Get the target from the "data-target" attribute
+  //       const target = el.dataset.target
+  //       const $target = document.getElementById(target)
 
-      // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
-      el.classList.toggle('is-active')
-      $target.classList.toggle('is-active')
-    })
-  })
-}
+  //       // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+  //       el.classList.toggle('is-active')
+  //       $target.classList.toggle('is-active')
+  //     })
+  //   })
+  // }
 
-feather.replace()
+  // feather.replace()
 
 // Hotjar Tracking Code for https://www.romansorin.com
 ;(function (h, o, t, j, a, r) {
