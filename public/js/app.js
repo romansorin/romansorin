@@ -2983,6 +2983,8 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({});
@@ -24507,7 +24509,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\n.landing-heading {\r\n  font-weight: 600;\r\n  font-size: 68px;\r\n  line-height: 132.46%;\r\n  /* or 111px */\r\n  letter-spacing: -0.04em;\r\n\r\n  color: #32325d;\r\n\r\n  text-shadow: 0px 4px 5px rgba(50, 50, 93, 0.09);\n}\n.landing-subheading {\r\n  font-style: normal;\r\n  font-weight: 300;\r\n  font-size: 29px;\r\n  line-height: 138.71%;\r\n  /* or 52px */\r\n\r\n  color: #424770;\n}\n.landing-icon {\r\n  cursor: pointer;\r\n  fill: #525f7f;\n}\n.landing-icon:hover {\r\n  fill: #6772e5;\n}\n.level {\r\n  padding-left: 5px;\r\n  padding-right: 5px;\r\n  justify-content: start;\n}\n.level > .level-item:not(.is-narrow) {\r\n  flex-grow: 0;\n}\n.level-item {\r\n  padding-right: 44px;\r\n  justify-content: start;\n}\n.level-item > svg {\r\n  width: 39px;\r\n  height: 39px;\n}\r\n", ""]);
+exports.push([module.i, "\n.landing-heading {\r\n  font-weight: 600;\r\n  font-size: 68px;\r\n  line-height: 86px;\r\n  /* or 111px */\r\n  letter-spacing: -0.04em;\r\n  margin-bottom: 55px;\r\n  color: #32325d;\r\n\r\n  text-shadow: 0px 4px 5px rgba(50, 50, 93, 0.09);\n}\n.landing-subheading {\r\n  font-style: normal;\r\n  font-weight: 300;\r\n  font-size: 29px;\r\n  line-height: 46px;\r\n  /* or 52px */\r\n\r\n  color: #424770;\n}\n.landing-copy {\r\n  margin-bottom: 255px;\n}\n.landing-icon {\r\n  cursor: pointer;\r\n  fill: #525f7f;\n}\n.landing-icon:hover {\r\n  fill: #6772e5;\n}\n.level {\r\n  padding-left: 5px;\r\n  padding-right: 5px;\r\n  justify-content: start;\n}\n.level > .level-item:not(.is-narrow) {\r\n  flex-grow: 0;\n}\n.level-item {\r\n  padding-right: 44px;\r\n  justify-content: start;\n}\n.level-item > svg {\r\n  width: 32px;\r\n  height: 32px;\n}\n.column {\r\n  margin-top: auto;\r\n  margin-bottom: auto;\n}\n.columns {\r\n  min-height: 100vh;\n}\n.section {\r\n  overflow-x: hidden;\n}\r\n", ""]);
 
 // exports
 
@@ -47074,51 +47076,55 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("main", { staticClass: "container" }, [
+  return _c("main", { staticClass: "section container" }, [
     _c("div", { staticClass: "columns" }, [
-      _c("div", { staticClass: "column" }, [
-        _c("h1", { staticClass: "landing-heading" }, [
-          _vm._v("Building products and experiences that businesses love")
-        ]),
-        _vm._v(" "),
-        _c("h2", { staticClass: "landing-subheading" }, [
-          _vm._v(
-            "I’m currently rebuilding and redesigning my portfolio with an updated stack, layout, and improved accessability. Feel free to check in for updates!"
-          )
-        ]),
+      _c("div", { staticClass: "column is-two-thirds-tablet" }, [
+        _vm._m(0),
         _vm._v(" "),
         _c("nav", { staticClass: "level" }, [
           _c(
-            "div",
-            { staticClass: "level-item" },
+            "a",
+            {
+              staticClass: "level-item",
+              attrs: { href: "https://github.com/romansorin" }
+            },
             [_c("GithubIcon", { staticClass: "landing-icon" })],
             1
           ),
           _vm._v(" "),
           _c(
-            "div",
-            { staticClass: "level-item" },
+            "a",
+            {
+              staticClass: "level-item",
+              attrs: { href: "https://twitter.com/romansorinn" }
+            },
             [_c("TwitterIcon", { staticClass: "landing-icon" })],
             1
           ),
           _vm._v(" "),
           _c(
-            "div",
-            { staticClass: "level-item" },
+            "a",
+            {
+              staticClass: "level-item",
+              attrs: { href: "https://linkedin.com/romansorin" }
+            },
             [_c("LinkedinIcon", { staticClass: "landing-icon" })],
             1
           ),
           _vm._v(" "),
           _c(
-            "div",
-            { staticClass: "level-item" },
+            "a",
+            { staticClass: "level-item", attrs: { href: "tel:+14408971215" } },
             [_c("PhoneIcon", { staticClass: "landing-icon" })],
             1
           ),
           _vm._v(" "),
           _c(
-            "div",
-            { staticClass: "level-item" },
+            "a",
+            {
+              staticClass: "level-item",
+              attrs: { href: "mailto:hello@romansorin.com" }
+            },
             [_c("EmailIcon", { staticClass: "landing-icon" })],
             1
           )
@@ -47129,7 +47135,24 @@ var render = function() {
     ])
   ])
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "landing-copy" }, [
+      _c("h1", { staticClass: "landing-heading" }, [
+        _vm._v("Building products and experiences that businesses love")
+      ]),
+      _vm._v(" "),
+      _c("h2", { staticClass: "landing-subheading" }, [
+        _vm._v(
+          "I’m currently rebuilding and redesigning my portfolio with an updated stack, layout, and improved accessability. Feel free to check in for updates!"
+        )
+      ])
+    ])
+  }
+]
 render._withStripped = true
 
 

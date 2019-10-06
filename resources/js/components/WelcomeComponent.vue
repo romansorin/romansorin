@@ -1,27 +1,29 @@
 <template>
-  <main class="container">
+  <main class="section container">
     <div class="columns">
-      <div class="column">
-        <h1 class="landing-heading">Building products and experiences that businesses love</h1>
-        <h2
-          class="landing-subheading"
-        >I’m currently rebuilding and redesigning my portfolio with an updated stack, layout, and improved accessability. Feel free to check in for updates!</h2>
+      <div class="column is-two-thirds-tablet">
+        <div class="landing-copy">
+          <h1 class="landing-heading">Building products and experiences that businesses love</h1>
+          <h2
+            class="landing-subheading"
+          >I’m currently rebuilding and redesigning my portfolio with an updated stack, layout, and improved accessability. Feel free to check in for updates!</h2>
+        </div>
         <nav class="level">
-          <div class="level-item">
+          <a href="https://github.com/romansorin" class="level-item">
             <GithubIcon class="landing-icon" />
-          </div>
-          <div class="level-item">
+          </a>
+          <a href="https://twitter.com/romansorinn" class="level-item">
             <TwitterIcon class="landing-icon" />
-          </div>
-          <div class="level-item">
+          </a>
+          <a href="https://linkedin.com/romansorin" class="level-item">
             <LinkedinIcon class="landing-icon" />
-          </div>
-          <div class="level-item">
+          </a>
+          <a href="tel:+14408971215" class="level-item">
             <PhoneIcon class="landing-icon" />
-          </div>
-          <div class="level-item">
+          </a>
+          <a href="mailto:hello@romansorin.com" class="level-item">
             <EmailIcon class="landing-icon" />
-          </div>
+          </a>
         </nav>
       </div>
       <div class="column">
@@ -41,10 +43,10 @@ export default {};
 .landing-heading {
   font-weight: 600;
   font-size: 68px;
-  line-height: 132.46%;
+  line-height: 86px;
   /* or 111px */
   letter-spacing: -0.04em;
-
+  margin-bottom: 55px;
   color: #32325d;
 
   text-shadow: 0px 4px 5px rgba(50, 50, 93, 0.09);
@@ -53,10 +55,13 @@ export default {};
   font-style: normal;
   font-weight: 300;
   font-size: 29px;
-  line-height: 138.71%;
+  line-height: 46px;
   /* or 52px */
 
   color: #424770;
+}
+.landing-copy {
+  margin-bottom: 255px;
 }
 .landing-icon {
   cursor: pointer;
@@ -79,7 +84,17 @@ export default {};
 }
 
 .level-item > svg {
-  width: 39px;
-  height: 39px;
+  width: 32px;
+  height: 32px;
+}
+.column {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.columns {
+  min-height: 100vh;
+}
+.section {
+  overflow-x: hidden;
 }
 </style>
