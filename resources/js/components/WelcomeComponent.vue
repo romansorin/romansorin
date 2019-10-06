@@ -1,7 +1,7 @@
 <template>
   <main class="section container">
     <div class="columns">
-      <div class="column is-two-thirds-tablet">
+      <div class="column is-two-thirds-touch">
         <div class="landing-copy">
           <h1 class="landing-heading">Building products and experiences that businesses love</h1>
           <h2
@@ -26,7 +26,7 @@
           </a>
         </nav>
       </div>
-      <div class="column">
+      <div class="column is-hidden-mobile">
         <LandingIllustration />
       </div>
     </div>
@@ -44,20 +44,17 @@ export default {};
   font-weight: 600;
   font-size: 68px;
   line-height: 86px;
-  /* or 111px */
   letter-spacing: -0.04em;
   margin-bottom: 55px;
   color: #32325d;
-
   text-shadow: 0px 4px 5px rgba(50, 50, 93, 0.09);
 }
+
 .landing-subheading {
   font-style: normal;
   font-weight: 300;
   font-size: 29px;
   line-height: 46px;
-  /* or 52px */
-
   color: #424770;
 }
 .landing-copy {
@@ -71,9 +68,10 @@ export default {};
   fill: #6772e5;
 }
 .level {
+  display: flex;
   padding-left: 5px;
   padding-right: 5px;
-  justify-content: start;
+  justify-content: flex-start;
 }
 .level > .level-item:not(.is-narrow) {
   flex-grow: 0;
@@ -96,5 +94,19 @@ export default {};
 }
 .section {
   overflow-x: hidden;
+}
+
+@media screen and (max-width: 767.96px) {
+  .landing-heading {
+    line-height: 63px;
+    font-size: 55px;
+  }
+  .landing-subheading {
+    line-height: 38px;
+    font-size: 22px;
+  }
+  .landing-copy {
+    margin-bottom: 130px;
+  }
 }
 </style>

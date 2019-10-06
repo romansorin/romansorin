@@ -24509,7 +24509,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\n.landing-heading {\r\n  font-weight: 600;\r\n  font-size: 68px;\r\n  line-height: 86px;\r\n  /* or 111px */\r\n  letter-spacing: -0.04em;\r\n  margin-bottom: 55px;\r\n  color: #32325d;\r\n\r\n  text-shadow: 0px 4px 5px rgba(50, 50, 93, 0.09);\n}\n.landing-subheading {\r\n  font-style: normal;\r\n  font-weight: 300;\r\n  font-size: 29px;\r\n  line-height: 46px;\r\n  /* or 52px */\r\n\r\n  color: #424770;\n}\n.landing-copy {\r\n  margin-bottom: 255px;\n}\n.landing-icon {\r\n  cursor: pointer;\r\n  fill: #525f7f;\n}\n.landing-icon:hover {\r\n  fill: #6772e5;\n}\n.level {\r\n  padding-left: 5px;\r\n  padding-right: 5px;\r\n  justify-content: start;\n}\n.level > .level-item:not(.is-narrow) {\r\n  flex-grow: 0;\n}\n.level-item {\r\n  padding-right: 44px;\r\n  justify-content: start;\n}\n.level-item > svg {\r\n  width: 32px;\r\n  height: 32px;\n}\n.column {\r\n  margin-top: auto;\r\n  margin-bottom: auto;\n}\n.columns {\r\n  min-height: 100vh;\n}\n.section {\r\n  overflow-x: hidden;\n}\r\n", ""]);
+exports.push([module.i, "\n.landing-heading {\r\n  font-weight: 600;\r\n  font-size: 68px;\r\n  line-height: 86px;\r\n  letter-spacing: -0.04em;\r\n  margin-bottom: 55px;\r\n  color: #32325d;\r\n  text-shadow: 0px 4px 5px rgba(50, 50, 93, 0.09);\n}\n.landing-subheading {\r\n  font-style: normal;\r\n  font-weight: 300;\r\n  font-size: 29px;\r\n  line-height: 46px;\r\n  color: #424770;\n}\n.landing-copy {\r\n  margin-bottom: 255px;\n}\n.landing-icon {\r\n  cursor: pointer;\r\n  fill: #525f7f;\n}\n.landing-icon:hover {\r\n  fill: #6772e5;\n}\n.level {\r\n  display: flex;\r\n  padding-left: 5px;\r\n  padding-right: 5px;\r\n  justify-content: flex-start;\n}\n.level > .level-item:not(.is-narrow) {\r\n  flex-grow: 0;\n}\n.level-item {\r\n  padding-right: 44px;\r\n  justify-content: start;\n}\n.level-item > svg {\r\n  width: 32px;\r\n  height: 32px;\n}\n.column {\r\n  margin-top: auto;\r\n  margin-bottom: auto;\n}\n.columns {\r\n  min-height: 100vh;\n}\n.section {\r\n  overflow-x: hidden;\n}\n@media screen and (max-width: 767.96px) {\n.landing-heading {\r\n    line-height: 63px;\r\n    font-size: 55px;\n}\n.landing-subheading {\r\n    line-height: 38px;\r\n    font-size: 22px;\n}\n.landing-copy {\r\n    margin-bottom: 130px;\n}\n}\r\n", ""]);
 
 // exports
 
@@ -47078,7 +47078,7 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c("main", { staticClass: "section container" }, [
     _c("div", { staticClass: "columns" }, [
-      _c("div", { staticClass: "column is-two-thirds-tablet" }, [
+      _c("div", { staticClass: "column is-two-thirds-touch" }, [
         _vm._m(0),
         _vm._v(" "),
         _c("nav", { staticClass: "level" }, [
@@ -47131,7 +47131,12 @@ var render = function() {
         ])
       ]),
       _vm._v(" "),
-      _c("div", { staticClass: "column" }, [_c("LandingIllustration")], 1)
+      _c(
+        "div",
+        { staticClass: "column is-hidden-mobile" },
+        [_c("LandingIllustration")],
+        1
+      )
     ])
   ])
 }
