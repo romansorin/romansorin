@@ -36,6 +36,7 @@
 <script>
 import * as Icons from "./icons";
 import LandingIllustration from "./LandingIllustration";
+
 export default {};
 </script>
 
@@ -62,6 +63,7 @@ export default {};
 }
 .landing-icon {
   cursor: pointer;
+  transition: fill 0.15s;
   fill: #525f7f;
 }
 .landing-icon:hover {
