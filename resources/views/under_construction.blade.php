@@ -23,7 +23,7 @@
 
 <body>
     <div id="app">
-        <welcome-component />
+        <welcome-component></welcome-component>
     </div>
     <script src="{{ asset('js/app.js') }}"></script>
 </body>
