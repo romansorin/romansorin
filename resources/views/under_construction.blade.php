@@ -22,6 +22,7 @@
 </head>
 
 <body>
+    <noscript>Javascript is required to use this site.</noscript>
     <div id="app">
         <welcome-component></welcome-component>
     </div>
