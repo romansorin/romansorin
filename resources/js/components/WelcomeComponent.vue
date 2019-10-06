@@ -36,7 +36,6 @@
 <script>
 import * as Icons from "./icons";
 import LandingIllustration from "./LandingIllustration";
-
 export default {};
 </script>
 
