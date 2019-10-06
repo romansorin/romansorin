@@ -4,6 +4,11 @@
 ///////////////////
 // Public Routes //
 ///////////////////
+
+// use romansorin\Invoice;
+
+Route::get('*', 'WelcomeController@index');
+
 Route::get('/', function () {
     return view('welcome');
 });
@@ -26,6 +31,11 @@ Route::get('/terms', function () {
 Route::get('/privacy', function () {
     return view('privacy');
 });
+
+// Route::get('/send', function () {
+//     $invoice = new Invoice();
+//     $invoice->send();
+// });
 
 // Auth::routes();
 
