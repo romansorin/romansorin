@@ -17,7 +17,7 @@
           <a href="https://twitter.com/romansorinn" class="level-item">
             <TwitterIcon class="landing-icon" />
           </a>
-          <a href="https://linkedin.com/romansorin" class="level-item">
+          <a href="https://linkedin.com/in/romansorin" class="level-item">
             <LinkedinIcon class="landing-icon" />
           </a>
           <a href="tel:+14408971215" class="level-item">
@@ -25,6 +25,9 @@
           </a>
           <a href="mailto:hello@romansorin.com" class="level-item">
             <EmailIcon class="landing-icon" />
+          </a>
+          <a href="https://calendly.com/rscom/30min" class="level-item">
+            <CalendarIcon class="landing-icon" />
           </a>
         </nav>
       </div>
