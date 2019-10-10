@@ -1,7 +1,7 @@
 <template>
   <main class="section container">
     <div class="columns">
-      <div class="column is-two-thirds-touch">
+      <div class="column is-full-mobile is-half-desktop is-two-thirds-tablet">
         <div class="landing-copy">
           <h1
             class="landing-heading font-semibold"
@@ -77,6 +77,7 @@ export default {};
   display: flex;
   padding-left: 5px;
   padding-right: 5px;
+  flex-wrap: wrap;
   justify-content: flex-start;
 }
 .level > .level-item:not(.is-narrow) {
@@ -85,6 +86,11 @@ export default {};
 .level-item {
   padding-right: 44px;
   justify-content: start;
+  margin-bottom: 25px;
+}
+
+.level-item:last-child {
+  padding-right: 0;
 }
 
 .level-item > svg {
@@ -113,6 +119,17 @@ export default {};
   }
   .landing-copy {
     margin-bottom: 130px;
+  }
+  .level-item:not(:last-child) {
+    
+    margin-bottom: 25px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .landing-heading {
+    font-size: 50px;
+    line-height: 65px;
   }
 }
 </style>
