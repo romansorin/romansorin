@@ -8,7 +8,7 @@
           >Building products and experiences that businesses love</h1>
           <h2
             class="landing-subheading font-light"
-          >I’m currently rebuilding and redesigning my portfolio with an updated stack, layout, and improved accessibility. Feel free to check in for updates!</h2>
+          >I’m currently rebuilding and redesigning my portfolio with an updated stack, layout, and improved accessibility. In the meantime, please use a contact method below if you're interested in my projects or prior work.</h2>
         </div>
         <nav class="level">
           <a href="https://github.com/romansorin" class="level-item">
