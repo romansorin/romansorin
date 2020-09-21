@@ -6,6 +6,8 @@
           <h1
             class="landing-heading font-semibold"
           >Building products and experiences that businesses love</h1>
+          <h2 class="landing-subheading font-light">I am a freelance software developer who specializes in web application development & design. I offer SaaS/web app development, design, consulting, and server maintenance.</h2>
+          <br/>
           <h2
             class="landing-subheading font-light"
           >I’m currently rebuilding and redesigning my portfolio with an updated stack, layout, and improved accessibility. In the meantime, please use a contact method below if you're interested in my projects or prior work.</h2>
@@ -20,7 +22,7 @@
           <a href="https://linkedin.com/in/romansorin" class="level-item">
             <LinkedinIcon class="landing-icon" />
           </a>
-          <a href="tel:+14408971215" class="level-item">
+          <a href="tel:+2163028812" class="level-item">
             <PhoneIcon class="landing-icon" />
           </a>
           <a href="mailto:hello@romansorin.com" class="level-item">
