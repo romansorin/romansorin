@@ -12,7 +12,9 @@
             class="landing-subheading font-light"
           >I’m currently rebuilding and redesigning my portfolio with an updated stack, layout, and improved accessibility. In the meantime, please use a contact method below if you're interested in my projects or prior work.</h2>
           <br/>
-          <h2>Email: rmaximsorin@gmail.com, roman@romansorin.com</h2>
+          <h2
+            class="landing-subheading font-light"
+          >Email: rmaximsorin@gmail.com, roman@romansorin.com</h2>
         
         </div>
         <nav class="level">
